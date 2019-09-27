@@ -1,0 +1,268 @@
+|sum_rest
+sel => yr0.IN0
+sel => yr1.IN0
+sel => yr2.IN0
+sel => yr3.IN0
+sel => sig.IN1
+sel => Sumador4BitsB:u0.cI
+sel => signo.DATAIN
+sel => z4.IN1
+x0 => Sumador4BitsB:u0.a0
+x1 => Sumador4BitsB:u0.a1
+x2 => Sumador4BitsB:u0.a2
+x3 => Sumador4BitsB:u0.a3
+y0 => yr0.IN1
+y1 => yr1.IN1
+y2 => yr2.IN1
+y3 => yr3.IN1
+z0 <= Sumador4BitsB:u1.out0
+z1 <= Sumador4BitsB:u1.out1
+z2 <= Sumador4BitsB:u1.out2
+z3 <= Sumador4BitsB:u1.out3
+z4 <= z4.DB_MAX_OUTPUT_PORT_TYPE
+co <= Sumador4BitsB:u1.cO
+signo <= sel.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0
+cI => fullAdderB:U0.Ci
+a0 => fullAdderB:U0.A
+a1 => fullAdderB:U1.A
+a2 => fullAdderB:U2.A
+a3 => fullAdderB:U3.A
+b0 => fullAdderB:U0.B
+b1 => fullAdderB:U1.B
+b2 => fullAdderB:U2.B
+b3 => fullAdderB:U3.B
+out0 <= fullAdderB:U0.S
+out1 <= fullAdderB:U1.S
+out2 <= fullAdderB:U2.S
+out3 <= fullAdderB:U3.S
+cO <= fullAdderB:U3.Co
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U0
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U0|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U0|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U1
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U1|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U1|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U2
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U2|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U2|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U3
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U3|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u0|fullAdderB:U3|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1
+cI => fullAdderB:U0.Ci
+a0 => fullAdderB:U0.A
+a1 => fullAdderB:U1.A
+a2 => fullAdderB:U2.A
+a3 => fullAdderB:U3.A
+b0 => fullAdderB:U0.B
+b1 => fullAdderB:U1.B
+b2 => fullAdderB:U2.B
+b3 => fullAdderB:U3.B
+out0 <= fullAdderB:U0.S
+out1 <= fullAdderB:U1.S
+out2 <= fullAdderB:U2.S
+out3 <= fullAdderB:U3.S
+cO <= fullAdderB:U3.Co
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U0
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U0|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U0|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U1
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U1|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U1|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U2
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U2|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U2|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U3
+A => halfAdderB:U0.x
+B => halfAdderB:U0.y
+Ci => halfAdderB:U1.x
+Co <= Co.DB_MAX_OUTPUT_PORT_TYPE
+S <= halfAdderB:U1.s
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U3|halfAdderB:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|sum_rest|Sumador4BitsB:u1|fullAdderB:U3|halfAdderB:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
