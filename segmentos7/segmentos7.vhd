@@ -14,7 +14,7 @@ end segmentos7;
 
 architecture Beh of segmentos7 is
 begin 
-	process (a(0), a(1), a(2), a(3))
+	process (a(0), a(1), a(2), a(3),s)
 	variable entrada: std_logic_vector(3 downto 0);
 	begin
 			entrada:=a(0) & a(1) & a(2) & a(3);
@@ -24,23 +24,23 @@ begin
 				when "0001" =>
 					s(6 downto 0) <= "1111001";
 				when "0010" =>
-					s(6 downto 0) <= "0100100";	--1011011
+					s(6 downto 0) <= "0100100";	
 				when "0011" =>
-					s(6 downto 0) <= "0110000"; --1001111
+					s(6 downto 0) <= "0110000"; 
 				when "0100" =>
-					s(6 downto 0) <= "0011001"; --1100110
+					s(6 downto 0) <= "0011001"; 
 				when "0101" =>
-					s(6 downto 0) <= "0010010"; --1101101
+					s(6 downto 0) <= "0010010"; 
 				when "0110" =>
-					s(6 downto 0) <= "0000010"; --1111101
+					s(6 downto 0) <= "0000010"; 
 				when "0111" =>
-					s(6 downto 0) <= "1111000"; --0000111
+					s(6 downto 0) <= "1111000"; 
 				when "1000" =>
 					s(6 downto 0) <= "0000000"; 
 				when "1001" =>
-					s(6 downto 0) <= "0010000"; --1101111
+					s(6 downto 0) <= "0010000"; 
            	when others =>
-           		s(6 downto 0) <= "0000000";
+           		s(6 downto 0) <= "0101010";
 				end case;
     end process;
 end Beh;
