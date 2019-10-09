@@ -24,7 +24,7 @@ component SumRes is
 
 ---signals
 	
-	signal clock 	: std_logic;
+	signal clk 	: std_logic;
   signal stop_clk	: boolean;
   signal A: std_logic_vector (3 downto 0);
 	signal B: std_logic_vector (3 downto 0);
@@ -44,26 +44,26 @@ stimulus: process
     
   stop_clk  <= false;
   -- Put initialisation code here
-  A<="1100";
-	B<="0110";
+  A<='1100';
+	B<='0110';
 	S<='0';
   
   wait for 160 ns;
   
-	A<="0001";
-	B<="0101";
+	A<='0001';
+	B<='0101';
 	S<='1';
 	
   wait for 160 ns;
   
-	A<="0111";
-	B<="0011";
+	A<='0111';
+	B<='0011';
 	S<='0';
   
   wait for 160 ns;
   
-	A<="0101";
-	B<="1011";
+	A<='0101';
+	B<='1011';
   S<='1';
   
   wait for 60 ns;

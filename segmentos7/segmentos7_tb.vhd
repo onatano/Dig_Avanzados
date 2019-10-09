@@ -30,15 +30,19 @@ begin
 
 
 -- instances DUTs
-
-stimulus: process
+U0 : segmentos7 port map (A,S);
+stimulus: process (A)
 
   begin
     
   stop_clk  <= false;
   -- Put initialisation code here
+  A <='1010'
   
+  A <= '1100'
 
+  A <= '0110'
+  
 	stop_clk <= true;
 
   wait;
