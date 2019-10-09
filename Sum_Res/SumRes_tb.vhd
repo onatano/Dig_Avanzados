@@ -38,7 +38,7 @@ begin
 -- instances DUTsc
  	U0: SumRes port map (S,A,B,O,CO);
     
-stimulus: process(A,B,S)
+stimulus: process(A,B,S,O,CO)
 
   begin
     
