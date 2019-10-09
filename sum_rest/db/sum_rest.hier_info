@@ -15,13 +15,13 @@ y0 => yr0.IN1
 y1 => yr1.IN1
 y2 => yr2.IN1
 y3 => yr3.IN1
-z0 <= Sumador4BitsB:u1.out0
-z1 <= Sumador4BitsB:u1.out1
-z2 <= Sumador4BitsB:u1.out2
-z3 <= Sumador4BitsB:u1.out3
-z4 <= z4.DB_MAX_OUTPUT_PORT_TYPE
-co <= Sumador4BitsB:u1.cO
-signo <= sel.DB_MAX_OUTPUT_PORT_TYPE
+z0 << Sumador4BitsB:u1.out0
+z1 << Sumador4BitsB:u1.out1
+z2 << Sumador4BitsB:u1.out2
+z3 << Sumador4BitsB:u1.out3
+z4 << z4.DB_MAX_OUTPUT_PORT_TYPE
+co << Sumador4BitsB:u1.cO
+signo << sel.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sum_rest|Sumador4BitsB:u0

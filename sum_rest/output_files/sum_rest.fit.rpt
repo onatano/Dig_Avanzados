@@ -1,5 +1,5 @@
 Fitter report for sum_rest
-Fri Sep 27 12:47:34 2019
+Wed Oct 09 12:07:42 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -63,7 +63,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Sep 27 12:47:34 2019       ;
+; Fitter Status                      ; Successful - Wed Oct 09 12:07:42 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; sum_rest                                    ;
 ; Top-level Entity Name              ; sum_rest                                    ;
@@ -150,12 +150,12 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 1.01        ;
+; Average used               ; 1.00        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.2%      ;
+;     Processors 2-4         ;   0.1%      ;
 +----------------------------+-------------+
 
 
@@ -1240,7 +1240,7 @@ refer to the applicable agreement for further details.
 +--------------+
 ; Pin-Out File ;
 +--------------+
-The pin-out file can be found in C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/output_files/sum_rest.pin.
+The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/output_files/sum_rest.pin.
 
 
 +---------------------------------------------------------------------+
@@ -3053,7 +3053,7 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:04
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -3066,25 +3066,25 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
-Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.09 seconds.
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
+Info (11888): Total time spent on timing analysis during the Fitter is 0.08 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:02
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
-Info (144001): Generated suppressed messages file C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/output_files/sum_rest.fit.smsg
+Info (144001): Generated suppressed messages file C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/output_files/sum_rest.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 518 warnings
-    Info: Peak virtual memory: 5701 megabytes
-    Info: Processing ended: Fri Sep 27 12:47:35 2019
-    Info: Elapsed time: 00:00:27
-    Info: Total CPU time (on all processors): 00:00:18
+    Info: Peak virtual memory: 5708 megabytes
+    Info: Processing ended: Wed Oct 09 12:07:42 2019
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:20
 
 
 +----------------------------+
 ; Fitter Suppressed Messages ;
 +----------------------------+
-The suppressed messages can be found in C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/output_files/sum_rest.fit.smsg.
+The suppressed messages can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/output_files/sum_rest.fit.smsg.
 
 

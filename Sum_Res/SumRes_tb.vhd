@@ -24,7 +24,7 @@ component SumRes is
 
 ---signals
 	
-	signal clock 	: std_logic;
+	signal clk 	: std_logic;
   signal stop_clk	: boolean;
   signal A: std_logic_vector (3 downto 0);
 	signal B: std_logic_vector (3 downto 0);
