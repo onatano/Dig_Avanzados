@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Oct 09 13:58:37 2019
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : bin_bcd
+Top-level Entity Name : bin_bcd
+Family : Cyclone IV E
+Total logic elements : 18
+    Total combinational functions : 18
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 19
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

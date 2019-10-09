@@ -1,0 +1,22 @@
+|bin_bcd
+a[0] => Ram0.RADDR4
+a[1] => Ram0.RADDR3
+a[2] => Ram0.RADDR2
+a[3] => Ram0.RADDR1
+a[4] => Ram0.RADDR
+s[0] << Ram0.DATAOUT
+s[1] << Ram0.DATAOUT1
+s[2] << Ram0.DATAOUT2
+s[3] << Ram0.DATAOUT3
+s[4] << Ram0.DATAOUT4
+s[5] << Ram0.DATAOUT5
+s[6] << Ram0.DATAOUT6
+s[7] << Ram0.DATAOUT7
+s[8] << Ram0.DATAOUT8
+s[9] << Ram0.DATAOUT9
+s[10] << Ram0.DATAOUT10
+s[11] << Ram0.DATAOUT11
+s[12] << Ram0.DATAOUT12
+s[13] << Ram0.DATAOUT13
+
+
