@@ -38,7 +38,7 @@ begin
 -- instances DUTsc
  	U0: SumRes port map (S,A,B,O,CO);
     
-stimulus: process(A,B,S,O,CO)
+stimulus: process
 
   begin
     
@@ -72,4 +72,13 @@ stimulus: process(A,B,S,O,CO)
 
   end process; --stimulus
   
+  clocking: process
+  begin
+    while NOT stop_clk loop
+      clk <= '1', '0' after clk_T / 2;
+      wait for clk_T;
+    end loop;
+    wait;
+  end process; --clocking
+
 end tb;
