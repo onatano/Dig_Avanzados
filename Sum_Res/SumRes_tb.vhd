@@ -36,7 +36,6 @@ begin
 
 
 -- instances DUTsc
- 	U0: SumRes port map (S,A,B,O,CO);
     
 stimulus: process
 
@@ -47,25 +46,29 @@ stimulus: process
   A<="1100";
 	B<="0110";
 	S<='0';
-  
+  U0: SumRes port map (S,A,B,O,CO);
+
   wait for 160 ns;
   
 	A<="0001";
 	B<="0101";
-	S<='1';
+  S<='1';
+  U0: SumRes port map (S,A,B,O,CO);
 	
-  wait for 240 ns;
+  wait for 160 ns;
   
 	A<="0111";
 	B<="0011";
 	S<='0';
-  
-  wait for 240 ns;
+  U0: SumRes port map (S,A,B,O,CO);
+
+  wait for 160 ns;
   
 	A<="0101";
 	B<="1011";
   S<='1';
-  
+  U0: SumRes port map (S,A,B,O,CO);
+
   wait for 60 ns;
 
 	stop_clk <= true;
