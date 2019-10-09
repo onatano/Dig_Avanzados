@@ -44,26 +44,26 @@ stimulus: process
     
   stop_clk  <= false;
   -- Put initialisation code here
-  A<="1100";
-	B<="0110";
+  A<='1100';
+	B<='0110';
 	S<='0';
   
   wait for 160 ns;
   
-	A<="0001";
-	B<="0101";
+	A<='0001';
+	B<='0101';
 	S<='1';
 	
   wait for 160 ns;
   
-	A<="0111";
-	B<="0011";
+	A<='0111';
+	B<='0011';
 	S<='0';
   
   wait for 160 ns;
   
-	A<="0101";
-	B<="1011";
+	A<='0101';
+	B<='1011';
   S<='1';
   
   wait for 60 ns;

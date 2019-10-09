@@ -16,7 +16,7 @@ ARCHITECTURE tb OF template_tb IS
 
 ---signals
 	
-	signal clock 	: std_logic;
+	signal clk 	: std_logic;
 	signal stop_clk	: boolean;
 
 begin
