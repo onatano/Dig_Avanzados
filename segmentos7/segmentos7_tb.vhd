@@ -23,7 +23,7 @@ end component;
 	
 	signal clk 	: std_logic;
   signal stop_clk	: boolean;
-  signal A : std_logic_vector(0 downto 3);
+  signal A : std_logic_vector(0 to 3);
   signal S : std_logic_vector(6 downto 0);
 
 begin
