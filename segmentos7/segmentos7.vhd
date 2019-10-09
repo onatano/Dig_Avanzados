@@ -14,7 +14,7 @@ end segmentos7;
 
 architecture Beh of segmentos7 is
 begin 
-	process (a(0), a(1), a(2), a(3),s)
+	process (a(0), a(1), a(2), a(3),s(6 downto 0));
 	variable entrada: std_logic_vector(3 downto 0);
 	begin
 			entrada:=a(0) & a(1) & a(2) & a(3);
