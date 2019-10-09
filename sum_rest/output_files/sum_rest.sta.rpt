@@ -1,5 +1,5 @@
 Timing Analyzer report for sum_rest
-Fri Sep 27 12:47:50 2019
+Wed Oct 09 12:07:54 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -409,7 +409,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Sep 27 12:47:46 2019
+    Info: Processing started: Wed Oct 09 12:07:51 2019
 Info: Command: quartus_sta sum_rest -c sum_rest
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -457,9 +457,9 @@ Info (332140): No Minimum Pulse Width paths to report
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4856 megabytes
-    Info: Processing ended: Fri Sep 27 12:47:50 2019
-    Info: Elapsed time: 00:00:04
+    Info: Peak virtual memory: 4857 megabytes
+    Info: Processing ended: Wed Oct 09 12:07:54 2019
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 

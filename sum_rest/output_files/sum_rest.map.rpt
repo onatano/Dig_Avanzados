@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sum_rest
-Fri Sep 27 12:47:06 2019
+Wed Oct 09 12:07:22 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -44,7 +44,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 27 12:47:06 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Oct 09 12:07:22 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; sum_rest                                    ;
 ; Top-level Entity Name              ; sum_rest                                    ;
@@ -163,16 +163,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                     ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                                        ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+---------+
-; sum_rest.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd      ;         ;
-; sumador4bitsb.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sumador4bitsb.vhd ;         ;
-; fulladderb.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/fulladderb.vhd    ;         ;
-; halfadderb.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/halfadderb.vhd    ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                               ; Library ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------+---------+
+; sum_rest.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd      ;         ;
+; sumador4bitsb.vhd                ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sumador4bitsb.vhd ;         ;
+; fulladderb.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/fulladderb.vhd    ;         ;
+; halfadderb.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/halfadderb.vhd    ;         ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -277,7 +277,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:07     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -287,66 +287,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Sep 27 12:46:28 2019
+    Info: Processing started: Wed Oct 09 12:07:07 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sum_rest -c sum_rest
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file sum_rest.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: sum_rest-beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 18
-    Info (12023): Found entity 1: sum_rest File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 7
+    Info (12022): Found design unit 1: sum_rest-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 18
+    Info (12023): Found entity 1: sum_rest File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 7
 Info (12127): Elaborating entity "sum_rest" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 30
-Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 30
-Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 30
-Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(37): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(38): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 38
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(39): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 39
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(40): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(47): signal "c1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(47): signal "selnot" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 47
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(48): signal "c1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 48
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(49): signal "c1not" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(51): signal "o0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 51
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(52): signal "o1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 52
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(53): signal "o2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 53
-Warning (10492): VHDL Process Statement warning at sum_rest.vhd(54): signal "o3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 54
+Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o0" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 30
+Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o1" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 30
+Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o2" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 30
+Warning (10541): VHDL Signal Declaration warning at sum_rest.vhd(30): used implicit default value for signal "o3" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(37): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(38): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(39): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(40): signal "sel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(47): signal "c1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(47): signal "selnot" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(48): signal "c1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(49): signal "c1not" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(51): signal "o0" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 51
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(52): signal "o1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 52
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(53): signal "o2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at sum_rest.vhd(54): signal "o3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 54
 Warning (12125): Using design file sumador4bitsb.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Sumador4BitsB-Beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sumador4bitsb.vhd Line: 14
-    Info (12023): Found entity 1: Sumador4BitsB File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sumador4bitsb.vhd Line: 4
-Info (12128): Elaborating entity "Sumador4BitsB" for hierarchy "Sumador4BitsB:u0" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 43
+    Info (12022): Found design unit 1: Sumador4BitsB-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sumador4bitsb.vhd Line: 14
+    Info (12023): Found entity 1: Sumador4BitsB File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sumador4bitsb.vhd Line: 4
+Info (12128): Elaborating entity "Sumador4BitsB" for hierarchy "Sumador4BitsB:u0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 43
 Warning (12125): Using design file fulladderb.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: fullAdderB-Beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/fulladderb.vhd Line: 12
-    Info (12023): Found entity 1: fullAdderB File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/fulladderb.vhd Line: 4
-Info (12128): Elaborating entity "fullAdderB" for hierarchy "Sumador4BitsB:u0|fullAdderB:U0" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sumador4bitsb.vhd Line: 28
+    Info (12022): Found design unit 1: fullAdderB-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/fulladderb.vhd Line: 12
+    Info (12023): Found entity 1: fullAdderB File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/fulladderb.vhd Line: 4
+Info (12128): Elaborating entity "fullAdderB" for hierarchy "Sumador4BitsB:u0|fullAdderB:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sumador4bitsb.vhd Line: 28
 Warning (12125): Using design file halfadderb.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: halfAdderB-Beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/halfadderb.vhd Line: 12
-    Info (12023): Found entity 1: halfAdderB File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/halfadderb.vhd Line: 4
-Info (12128): Elaborating entity "halfAdderB" for hierarchy "Sumador4BitsB:u0|fullAdderB:U0|halfAdderB:U0" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/fulladderb.vhd Line: 24
+    Info (12022): Found design unit 1: halfAdderB-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/halfadderb.vhd Line: 12
+    Info (12023): Found entity 1: halfAdderB File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/halfadderb.vhd Line: 4
+Info (12128): Elaborating entity "halfAdderB" for hierarchy "Sumador4BitsB:u0|fullAdderB:U0|halfAdderB:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/fulladderb.vhd Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "z0" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 12
-    Warning (13410): Pin "z1" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 12
-    Warning (13410): Pin "z2" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 12
-    Warning (13410): Pin "z3" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 12
-    Warning (13410): Pin "co" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 13
+    Warning (13410): Pin "z0" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 12
+    Warning (13410): Pin "z1" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 12
+    Warning (13410): Pin "z2" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 12
+    Warning (13410): Pin "z3" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 12
+    Warning (13410): Pin "co" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 6 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "x1" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 10
-    Warning (15610): No output dependent on input pin "x2" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 10
-    Warning (15610): No output dependent on input pin "x3" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 10
-    Warning (15610): No output dependent on input pin "y1" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 11
-    Warning (15610): No output dependent on input pin "y2" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 11
-    Warning (15610): No output dependent on input pin "y3" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/sumador de 4 bits cesar/sum_rest/sum_rest.vhd Line: 11
+    Warning (15610): No output dependent on input pin "x1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 10
+    Warning (15610): No output dependent on input pin "x2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 10
+    Warning (15610): No output dependent on input pin "x3" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 10
+    Warning (15610): No output dependent on input pin "y1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 11
+    Warning (15610): No output dependent on input pin "y2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 11
+    Warning (15610): No output dependent on input pin "y3" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/sum_rest/sum_rest.vhd Line: 11
 Info (21057): Implemented 17 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 7 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 34 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Fri Sep 27 12:47:06 2019
-    Info: Elapsed time: 00:00:38
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4811 megabytes
+    Info: Processing ended: Wed Oct 09 12:07:22 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
 
 
