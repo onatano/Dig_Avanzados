@@ -23,7 +23,7 @@ end component;
 	
 	signal clk 	: std_logic;
   signal stop_clk	: boolean;
-  signal A : std_logic_vector(0 to 3);
+  signal A : std_logic_vector(3 downto 0);
   signal S : std_logic_vector(6 downto 0);
 
 begin
@@ -37,9 +37,9 @@ stimulus: process
     
   stop_clk  <= false;
   -- Put initialisation code here
-  A <="0010";
+  A <="0100";
   wait for 160 ns;
-  A <= "0101";
+  A <= "1010";
   wait for 160 ns;
   A <= "0110";
   wait for 160 ns;
