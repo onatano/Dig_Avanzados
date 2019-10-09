@@ -3,8 +3,6 @@ use ieee.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
 
---Bianca Joselin Nuñez Buendia A01336483
---Osmar Isaid Barbeyto Wever A01171711
 
 entity segmentos7 is
 	port (a: in std_logic_vector (3 downto 0); --4 entradas
@@ -14,7 +12,7 @@ end segmentos7;
 
 architecture Beh of segmentos7 is
 begin 
-	process (a(0), a(1), a(2), a(3),s(0),s(1),s(2),s(3),s(4),s(5),s(6));
+	process (a(0), a(1), a(2), a(3));
 	variable entrada: std_logic_vector(3 downto 0);
 	begin
 			entrada:=a(0) & a(1) & a(2) & a(3);
@@ -39,8 +37,8 @@ begin
 					s(6 downto 0) <= "0000000"; 
 				when "1001" =>
 					s(6 downto 0) <= "0010000"; 
-           	when others =>
-           		s(6 downto 0) <= "0101010";
-				end case;
+           		when others =>
+           			s(6 downto 0) <= "0101010";
+			end case;
     end process;
 end Beh;
