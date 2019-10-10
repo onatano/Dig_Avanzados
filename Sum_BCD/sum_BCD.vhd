@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
  
 entity SumBCD is
     port (
-        sig: in std_logic;
+        sig: in std_logic <= '0';
         a: in std_logic_vector (3 downto 0);
         b: in std_logic_vector (3 downto 0);
         res: out std_logic_vector (13 downto 0)
@@ -26,8 +26,8 @@ architecture Beh of SumBCD is
 
     component bin_bcd is
         port (
-            a: in std_logic_vector (4 downto 0); --5 entradas
-            s: out std_logic_vector (13 downto 0) -- 14 salidas
+            a: in std_logic_vector (4 downto 0); 
+            s: out std_logic_vector (13 downto 0)
         );
     end component;
     
@@ -38,7 +38,7 @@ architecture Beh of SumBCD is
     begin
 
         U0 : SumRes port map (sig,a,b,x,y);
-        z(4) <= y;
+        z(4) <= 0;
         z(3) <= x(3);
         z(2) <= x(2);
         z(1) <= x(1);
