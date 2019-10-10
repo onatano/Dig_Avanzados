@@ -37,7 +37,7 @@ architecture Beh of Sum_BCD is
     begin
 
         U0 : SumRes port map ('0',a,b,x,y);
-        z(4) <= 0;
+        z(4) <= '0';
         z(3) <= x(3);
         z(2) <= x(2);
         z(1) <= x(1);

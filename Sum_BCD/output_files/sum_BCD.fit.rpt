@@ -1,5 +1,5 @@
 Fitter report for sum_BCD
-Thu Oct 10 09:32:18 2019
+Thu Oct 10 09:54:41 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -63,18 +63,18 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Thu Oct 10 09:32:18 2019       ;
+; Fitter Status                      ; Successful - Thu Oct 10 09:54:41 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; sum_BCD                                     ;
 ; Top-level Entity Name              ; Sum_BCD                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE115F29C7                               ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 29 / 114,480 ( < 1 % )                      ;
-;     Total combinational functions  ; 29 / 114,480 ( < 1 % )                      ;
+; Total logic elements               ; 14 / 114,480 ( < 1 % )                      ;
+;     Total combinational functions  ; 14 / 114,480 ( < 1 % )                      ;
 ;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                         ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 23 / 529 ( 4 % )                            ;
+; Total pins                         ; 22 / 529 ( 4 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
 ; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
@@ -666,6 +666,7 @@ refer to the applicable agreement for further details.
 ; Location     ;                ;              ; VGA_R[7]         ; PIN_H10       ; QSF Assignment ;
 ; Location     ;                ;              ; VGA_SYNC_N       ; PIN_C10       ; QSF Assignment ;
 ; Location     ;                ;              ; VGA_VS           ; PIN_C13       ; QSF Assignment ;
+; Location     ;                ;              ; sig              ; PIN_Y23       ; QSF Assignment ;
 ; I/O Standard ; Sum_BCD        ;              ; AUD_ADCDAT       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Sum_BCD        ;              ; AUD_ADCLRCK      ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Sum_BCD        ;              ; AUD_BCLK         ; 3.3-V LVTTL   ; QSF Assignment ;
@@ -1168,6 +1169,7 @@ refer to the applicable agreement for further details.
 ; I/O Standard ; Sum_BCD        ;              ; VGA_R[7]         ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Sum_BCD        ;              ; VGA_SYNC_N       ; 3.3-V LVTTL   ; QSF Assignment ;
 ; I/O Standard ; Sum_BCD        ;              ; VGA_VS           ; 3.3-V LVTTL   ; QSF Assignment ;
+; I/O Standard ; Sum_BCD        ;              ; sig              ; 2.5 V         ; QSF Assignment ;
 +--------------+----------------+--------------+------------------+---------------+----------------+
 
 
@@ -1177,8 +1179,8 @@ refer to the applicable agreement for further details.
 ; Type                ; Total [A + B]     ; From Design Partitions [A] ; From Rapid Recompile [B] ;
 +---------------------+-------------------+----------------------------+--------------------------+
 ; Placement (by node) ;                   ;                            ;                          ;
-;     -- Requested    ; 0.00 % ( 0 / 86 ) ; 0.00 % ( 0 / 86 )          ; 0.00 % ( 0 / 86 )        ;
-;     -- Achieved     ; 0.00 % ( 0 / 86 ) ; 0.00 % ( 0 / 86 )          ; 0.00 % ( 0 / 86 )        ;
+;     -- Requested    ; 0.00 % ( 0 / 69 ) ; 0.00 % ( 0 / 69 )          ; 0.00 % ( 0 / 69 )        ;
+;     -- Achieved     ; 0.00 % ( 0 / 69 ) ; 0.00 % ( 0 / 69 )          ; 0.00 % ( 0 / 69 )        ;
 ;                     ;                   ;                            ;                          ;
 ; Routing (by net)    ;                   ;                            ;                          ;
 ;     -- Requested    ; 0.00 % ( 0 / 0 )  ; 0.00 % ( 0 / 0 )           ; 0.00 % ( 0 / 0 )         ;
@@ -1201,7 +1203,7 @@ refer to the applicable agreement for further details.
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 ; Partition Name                 ; Preservation Achieved ; Preservation Level Used ; Netlist Type Used ; Preservation Method ; Notes ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
-; Top                            ; 0.00 % ( 0 / 76 )     ; N/A                     ; Source File       ; N/A                 ;       ;
+; Top                            ; 0.00 % ( 0 / 59 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 ; hard_block:auto_generated_inst ; 0.00 % ( 0 / 10 )     ; N/A                     ; Source File       ; N/A                 ;       ;
 +--------------------------------+-----------------------+-------------------------+-------------------+---------------------+-------+
 
@@ -1217,28 +1219,28 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 +---------------------------------------------+------------------------+
 ; Resource                                    ; Usage                  ;
 +---------------------------------------------+------------------------+
-; Total logic elements                        ; 29 / 114,480 ( < 1 % ) ;
-;     -- Combinational with no register       ; 29                     ;
+; Total logic elements                        ; 14 / 114,480 ( < 1 % ) ;
+;     -- Combinational with no register       ; 14                     ;
 ;     -- Register only                        ; 0                      ;
 ;     -- Combinational with a register        ; 0                      ;
 ;                                             ;                        ;
 ; Logic element usage by number of LUT inputs ;                        ;
-;     -- 4 input functions                    ; 20                     ;
-;     -- 3 input functions                    ; 5                      ;
-;     -- <=2 input functions                  ; 4                      ;
+;     -- 4 input functions                    ; 11                     ;
+;     -- 3 input functions                    ; 1                      ;
+;     -- <=2 input functions                  ; 2                      ;
 ;     -- Register only                        ; 0                      ;
 ;                                             ;                        ;
 ; Logic elements by mode                      ;                        ;
-;     -- normal mode                          ; 29                     ;
+;     -- normal mode                          ; 14                     ;
 ;     -- arithmetic mode                      ; 0                      ;
 ;                                             ;                        ;
 ; Total registers*                            ; 0 / 117,053 ( 0 % )    ;
 ;     -- Dedicated logic registers            ; 0 / 114,480 ( 0 % )    ;
 ;     -- I/O registers                        ; 0 / 2,573 ( 0 % )      ;
 ;                                             ;                        ;
-; Total LABs:  partially or completely used   ; 2 / 7,155 ( < 1 % )    ;
+; Total LABs:  partially or completely used   ; 1 / 7,155 ( < 1 % )    ;
 ; Virtual pins                                ; 0                      ;
-; I/O pins                                    ; 23 / 529 ( 4 % )       ;
+; I/O pins                                    ; 22 / 529 ( 4 % )       ;
 ;     -- Clock pins                           ; 0 / 7 ( 0 % )          ;
 ;     -- Dedicated input pins                 ; 0 / 9 ( 0 % )          ;
 ;                                             ;                        ;
@@ -1255,11 +1257,11 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 ; Oscillator blocks                           ; 0 / 1 ( 0 % )          ;
 ; Impedance control blocks                    ; 0 / 4 ( 0 % )          ;
 ; Average interconnect usage (total/H/V)      ; 0.0% / 0.0% / 0.0%     ;
-; Peak interconnect usage (total/H/V)         ; 0.6% / 0.6% / 0.6%     ;
-; Maximum fan-out                             ; 12                     ;
-; Highest non-global fan-out                  ; 12                     ;
-; Total fan-out                               ; 144                    ;
-; Average fan-out                             ; 1.69                   ;
+; Peak interconnect usage (total/H/V)         ; 0.4% / 0.5% / 0.4%     ;
+; Maximum fan-out                             ; 8                      ;
+; Highest non-global fan-out                  ; 8                      ;
+; Total fan-out                               ; 91                     ;
+; Average fan-out                             ; 1.34                   ;
 +---------------------------------------------+------------------------+
 *  Register count does not include registers inside RAM blocks or DSP blocks.
 
@@ -1272,29 +1274,29 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 +---------------------------------------------+-----------------------+--------------------------------+
 ; Difficulty Clustering Region                ; Low                   ; Low                            ;
 ;                                             ;                       ;                                ;
-; Total logic elements                        ; 29 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
-;     -- Combinational with no register       ; 29                    ; 0                              ;
+; Total logic elements                        ; 14 / 114480 ( < 1 % ) ; 0 / 114480 ( 0 % )             ;
+;     -- Combinational with no register       ; 14                    ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;     -- Combinational with a register        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic element usage by number of LUT inputs ;                       ;                                ;
-;     -- 4 input functions                    ; 20                    ; 0                              ;
-;     -- 3 input functions                    ; 5                     ; 0                              ;
-;     -- <=2 input functions                  ; 4                     ; 0                              ;
+;     -- 4 input functions                    ; 11                    ; 0                              ;
+;     -- 3 input functions                    ; 1                     ; 0                              ;
+;     -- <=2 input functions                  ; 2                     ; 0                              ;
 ;     -- Register only                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Logic elements by mode                      ;                       ;                                ;
-;     -- normal mode                          ; 29                    ; 0                              ;
+;     -- normal mode                          ; 14                    ; 0                              ;
 ;     -- arithmetic mode                      ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Total registers                             ; 0                     ; 0                              ;
 ;     -- Dedicated logic registers            ; 0 / 114480 ( 0 % )    ; 0 / 114480 ( 0 % )             ;
 ;     -- I/O registers                        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
-; Total LABs:  partially or completely used   ; 2 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
+; Total LABs:  partially or completely used   ; 1 / 7155 ( < 1 % )    ; 0 / 7155 ( 0 % )               ;
 ;                                             ;                       ;                                ;
 ; Virtual pins                                ; 0                     ; 0                              ;
-; I/O pins                                    ; 23                    ; 0                              ;
+; I/O pins                                    ; 22                    ; 0                              ;
 ; Embedded Multiplier 9-bit elements          ; 0 / 532 ( 0 % )       ; 0 / 532 ( 0 % )                ;
 ; Total memory bits                           ; 0                     ; 0                              ;
 ; Total RAM block bits                        ; 0                     ; 0                              ;
@@ -1306,7 +1308,7 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 ;     -- Registered Output Connections        ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Internal Connections                        ;                       ;                                ;
-;     -- Total Connections                    ; 139                   ; 5                              ;
+;     -- Total Connections                    ; 86                    ; 5                              ;
 ;     -- Registered Connections               ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; External Connections                        ;                       ;                                ;
@@ -1314,7 +1316,7 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 ;     -- hard_block:auto_generated_inst       ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
 ; Partition Interface                         ;                       ;                                ;
-;     -- Input Ports                          ; 9                     ; 0                              ;
+;     -- Input Ports                          ; 8                     ; 0                              ;
 ;     -- Output Ports                         ; 14                    ; 0                              ;
 ;     -- Bidir Ports                          ; 0                     ; 0                              ;
 ;                                             ;                       ;                                ;
@@ -1339,15 +1341,14 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 ; Name ; Pin # ; I/O Bank ; X coordinate ; Y coordinate ; Z coordinate ; Combinational Fan-Out ; Registered Fan-Out ; Global ; Input Register ; Power Up High ; PCI I/O Enabled ; Bus Hold ; Weak Pull Up ; I/O Standard ; Termination Control Block ; Location assigned by ; Slew Rate ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
-; a[0] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; a[1] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; a[0] ; AB27  ; 5        ; 115          ; 18           ; 7            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; a[1] ; AC26  ; 5        ; 115          ; 11           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; a[2] ; AD26  ; 5        ; 115          ; 10           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; a[3] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; b[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 6                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; a[3] ; AB26  ; 5        ; 115          ; 15           ; 0            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; b[0] ; AB28  ; 5        ; 115          ; 17           ; 0            ; 4                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; b[1] ; AC28  ; 5        ; 115          ; 14           ; 0            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 ; b[2] ; AC27  ; 5        ; 115          ; 15           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; b[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 2                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
-; sig  ; Y23   ; 5        ; 115          ; 14           ; 7            ; 7                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
+; b[3] ; AD27  ; 5        ; 115          ; 13           ; 7            ; 1                     ; 0                  ; no     ; no             ; no            ; yes             ; no       ; Off          ; 2.5 V        ; --                        ; User                 ; no        ;
 +------+-------+----------+--------------+--------------+--------------+-----------------------+--------------------+--------+----------------+---------------+-----------------+----------+--------------+--------------+---------------------------+----------------------+-----------+
 
 
@@ -1403,7 +1404,7 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 ; 2        ; 0 / 63 ( 0 % )   ; 2.5V          ; --           ;
 ; 3        ; 1 / 73 ( 1 % )   ; 3.3V          ; --           ;
 ; 4        ; 13 / 71 ( 18 % ) ; 3.3V          ; --           ;
-; 5        ; 9 / 65 ( 14 % )  ; 2.5V          ; --           ;
+; 5        ; 8 / 65 ( 12 % )  ; 2.5V          ; --           ;
 ; 6        ; 1 / 58 ( 2 % )   ; 2.5V          ; --           ;
 ; 7        ; 0 / 72 ( 0 % )   ; 2.5V          ; --           ;
 ; 8        ; 0 / 71 ( 0 % )   ; 2.5V          ; --           ;
@@ -2189,7 +2190,7 @@ The pin-out file can be found in C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados
 ; Y20      ;            ;          ; VCCD_PLL4                                                 ; power  ;              ; 1.2V    ; --         ;                 ; --       ; --           ;
 ; Y21      ;            ; --       ; VCCA4                                                     ; power  ;              ; 2.5V    ; --         ;                 ; --       ; --           ;
 ; Y22      ; 320        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
-; Y23      ; 288        ; 5        ; sig                                                       ; input  ; 2.5 V        ;         ; Row I/O    ; Y               ; no       ; Off          ;
+; Y23      ; 288        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y24      ; 287        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y25      ; 298        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
 ; Y26      ; 297        ; 5        ; RESERVED_INPUT_WITH_WEAK_PULLUP                           ;        ;              ;         ; Row I/O    ;                 ; no       ; On           ;
@@ -2226,18 +2227,17 @@ Note: Pin directions (input, output or bidir) are based on device operating in u
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                      ; Entity Name ; Library Name ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------+-------------+--------------+
-; |Sum_BCD                   ; 29 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 23   ; 0            ; 29 (0)       ; 0 (0)             ; 0 (0)            ; |Sum_BCD                                 ; Sum_BCD     ; work         ;
-;    |SumRes:U0|             ; 10 (1)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 10 (1)       ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0                       ; SumRes      ; work         ;
-;       |Fulladd:U0|         ; 3 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U0            ; Fulladd     ; work         ;
+; |Sum_BCD                   ; 14 (0)      ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 22   ; 0            ; 14 (0)       ; 0 (0)             ; 0 (0)            ; |Sum_BCD                                 ; Sum_BCD     ; work         ;
+;    |SumRes:U0|             ; 6 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 6 (0)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0                       ; SumRes      ; work         ;
+;       |Fulladd:U0|         ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U0            ; Fulladd     ; work         ;
 ;          |HalfAdd:U0|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U0 ; HalfAdd     ; work         ;
-;          |HalfAdd:U1|      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U1 ; HalfAdd     ; work         ;
 ;       |Fulladd:U1|         ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U1            ; Fulladd     ; work         ;
 ;          |HalfAdd:U1|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U1|HalfAdd:U1 ; HalfAdd     ; work         ;
-;       |Fulladd:U2|         ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U2            ; Fulladd     ; work         ;
+;       |Fulladd:U2|         ; 1 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U2            ; Fulladd     ; work         ;
 ;          |HalfAdd:U1|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U2|HalfAdd:U1 ; HalfAdd     ; work         ;
-;       |Fulladd:U3|         ; 2 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U3            ; Fulladd     ; work         ;
-;          |HalfAdd:U1|      ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U3|HalfAdd:U1 ; HalfAdd     ; work         ;
-;    |bin_bcd:U1|            ; 19 (19)     ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 19 (19)      ; 0 (0)             ; 0 (0)            ; |Sum_BCD|bin_bcd:U1                      ; bin_bcd     ; work         ;
+;       |Fulladd:U3|         ; 2 (0)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U3            ; Fulladd     ; work         ;
+;          |HalfAdd:U1|      ; 2 (2)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|SumRes:U0|Fulladd:U3|HalfAdd:U1 ; HalfAdd     ; work         ;
+;    |bin_bcd:U1|            ; 8 (8)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; |Sum_BCD|bin_bcd:U1                      ; bin_bcd     ; work         ;
 +----------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -2261,15 +2261,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; res[11] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; res[12] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
 ; res[13] ; Output   ; --            ; --            ; --                    ; --  ; --   ;
-; b[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; sig     ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; a[1]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; a[0]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; b[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; a[0]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; a[1]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; b[1]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
 ; a[2]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; b[2]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
-; a[3]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
-; b[3]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
+; b[2]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; b[3]    ; Input    ; --            ; (6) 1314 ps   ; --                    ; --  ; --   ;
+; a[3]    ; Input    ; (6) 1314 ps   ; --            ; --                    ; --  ; --   ;
 +---------+----------+---------------+---------------+-----------------------+-----+------+
 
 
@@ -2278,45 +2277,32 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------+-------------------+---------+
 ; Source Pin / Fanout                        ; Pad To Core Index ; Setting ;
 +--------------------------------------------+-------------------+---------+
-; b[1]                                       ;                   ;         ;
-;      - SumRes:U0|Fulladd:U1|HalfAdd:U1|s   ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U1|co~0           ; 0                 ; 6       ;
-; sig                                        ;                   ;         ;
-;      - SumRes:U0|d[1]                      ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U0|c   ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U1|c   ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U2|HalfAdd:U1|s~0 ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U2|co~0           ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U3|HalfAdd:U1|s~0 ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U3|co~0           ; 1                 ; 6       ;
-; a[1]                                       ;                   ;         ;
-;      - SumRes:U0|d[1]                      ; 0                 ; 6       ;
-; b[0]                                       ;                   ;         ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U0|c   ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U1|c   ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U1|s~0 ; 0                 ; 6       ;
-;      - bin_bcd:U1|Ram0~22                  ; 0                 ; 6       ;
-;      - bin_bcd:U1|Ram0~23                  ; 0                 ; 6       ;
-;      - bin_bcd:U1|Ram0~24                  ; 0                 ; 6       ;
 ; a[0]                                       ;                   ;         ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U0|c   ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U1|c   ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U0|HalfAdd:U1|s~0 ; 0                 ; 6       ;
-;      - bin_bcd:U1|Ram0~22                  ; 0                 ; 6       ;
-;      - bin_bcd:U1|Ram0~23                  ; 0                 ; 6       ;
-;      - bin_bcd:U1|Ram0~24                  ; 0                 ; 6       ;
+;      - SumRes:U0|Fulladd:U1|HalfAdd:U1|s~0 ; 1                 ; 6       ;
+;      - SumRes:U0|Fulladd:U1|co~0           ; 1                 ; 6       ;
+;      - SumRes:U0|Fulladd:U0|HalfAdd:U0|s   ; 1                 ; 6       ;
+;      - bin_bcd:U1|Ram0~9                   ; 1                 ; 6       ;
+; b[0]                                       ;                   ;         ;
+;      - SumRes:U0|Fulladd:U1|HalfAdd:U1|s~0 ; 0                 ; 6       ;
+;      - SumRes:U0|Fulladd:U1|co~0           ; 0                 ; 6       ;
+;      - SumRes:U0|Fulladd:U0|HalfAdd:U0|s   ; 0                 ; 6       ;
+;      - bin_bcd:U1|Ram0~9                   ; 0                 ; 6       ;
+; a[1]                                       ;                   ;         ;
+;      - SumRes:U0|Fulladd:U1|HalfAdd:U1|s~0 ; 1                 ; 6       ;
+;      - SumRes:U0|Fulladd:U1|co~0           ; 1                 ; 6       ;
+; b[1]                                       ;                   ;         ;
+;      - SumRes:U0|Fulladd:U1|HalfAdd:U1|s~0 ; 1                 ; 6       ;
+;      - SumRes:U0|Fulladd:U1|co~0           ; 1                 ; 6       ;
 ; a[2]                                       ;                   ;         ;
 ;      - SumRes:U0|Fulladd:U2|HalfAdd:U1|s~0 ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U2|co~0           ; 0                 ; 6       ;
-; b[2]                                       ;                   ;         ;
-;      - SumRes:U0|Fulladd:U2|HalfAdd:U1|s~0 ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U2|co~0           ; 0                 ; 6       ;
-; a[3]                                       ;                   ;         ;
-;      - SumRes:U0|Fulladd:U3|HalfAdd:U1|s~0 ; 1                 ; 6       ;
-;      - SumRes:U0|Fulladd:U3|co~0           ; 1                 ; 6       ;
-; b[3]                                       ;                   ;         ;
 ;      - SumRes:U0|Fulladd:U3|HalfAdd:U1|s~0 ; 0                 ; 6       ;
-;      - SumRes:U0|Fulladd:U3|co~0           ; 0                 ; 6       ;
+; b[2]                                       ;                   ;         ;
+;      - SumRes:U0|Fulladd:U2|HalfAdd:U1|s~0 ; 1                 ; 6       ;
+;      - SumRes:U0|Fulladd:U3|HalfAdd:U1|s~0 ; 1                 ; 6       ;
+; b[3]                                       ;                   ;         ;
+;      - SumRes:U0|Fulladd:U3|HalfAdd:U1|s   ; 1                 ; 6       ;
+; a[3]                                       ;                   ;         ;
+;      - SumRes:U0|Fulladd:U3|HalfAdd:U1|s~0 ; 0                 ; 6       ;
 +--------------------------------------------+-------------------+---------+
 
 
@@ -2325,21 +2311,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+------------------------+
 ; Routing Resource Type ; Usage                  ;
 +-----------------------+------------------------+
-; Block interconnects   ; 30 / 342,891 ( < 1 % ) ;
+; Block interconnects   ; 20 / 342,891 ( < 1 % ) ;
 ; C16 interconnects     ; 9 / 10,120 ( < 1 % )   ;
-; C4 interconnects      ; 28 / 209,544 ( < 1 % ) ;
-; Direct links          ; 2 / 342,891 ( < 1 % )  ;
+; C4 interconnects      ; 29 / 209,544 ( < 1 % ) ;
+; Direct links          ; 0 / 342,891 ( 0 % )    ;
 ; Global clocks         ; 0 / 20 ( 0 % )         ;
-; Local interconnects   ; 16 / 119,088 ( < 1 % ) ;
-; R24 interconnects     ; 17 / 9,963 ( < 1 % )   ;
-; R4 interconnects      ; 38 / 289,782 ( < 1 % ) ;
+; Local interconnects   ; 6 / 119,088 ( < 1 % )  ;
+; R24 interconnects     ; 24 / 9,963 ( < 1 % )   ;
+; R4 interconnects      ; 23 / 289,782 ( < 1 % ) ;
 +-----------------------+------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Logic Elements                                                        ;
 +---------------------------------------------+-----------------------------+
-; Number of Logic Elements  (Average = 14.50) ; Number of LABs  (Total = 2) ;
+; Number of Logic Elements  (Average = 14.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
@@ -2353,17 +2339,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                          ; 0                           ;
 ; 11                                          ; 0                           ;
 ; 12                                          ; 0                           ;
-; 13                                          ; 1                           ;
-; 14                                          ; 0                           ;
+; 13                                          ; 0                           ;
+; 14                                          ; 1                           ;
 ; 15                                          ; 0                           ;
-; 16                                          ; 1                           ;
+; 16                                          ; 0                           ;
 +---------------------------------------------+-----------------------------+
 
 
 +----------------------------------------------------------------------------+
 ; LAB Signals Sourced                                                        ;
 +----------------------------------------------+-----------------------------+
-; Number of Signals Sourced  (Average = 14.50) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced  (Average = 14.00) ; Number of LABs  (Total = 1) ;
 +----------------------------------------------+-----------------------------+
 ; 0                                            ; 0                           ;
 ; 1                                            ; 0                           ;
@@ -2378,17 +2364,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 10                                           ; 0                           ;
 ; 11                                           ; 0                           ;
 ; 12                                           ; 0                           ;
-; 13                                           ; 1                           ;
-; 14                                           ; 0                           ;
-; 15                                           ; 0                           ;
-; 16                                           ; 1                           ;
+; 13                                           ; 0                           ;
+; 14                                           ; 1                           ;
 +----------------------------------------------+-----------------------------+
 
 
 +-------------------------------------------------------------------------------+
 ; LAB Signals Sourced Out                                                       ;
 +-------------------------------------------------+-----------------------------+
-; Number of Signals Sourced Out  (Average = 8.00) ; Number of LABs  (Total = 2) ;
+; Number of Signals Sourced Out  (Average = 8.00) ; Number of LABs  (Total = 1) ;
 +-------------------------------------------------+-----------------------------+
 ; 0                                               ; 0                           ;
 ; 1                                               ; 0                           ;
@@ -2398,25 +2382,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 5                                               ; 0                           ;
 ; 6                                               ; 0                           ;
 ; 7                                               ; 0                           ;
-; 8                                               ; 2                           ;
+; 8                                               ; 1                           ;
 +-------------------------------------------------+-----------------------------+
 
 
 +---------------------------------------------------------------------------+
 ; LAB Distinct Inputs                                                       ;
 +---------------------------------------------+-----------------------------+
-; Number of Distinct Inputs  (Average = 7.00) ; Number of LABs  (Total = 2) ;
+; Number of Distinct Inputs  (Average = 8.00) ; Number of LABs  (Total = 1) ;
 +---------------------------------------------+-----------------------------+
 ; 0                                           ; 0                           ;
 ; 1                                           ; 0                           ;
 ; 2                                           ; 0                           ;
 ; 3                                           ; 0                           ;
 ; 4                                           ; 0                           ;
-; 5                                           ; 1                           ;
+; 5                                           ; 0                           ;
 ; 6                                           ; 0                           ;
 ; 7                                           ; 0                           ;
-; 8                                           ; 0                           ;
-; 9                                           ; 1                           ;
+; 8                                           ; 1                           ;
 +---------------------------------------------+-----------------------------+
 
 
@@ -2476,9 +2459,9 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 ; Pin/Rules          ; IO_000001 ; IO_000002    ; IO_000003 ; IO_000004    ; IO_000005    ; IO_000006 ; IO_000007 ; IO_000008    ; IO_000009 ; IO_000010 ; IO_000011    ; IO_000012    ; IO_000013    ; IO_000014    ; IO_000015    ; IO_000018    ; IO_000019    ; IO_000020    ; IO_000021    ; IO_000022    ; IO_000023    ; IO_000024    ; IO_000026    ; IO_000027    ; IO_000045    ; IO_000046    ; IO_000047    ; IO_000033 ; IO_000034    ; IO_000042    ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
-; Total Pass         ; 23        ; 0            ; 23        ; 0            ; 0            ; 23        ; 23        ; 0            ; 23        ; 23        ; 0            ; 0            ; 0            ; 0            ; 9            ; 0            ; 0            ; 9            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 23        ; 0            ; 0            ;
+; Total Pass         ; 22        ; 0            ; 22        ; 0            ; 0            ; 22        ; 22        ; 0            ; 22        ; 22        ; 0            ; 0            ; 0            ; 0            ; 8            ; 0            ; 0            ; 8            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 22        ; 0            ; 0            ;
 ; Total Unchecked    ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
-; Total Inapplicable ; 0         ; 23           ; 0         ; 23           ; 23           ; 0         ; 0         ; 23           ; 0         ; 0         ; 23           ; 23           ; 23           ; 23           ; 14           ; 23           ; 23           ; 14           ; 23           ; 23           ; 23           ; 23           ; 23           ; 23           ; 23           ; 23           ; 23           ; 0         ; 23           ; 23           ;
+; Total Inapplicable ; 0         ; 22           ; 0         ; 22           ; 22           ; 0         ; 0         ; 22           ; 0         ; 0         ; 22           ; 22           ; 22           ; 22           ; 14           ; 22           ; 22           ; 14           ; 22           ; 22           ; 22           ; 22           ; 22           ; 22           ; 22           ; 22           ; 22           ; 0         ; 22           ; 22           ;
 ; Total Fail         ; 0         ; 0            ; 0         ; 0            ; 0            ; 0         ; 0         ; 0            ; 0         ; 0         ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0         ; 0            ; 0            ;
 ; res[0]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; res[1]             ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
@@ -2494,15 +2477,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; res[11]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; res[12]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; res[13]            ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; b[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; sig                ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; a[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; b[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; a[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; b[0]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; a[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; b[1]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; a[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; b[2]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
-; a[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 ; b[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
+; a[3]               ; Pass      ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Pass      ; Pass      ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Pass         ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Inapplicable ; Pass      ; Inapplicable ; Inapplicable ;
 +--------------------+-----------+--------------+-----------+--------------+--------------+-----------+-----------+--------------+-----------+-----------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+-----------+--------------+--------------+
 
 
@@ -3082,31 +3064,32 @@ Warning (15705): Ignored locations or region assignments to the following nodes
     Warning (15706): Node "VGA_R[7]" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_SYNC_N" is assigned to location or region, but does not exist in design
     Warning (15706): Node "VGA_VS" is assigned to location or region, but does not exist in design
+    Warning (15706): Node "sig" is assigned to location or region, but does not exist in design
 Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X104_Y0 to location X115_Y11
+    Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X81_Y12 to location X91_Y23
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
     Info (170200): Optimizations that may affect the design's timing were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.04 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.05 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/output_files/sum_BCD.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 509 warnings
-    Info: Peak virtual memory: 5701 megabytes
-    Info: Processing ended: Thu Oct 10 09:32:18 2019
+Info: Quartus Prime Fitter was successful. 0 errors, 510 warnings
+    Info: Peak virtual memory: 5712 megabytes
+    Info: Processing ended: Thu Oct 10 09:54:41 2019
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:20
 
