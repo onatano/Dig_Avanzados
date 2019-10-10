@@ -3,16 +3,16 @@ use IEEE.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
  
-entity Sum_BCD is
+entity SumBCD is
     port (
         sig: in std_logic;
         a: in std_logic_vector (3 downto 0);
         b: in std_logic_vector (3 downto 0);
         res: out std_logic_vector (13 downto 0)
     );
-    end Sum_BCD;
+    end SumBCD;
 
-architecture Beh of Sum_BCD is
+architecture Beh of SumBCD is
     
     component SumRes is
         port (

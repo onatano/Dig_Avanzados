@@ -1,0 +1,173 @@
+|Sum_BCD
+sig => SumRes:U0.s
+a[0] => SumRes:U0.a[0]
+a[1] => SumRes:U0.a[1]
+a[2] => SumRes:U0.a[2]
+a[3] => SumRes:U0.a[3]
+b[0] => SumRes:U0.b[0]
+b[1] => SumRes:U0.b[1]
+b[2] => SumRes:U0.b[2]
+b[3] => SumRes:U0.b[3]
+res[0] << bin_bcd:U1.s[0]
+res[1] << bin_bcd:U1.s[1]
+res[2] << bin_bcd:U1.s[2]
+res[3] << bin_bcd:U1.s[3]
+res[4] << bin_bcd:U1.s[4]
+res[5] << bin_bcd:U1.s[5]
+res[6] << bin_bcd:U1.s[6]
+res[7] << bin_bcd:U1.s[7]
+res[8] << bin_bcd:U1.s[8]
+res[9] << bin_bcd:U1.s[9]
+res[10] << bin_bcd:U1.s[10]
+res[11] << bin_bcd:U1.s[11]
+res[12] << bin_bcd:U1.s[12]
+res[13] << bin_bcd:U1.s[13]
+
+
+|Sum_BCD|SumRes:U0
+s => d[0].IN0
+s => d[1].IN0
+s => d[2].IN0
+s => d[3].IN0
+s => FullAdd:U0.ci
+a[0] => d[0].IN1
+a[1] => d[1].IN1
+a[2] => d[2].IN1
+a[3] => d[3].IN1
+b[0] => FullAdd:U0.b
+b[1] => FullAdd:U1.b
+b[2] => FullAdd:U2.b
+b[3] => FullAdd:U3.b
+o[0] <= FullAdd:U0.s
+o[1] <= FullAdd:U1.s
+o[2] <= FullAdd:U2.s
+o[3] <= FullAdd:U3.s
+cO <= FullAdd:U3.co
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U0
+a => HalfAdd:U0.x
+b => HalfAdd:U0.y
+ci => HalfAdd:U1.y
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= HalfAdd:U1.s
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U0|HalfAdd:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U0|HalfAdd:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U1
+a => HalfAdd:U0.x
+b => HalfAdd:U0.y
+ci => HalfAdd:U1.y
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= HalfAdd:U1.s
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U1|HalfAdd:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U1|HalfAdd:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U2
+a => HalfAdd:U0.x
+b => HalfAdd:U0.y
+ci => HalfAdd:U1.y
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= HalfAdd:U1.s
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U2|HalfAdd:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U2|HalfAdd:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U3
+a => HalfAdd:U0.x
+b => HalfAdd:U0.y
+ci => HalfAdd:U1.y
+co <= co.DB_MAX_OUTPUT_PORT_TYPE
+s <= HalfAdd:U1.s
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U3|HalfAdd:U0
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|SumRes:U0|FullAdd:U3|HalfAdd:U1
+x => c.IN0
+x => s.IN0
+y => c.IN1
+y => s.IN1
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Sum_BCD|bin_bcd:U1
+a[0] => Ram0.RADDR4
+a[1] => Ram0.RADDR3
+a[2] => Ram0.RADDR2
+a[3] => Ram0.RADDR1
+a[4] => Ram0.RADDR
+s[0] <= Ram0.DATAOUT
+s[1] <= Ram0.DATAOUT1
+s[2] <= Ram0.DATAOUT2
+s[3] <= Ram0.DATAOUT3
+s[4] <= Ram0.DATAOUT4
+s[5] <= Ram0.DATAOUT5
+s[6] <= Ram0.DATAOUT6
+s[7] <= Ram0.DATAOUT7
+s[8] <= Ram0.DATAOUT8
+s[9] <= Ram0.DATAOUT9
+s[10] <= Ram0.DATAOUT10
+s[11] <= Ram0.DATAOUT11
+s[12] <= Ram0.DATAOUT12
+s[13] <= Ram0.DATAOUT13
+
+
