@@ -3,9 +3,6 @@ use ieee.std_logic_1164.all;
 use IEEE.std_logic_unsigned.all;
 use IEEE.numeric_std.all;
 
---Bianca Joselin Nuñez Buendia A01336483
---Osmar Isaid Barbeyto Wever A01171711
-
 entity segmentos7 is
 	port (a: in std_logic_vector (3 downto 0); --4 entradas
 		s: out std_logic_vector (6 downto 0) -- 7 salidas
