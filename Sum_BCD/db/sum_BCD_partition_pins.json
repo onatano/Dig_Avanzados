@@ -56,15 +56,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "b[1]",
-					"strict" : false
-				},
-				{
-					"name" : "sig",
-					"strict" : false
-				},
-				{
-					"name" : "a[1]",
+					"name" : "a[0]",
 					"strict" : false
 				},
 				{
@@ -72,7 +64,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[0]",
+					"name" : "a[1]",
+					"strict" : false
+				},
+				{
+					"name" : "b[1]",
 					"strict" : false
 				},
 				{
@@ -84,11 +80,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "a[3]",
+					"name" : "b[3]",
 					"strict" : false
 				},
 				{
-					"name" : "b[3]",
+					"name" : "a[3]",
 					"strict" : false
 				}
 			]

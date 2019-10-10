@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sum_BCD
-Thu Oct 10 09:48:23 2019
+Thu Oct 10 09:54:28 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,9 +14,11 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Port Connectivity Checks: "bin_bcd:U1"
+ 10. Port Connectivity Checks: "SumRes:U0"
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -42,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 10 09:48:23 2019       ;
+; Analysis & Synthesis Status        ; Successful - Thu Oct 10 09:54:28 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; sum_BCD                                     ;
 ; Top-level Entity Name              ; Sum_BCD                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 29                                          ;
-;     Total combinational functions  ; 29                                          ;
+; Total logic elements               ; 14                                          ;
+;     Total combinational functions  ; 14                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 23                                          ;
+; Total pins                         ; 22                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -174,36 +176,36 @@ refer to the applicable agreement for further details.
 +----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                     ;
-+---------------------------------------------+-----------------------------------+
-; Resource                                    ; Usage                             ;
-+---------------------------------------------+-----------------------------------+
-; Estimated Total logic elements              ; 29                                ;
-;                                             ;                                   ;
-; Total combinational functions               ; 29                                ;
-; Logic element usage by number of LUT inputs ;                                   ;
-;     -- 4 input functions                    ; 20                                ;
-;     -- 3 input functions                    ; 5                                 ;
-;     -- <=2 input functions                  ; 4                                 ;
-;                                             ;                                   ;
-; Logic elements by mode                      ;                                   ;
-;     -- normal mode                          ; 29                                ;
-;     -- arithmetic mode                      ; 0                                 ;
-;                                             ;                                   ;
-; Total registers                             ; 0                                 ;
-;     -- Dedicated logic registers            ; 0                                 ;
-;     -- I/O registers                        ; 0                                 ;
-;                                             ;                                   ;
-; I/O pins                                    ; 23                                ;
-;                                             ;                                   ;
-; Embedded Multiplier 9-bit elements          ; 0                                 ;
-;                                             ;                                   ;
-; Maximum fan-out node                        ; SumRes:U0|Fulladd:U1|HalfAdd:U1|s ;
-; Maximum fan-out                             ; 12                                ;
-; Total fan-out                               ; 139                               ;
-; Average fan-out                             ; 1.85                              ;
-+---------------------------------------------+-----------------------------------+
++-----------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                       ;
++---------------------------------------------+-------------------------------------+
+; Resource                                    ; Usage                               ;
++---------------------------------------------+-------------------------------------+
+; Estimated Total logic elements              ; 14                                  ;
+;                                             ;                                     ;
+; Total combinational functions               ; 14                                  ;
+; Logic element usage by number of LUT inputs ;                                     ;
+;     -- 4 input functions                    ; 11                                  ;
+;     -- 3 input functions                    ; 1                                   ;
+;     -- <=2 input functions                  ; 2                                   ;
+;                                             ;                                     ;
+; Logic elements by mode                      ;                                     ;
+;     -- normal mode                          ; 14                                  ;
+;     -- arithmetic mode                      ; 0                                   ;
+;                                             ;                                     ;
+; Total registers                             ; 0                                   ;
+;     -- Dedicated logic registers            ; 0                                   ;
+;     -- I/O registers                        ; 0                                   ;
+;                                             ;                                     ;
+; I/O pins                                    ; 22                                  ;
+;                                             ;                                     ;
+; Embedded Multiplier 9-bit elements          ; 0                                   ;
+;                                             ;                                     ;
+; Maximum fan-out node                        ; SumRes:U0|Fulladd:U1|HalfAdd:U1|s~0 ;
+; Maximum fan-out                             ; 8                                   ;
+; Total fan-out                               ; 86                                  ;
+; Average fan-out                             ; 1.48                                ;
++---------------------------------------------+-------------------------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -211,18 +213,17 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
-; |Sum_BCD                   ; 29 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |Sum_BCD                                 ; Sum_BCD     ; work         ;
-;    |SumRes:U0|             ; 10 (1)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0                       ; SumRes      ; work         ;
-;       |Fulladd:U0|         ; 3 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0            ; Fulladd     ; work         ;
+; |Sum_BCD                   ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |Sum_BCD                                 ; Sum_BCD     ; work         ;
+;    |SumRes:U0|             ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0                       ; SumRes      ; work         ;
+;       |Fulladd:U0|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0            ; Fulladd     ; work         ;
 ;          |HalfAdd:U0|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U0 ; HalfAdd     ; work         ;
-;          |HalfAdd:U1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U1 ; HalfAdd     ; work         ;
 ;       |Fulladd:U1|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U1            ; Fulladd     ; work         ;
 ;          |HalfAdd:U1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U1|HalfAdd:U1 ; HalfAdd     ; work         ;
-;       |Fulladd:U2|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2            ; Fulladd     ; work         ;
+;       |Fulladd:U2|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2            ; Fulladd     ; work         ;
 ;          |HalfAdd:U1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2|HalfAdd:U1 ; HalfAdd     ; work         ;
-;       |Fulladd:U3|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3            ; Fulladd     ; work         ;
-;          |HalfAdd:U1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3|HalfAdd:U1 ; HalfAdd     ; work         ;
-;    |bin_bcd:U1|            ; 19 (19)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|bin_bcd:U1                      ; bin_bcd     ; work         ;
+;       |Fulladd:U3|         ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3            ; Fulladd     ; work         ;
+;          |HalfAdd:U1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3|HalfAdd:U1 ; HalfAdd     ; work         ;
+;    |bin_bcd:U1|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|bin_bcd:U1                      ; bin_bcd     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,22 +243,41 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++----------------------------------------+
+; Port Connectivity Checks: "bin_bcd:U1" ;
++------+-------+----------+--------------+
+; Port ; Type  ; Severity ; Details      ;
++------+-------+----------+--------------+
+; a[4] ; Input ; Info     ; Stuck at GND ;
++------+-------+----------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "SumRes:U0"                                                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; s    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 23                          ;
-; cycloneiii_lcell_comb ; 34                          ;
-;     normal            ; 34                          ;
+; boundary_port         ; 22                          ;
+; cycloneiii_lcell_comb ; 19                          ;
+;     normal            ; 19                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 4                           ;
-;         2 data inputs ; 4                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 20                          ;
+;         2 data inputs ; 2                           ;
+;         3 data inputs ; 1                           ;
+;         4 data inputs ; 11                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 5.93                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 4.26                        ;
 +-----------------------+-----------------------------+
 
 
@@ -276,18 +296,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 10 09:48:09 2019
+    Info: Processing started: Thu Oct 10 09:54:13 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sum_BCD -c sum_BCD
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file sum_bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Sum_BCD-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 15
+    Info (12022): Found design unit 1: Sum_BCD-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 14
     Info (12023): Found entity 1: Sum_BCD File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 6
 Info (12127): Elaborating entity "Sum_BCD" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at sum_bcd.vhd(34): object "y" assigned a value but never read File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 34
 Warning (12125): Using design file sumres.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: SumRes-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sumres.vhd Line: 14
     Info (12023): Found entity 1: SumRes File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sumres.vhd Line: 4
-Info (12128): Elaborating entity "SumRes" for hierarchy "SumRes:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 40
+Info (12128): Elaborating entity "SumRes" for hierarchy "SumRes:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 39
 Warning (12125): Using design file fulladd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: Fulladd-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/fulladd.vhd Line: 12
     Info (12023): Found entity 1: Fulladd File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/fulladd.vhd Line: 4
@@ -299,23 +320,23 @@ Info (12128): Elaborating entity "HalfAdd" for hierarchy "SumRes:U0|FullAdd:U0|H
 Warning (12125): Using design file bin_bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: bin_bcd-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 13
     Info (12023): Found entity 1: bin_bcd File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 7
-Info (12128): Elaborating entity "bin_bcd" for hierarchy "bin_bcd:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 46
+Info (12128): Elaborating entity "bin_bcd" for hierarchy "bin_bcd:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 45
 Warning (10812): VHDL warning at bin_bcd.vhd(15): sensitivity list already contains a File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 15
 Info (276014): Found 1 instances of uninferred RAM logic
     Info (276004): RAM logic "bin_bcd:U1|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 19
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "res[5]" is stuck at VCC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 11
+    Warning (13410): Pin "res[5]" is stuck at VCC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 10
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 52 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
+Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 29 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 9 warnings
-    Info: Peak virtual memory: 4812 megabytes
-    Info: Processing ended: Thu Oct 10 09:48:23 2019
-    Info: Elapsed time: 00:00:14
+    Info (21061): Implemented 14 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Thu Oct 10 09:54:28 2019
+    Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:31
 
 
