@@ -18,7 +18,7 @@ L7
 V8a8BS2J1zY8KD8fkI4AX10
 Z9 OV;C;10.1d;51
 32
-Z10 !s108 1570665768.078000
+Z10 !s108 1570717439.871000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/bin_bcd.vhd|
 Z12 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/bin_bcd.vhd|
 Z13 o-work work -2002 -explicit -O0
@@ -56,7 +56,7 @@ L4
 VF4;En75HGD3DK94`6mYAo3
 R9
 32
-Z18 !s108 1570665768.426000
+Z18 !s108 1570717440.324000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/FullAdd.vhd|
 Z20 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/FullAdd.vhd|
 R13
@@ -91,7 +91,7 @@ L4
 Vz6a5@dSm;:5O`[NJRKL<N2
 R9
 32
-Z24 !s108 1570665768.554000
+Z24 !s108 1570717440.481000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/HalfAdd.vhd|
 Z26 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/HalfAdd.vhd|
 R13
@@ -115,7 +115,7 @@ R14
 !s100 `SaU>`]3SH_0@ZW5EJi8b1
 !i10b 1
 Esumbcd
-Z27 w1570663412
+Z27 w1570717262
 R1
 R2
 R3
@@ -129,7 +129,7 @@ L6
 V5<MiimY>DGfaRS:;WL?Bz3
 R9
 32
-Z30 !s108 1570665768.686000
+Z30 !s108 1570717440.668000
 Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/sum_BCD.vhd|
 Z32 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/sum_BCD.vhd|
 R13
@@ -146,6 +146,7 @@ DEx4 work 6 sumbcd 0 22 5<MiimY>DGfaRS:;WL?Bz3
 l38
 L15
 V?MX]ATZ_R05m8DO?B1D^[2
+!s100 ZQLhhIG7P=N5OaBegjYUS3
 R9
 32
 R30
@@ -153,7 +154,6 @@ R31
 R32
 R13
 R14
-!s100 ZQLhhIG7P=N5OaBegjYUS3
 !i10b 1
 Esumres
 Z33 w1570662686
@@ -169,7 +169,7 @@ Vga201XBI1jdCW[Y=VQjU@1
 R9
 32
 !i10b 1
-Z36 !s108 1570665768.866000
+Z36 !s108 1570717440.824000
 Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/SumRes.vhd|
 Z38 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/SumRes.vhd|
 R13
@@ -177,11 +177,11 @@ R14
 Abeh
 R4
 R5
-DEx4 work 6 sumres 0 22 ga201XBI1jdCW[Y=VQjU@1
+Z39 DEx4 work 6 sumres 0 22 ga201XBI1jdCW[Y=VQjU@1
 l26
 L14
-V9z5AG0bQl568i`>J[fg7K0
-!s100 F;9G?Pj;gf1CePH7<a<1c0
+Z40 V9z5AG0bQl568i`>J[fg7K0
+Z41 !s100 F;9G?Pj;gf1CePH7<a<1c0
 R9
 32
 !i10b 1
