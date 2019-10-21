@@ -1,6 +1,6 @@
 Analysis & Synthesis report for sum_BCD
-Thu Oct 10 09:54:28 2019
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Thu Oct 17 09:53:01 2019
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -14,166 +14,159 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Port Connectivity Checks: "bin_bcd:U1"
- 10. Port Connectivity Checks: "SumRes:U0"
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 10 09:54:28 2019       ;
-; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
-; Revision Name                      ; sum_BCD                                     ;
-; Top-level Entity Name              ; Sum_BCD                                     ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 14                                          ;
-;     Total combinational functions  ; 14                                          ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 22                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Thu Oct 17 09:53:01 2019           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; sum_BCD                                         ;
+; Top-level Entity Name              ; Sum_BCD                                         ;
+; Family                             ; Cyclone IV E                                    ;
+; Total logic elements               ; 36                                              ;
+;     Total combinational functions  ; 36                                              ;
+;     Dedicated logic registers      ; 0                                               ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 23                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                              ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                           ; Setting            ; Default Value      ;
-+------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                           ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                            ; Sum_BCD            ; sum_BCD            ;
-; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
-; Use smart compilation                                            ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                      ; Off                ; Off                ;
-; Restructure Multiplexers                                         ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
-; Preserve fewer node names                                        ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
-; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                         ; Auto               ; Auto               ;
-; Safe State Machine                                               ; Off                ; Off                ;
-; Extract Verilog State Machines                                   ; On                 ; On                 ;
-; Extract VHDL State Machines                                      ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
-; Parallel Synthesis                                               ; On                 ; On                 ;
-; DSP Block Balancing                                              ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                               ; On                 ; On                 ;
-; Power-Up Don't Care                                              ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
-; Remove Duplicate Registers                                       ; On                 ; On                 ;
-; Ignore CARRY Buffers                                             ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
-; Ignore LCELL Buffers                                             ; Off                ; Off                ;
-; Ignore SOFT Buffers                                              ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
-; Optimization Technique                                           ; Balanced           ; Balanced           ;
-; Carry Chain Length                                               ; 70                 ; 70                 ;
-; Auto Carry Chains                                                ; On                 ; On                 ;
-; Auto Open-Drain Pins                                             ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
-; Auto ROM Replacement                                             ; On                 ; On                 ;
-; Auto RAM Replacement                                             ; On                 ; On                 ;
-; Auto DSP Block Replacement                                       ; On                 ; On                 ;
-; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
-; Strict RAM Replacement                                           ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
-; Auto RAM Block Balancing                                         ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
-; Auto Resource Sharing                                            ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
-; Timing-Driven Synthesis                                          ; On                 ; On                 ;
-; Report Parameter Settings                                        ; On                 ; On                 ;
-; Report Source Assignments                                        ; On                 ; On                 ;
-; Report Connectivity Checks                                       ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
-; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
-; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
-; HDL message level                                                ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
-; Clock MUX Protection                                             ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
-; Block Design Naming                                              ; Auto               ; Auto               ;
-; SDC constraint protection                                        ; Off                ; Off                ;
-; Synthesis Effort                                                 ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
-+------------------------------------------------------------------+--------------------+--------------------+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; Sum_BCD            ; sum_BCD            ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                     ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
-; sum_bcd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd ;         ;
-; sumres.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sumres.vhd  ;         ;
-; fulladd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/fulladd.vhd ;         ;
-; halfadd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/halfadd.vhd ;         ;
-; bin_bcd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                  ; Library ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------+---------+
+; sum_bcd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/sum_bcd.vhd ;         ;
+; sumres.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/sumres.vhd  ;         ;
+; fulladd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/fulladd.vhd ;         ;
+; halfadd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/halfadd.vhd ;         ;
+; bin_bcd.vhd                      ; yes             ; Auto-Found VHDL File  ; C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_BCD/bin_bcd.vhd ;         ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------+
@@ -181,50 +174,49 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-------------------------------------+
 ; Resource                                    ; Usage                               ;
 +---------------------------------------------+-------------------------------------+
-; Estimated Total logic elements              ; 14                                  ;
+; Estimated Total logic elements              ; 36                                  ;
 ;                                             ;                                     ;
-; Total combinational functions               ; 14                                  ;
+; Total combinational functions               ; 36                                  ;
 ; Logic element usage by number of LUT inputs ;                                     ;
-;     -- 4 input functions                    ; 11                                  ;
-;     -- 3 input functions                    ; 1                                   ;
-;     -- <=2 input functions                  ; 2                                   ;
+;     -- 4 input functions                    ; 28                                  ;
+;     -- 3 input functions                    ; 3                                   ;
+;     -- <=2 input functions                  ; 5                                   ;
 ;                                             ;                                     ;
 ; Logic elements by mode                      ;                                     ;
-;     -- normal mode                          ; 14                                  ;
+;     -- normal mode                          ; 36                                  ;
 ;     -- arithmetic mode                      ; 0                                   ;
 ;                                             ;                                     ;
 ; Total registers                             ; 0                                   ;
 ;     -- Dedicated logic registers            ; 0                                   ;
 ;     -- I/O registers                        ; 0                                   ;
 ;                                             ;                                     ;
-; I/O pins                                    ; 22                                  ;
-;                                             ;                                     ;
+; I/O pins                                    ; 23                                  ;
 ; Embedded Multiplier 9-bit elements          ; 0                                   ;
-;                                             ;                                     ;
-; Maximum fan-out node                        ; SumRes:U0|Fulladd:U1|HalfAdd:U1|s~0 ;
-; Maximum fan-out                             ; 8                                   ;
-; Total fan-out                               ; 86                                  ;
-; Average fan-out                             ; 1.48                                ;
+; Maximum fan-out node                        ; SumRes:U0|Fulladd:U2|HalfAdd:U1|s~0 ;
+; Maximum fan-out                             ; 13                                  ;
+; Total fan-out                               ; 167                                 ;
+; Average fan-out                             ; 2.04                                ;
 +---------------------------------------------+-------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                           ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
-; |Sum_BCD                   ; 14 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 22   ; 0            ; |Sum_BCD                                 ; Sum_BCD     ; work         ;
-;    |SumRes:U0|             ; 6 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0                       ; SumRes      ; work         ;
-;       |Fulladd:U0|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0            ; Fulladd     ; work         ;
-;          |HalfAdd:U0|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U0 ; HalfAdd     ; work         ;
-;       |Fulladd:U1|         ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U1            ; Fulladd     ; work         ;
-;          |HalfAdd:U1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U1|HalfAdd:U1 ; HalfAdd     ; work         ;
-;       |Fulladd:U2|         ; 1 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2            ; Fulladd     ; work         ;
-;          |HalfAdd:U1|      ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2|HalfAdd:U1 ; HalfAdd     ; work         ;
-;       |Fulladd:U3|         ; 2 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3            ; Fulladd     ; work         ;
-;          |HalfAdd:U1|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3|HalfAdd:U1 ; HalfAdd     ; work         ;
-;    |bin_bcd:U1|            ; 8 (8)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|bin_bcd:U1                      ; bin_bcd     ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+-------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                              ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                      ; Library Name ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
+; |Sum_BCD                   ; 36 (5)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |Sum_BCD                                 ; work         ;
+;    |SumRes:U0|             ; 10 (1)            ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0                       ; work         ;
+;       |Fulladd:U0|         ; 3 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0            ; work         ;
+;          |HalfAdd:U0|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U0 ; work         ;
+;          |HalfAdd:U1|      ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U0|HalfAdd:U1 ; work         ;
+;       |Fulladd:U1|         ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U1            ; work         ;
+;          |HalfAdd:U1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U1|HalfAdd:U1 ; work         ;
+;       |Fulladd:U2|         ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2            ; work         ;
+;          |HalfAdd:U1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U2|HalfAdd:U1 ; work         ;
+;       |Fulladd:U3|         ; 2 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3            ; work         ;
+;          |HalfAdd:U1|      ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|SumRes:U0|Fulladd:U3|HalfAdd:U1 ; work         ;
+;    |bin_bcd:U1|            ; 21 (21)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Sum_BCD|bin_bcd:U1                      ; work         ;
++----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -243,50 +235,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------+
-; Port Connectivity Checks: "bin_bcd:U1" ;
-+------+-------+----------+--------------+
-; Port ; Type  ; Severity ; Details      ;
-+------+-------+----------+--------------+
-; a[4] ; Input ; Info     ; Stuck at GND ;
-+------+-------+----------+--------------+
-
-
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "SumRes:U0"                                                                          ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; s    ; Input  ; Info     ; Stuck at GND                                                                        ;
-; co   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 22                          ;
-; cycloneiii_lcell_comb ; 19                          ;
-;     normal            ; 19                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 2                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 11                          ;
-;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 4.26                        ;
-+-----------------------+-----------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -294,49 +248,66 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 10 09:54:13 2019
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Thu Oct 17 09:52:55 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sum_BCD -c sum_BCD
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Warning (12125): Using design file sum_bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Sum_BCD-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 14
-    Info (12023): Found entity 1: Sum_BCD File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 6
+    Info (12022): Found design unit 1: Sum_BCD-Beh
+    Info (12023): Found entity 1: Sum_BCD
 Info (12127): Elaborating entity "Sum_BCD" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at sum_bcd.vhd(34): object "y" assigned a value but never read File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at sum_bcd.vhd(50): signal "a" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at sum_bcd.vhd(50): signal "b" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at sum_bcd.vhd(52): signal "s2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at sum_bcd.vhd(54): signal "s1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at sum_bcd.vhd(48): inferring latch(es) for signal or variable "s2", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "s2[0]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[1]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[2]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[3]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[4]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[5]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[6]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[7]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[8]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[9]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[10]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[11]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[12]" at sum_bcd.vhd(48)
+Info (10041): Inferred latch for "s2[13]" at sum_bcd.vhd(48)
 Warning (12125): Using design file sumres.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: SumRes-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sumres.vhd Line: 14
-    Info (12023): Found entity 1: SumRes File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sumres.vhd Line: 4
-Info (12128): Elaborating entity "SumRes" for hierarchy "SumRes:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 39
+    Info (12022): Found design unit 1: SumRes-Beh
+    Info (12023): Found entity 1: SumRes
+Info (12128): Elaborating entity "SumRes" for hierarchy "SumRes:U0"
 Warning (12125): Using design file fulladd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Fulladd-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/fulladd.vhd Line: 12
-    Info (12023): Found entity 1: Fulladd File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/fulladd.vhd Line: 4
-Info (12128): Elaborating entity "FullAdd" for hierarchy "SumRes:U0|FullAdd:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sumres.vhd Line: 31
+    Info (12022): Found design unit 1: Fulladd-Beh
+    Info (12023): Found entity 1: Fulladd
+Info (12128): Elaborating entity "FullAdd" for hierarchy "SumRes:U0|FullAdd:U0"
 Warning (12125): Using design file halfadd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: HalfAdd-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/halfadd.vhd Line: 12
-    Info (12023): Found entity 1: HalfAdd File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/halfadd.vhd Line: 4
-Info (12128): Elaborating entity "HalfAdd" for hierarchy "SumRes:U0|FullAdd:U0|HalfAdd:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/fulladd.vhd Line: 27
+    Info (12022): Found design unit 1: HalfAdd-Beh
+    Info (12023): Found entity 1: HalfAdd
+Info (12128): Elaborating entity "HalfAdd" for hierarchy "SumRes:U0|FullAdd:U0|HalfAdd:U0"
 Warning (12125): Using design file bin_bcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: bin_bcd-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 13
-    Info (12023): Found entity 1: bin_bcd File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 7
-Info (12128): Elaborating entity "bin_bcd" for hierarchy "bin_bcd:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 45
-Warning (10812): VHDL warning at bin_bcd.vhd(15): sensitivity list already contains a File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 15
+    Info (12022): Found design unit 1: bin_bcd-Beh
+    Info (12023): Found entity 1: bin_bcd
+Info (12128): Elaborating entity "bin_bcd" for hierarchy "bin_bcd:U1"
+Warning (10812): VHDL warning at bin_bcd.vhd(15): sensitivity list already contains a
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "bin_bcd:U1|Ram0" is uninferred due to inappropriate RAM size File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/bin_bcd.vhd Line: 19
+    Info (276004): RAM logic "bin_bcd:U1|Ram0" is uninferred due to inappropriate RAM size
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "res[5]" is stuck at VCC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/Sum_BCD/sum_bcd.vhd Line: 10
+    Warning (13410): Pin "res[5]" is stuck at VCC
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
+Info (21057): Implemented 59 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 14 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 10 warnings
-    Info: Peak virtual memory: 4810 megabytes
-    Info: Processing ended: Thu Oct 10 09:54:28 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (21061): Implemented 36 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 4643 megabytes
+    Info: Processing ended: Thu Oct 17 09:53:01 2019
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:03
 
 

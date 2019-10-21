@@ -15,7 +15,7 @@ begin
 	process (a(0), a(1), a(2), a(3), a(4))
 	variable entrada: std_logic_vector(4 downto 0);
 	begin
-			entrada:=a(0) & a(1) & a(2) & a(3) & a(4);
+			entrada:=a;
 			case entrada is
 				when "00000" =>
 					s(13 downto 0) <= "10000001111111";

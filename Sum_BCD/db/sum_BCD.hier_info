@@ -1,26 +1,36 @@
 |Sum_BCD
+sig => process_0.IN1
+sig => SumRes:U0.s
+a[0] => LessThan0.IN4
 a[0] => SumRes:U0.a[0]
+a[1] => LessThan0.IN3
 a[1] => SumRes:U0.a[1]
+a[2] => LessThan0.IN2
 a[2] => SumRes:U0.a[2]
+a[3] => LessThan0.IN1
 a[3] => SumRes:U0.a[3]
+b[0] => LessThan0.IN8
 b[0] => SumRes:U0.b[0]
+b[1] => LessThan0.IN7
 b[1] => SumRes:U0.b[1]
+b[2] => LessThan0.IN6
 b[2] => SumRes:U0.b[2]
+b[3] => LessThan0.IN5
 b[3] => SumRes:U0.b[3]
-res[0] <= bin_bcd:U1.s[0]
-res[1] <= bin_bcd:U1.s[1]
-res[2] <= bin_bcd:U1.s[2]
-res[3] <= bin_bcd:U1.s[3]
-res[4] <= bin_bcd:U1.s[4]
-res[5] <= bin_bcd:U1.s[5]
-res[6] <= bin_bcd:U1.s[6]
-res[7] <= bin_bcd:U1.s[7]
-res[8] <= bin_bcd:U1.s[8]
-res[9] <= bin_bcd:U1.s[9]
-res[10] <= bin_bcd:U1.s[10]
-res[11] <= bin_bcd:U1.s[11]
-res[12] <= bin_bcd:U1.s[12]
-res[13] <= bin_bcd:U1.s[13]
+res[0] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[1] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[2] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[3] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[4] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[5] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[6] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[7] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[8] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[9] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[10] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[11] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[12] <= res.DB_MAX_OUTPUT_PORT_TYPE
+res[13] <= res.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Sum_BCD|SumRes:U0
@@ -149,11 +159,11 @@ s <= s.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |Sum_BCD|bin_bcd:U1
-a[0] => Ram0.RADDR4
-a[1] => Ram0.RADDR3
+a[0] => Ram0.RADDR
+a[1] => Ram0.RADDR1
 a[2] => Ram0.RADDR2
-a[3] => Ram0.RADDR1
-a[4] => Ram0.RADDR
+a[3] => Ram0.RADDR3
+a[4] => Ram0.RADDR4
 s[0] <= Ram0.DATAOUT
 s[1] <= Ram0.DATAOUT1
 s[2] <= Ram0.DATAOUT2
