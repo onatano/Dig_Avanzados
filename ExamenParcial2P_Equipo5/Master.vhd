@@ -7,14 +7,7 @@ entity Master is
     port (
         entrada: in std_logic_vector(2 downto 0);
         Fi,Fmedir : in std_logic;
-        HEX0 : out std_logic_vector (6 downto 0);
-        HEX1 : out std_logic_vector (6 downto 0);
-        HEX2 : out std_logic_vector (6 downto 0);
-        HEX3 : out std_logic_vector (6 downto 0);
-        HEX4 : out std_logic_vector (6 downto 0);
-        HEX5 : out std_logic_vector (6 downto 0);
-        HEX6 : out std_logic_vector (6 downto 0);
-        HEX7 : out std_logic_vector (6 downto 0)
+        HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7 : out std_logic_vector (6 downto 0)
 	);
 end entity;
 
