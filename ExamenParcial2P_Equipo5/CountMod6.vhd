@@ -6,7 +6,6 @@ use IEEE.numeric_std.all;
 entity CountMod6 is
 	port (
 		Fi : in std_logic;
-		Fo : out std_logic;
 		stage : out std_logic_vector(2 downto 0)
 	);
 end entity;
@@ -24,14 +23,10 @@ begin
 		stage <= std_logic_vector(to_unsigned(cont, stage'length));
 			if cont = 6 then
 				cont:=0;
-				clk_div<= not (clk_div);
-			else
-			 	clk_div<= clk_div;
-			 end if;
+			end if;
 		else
 		 	cont:= cont;
 		end if;
 	end process; 
-	Fo <= clk_div;
 
 end architecture beh;
