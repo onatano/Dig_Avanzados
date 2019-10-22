@@ -14,6 +14,26 @@ architecture Beh of Deco is
 
     begin
 
-       
+        process (stage) 
+        begin
+            case stage is 
+                when "001" =>
+                    clear <= '1';
+                    enable <= '0';
+                    store <= '0';
+                when "011" =>
+                    clear <= '0';
+                    enable <= '1';
+                    store <= '0';
+                when "101" =>
+                    clear <= '0';
+                    enable <= '0';
+                    store <= '1';
+                when others =>
+                    clear <= '0';
+                    enable <= '0';
+                    store <= '0';
+                
+
     
 end Beh;
