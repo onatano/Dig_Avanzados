@@ -34,9 +34,26 @@ begin
         
 		if rising_edge (Fi) then
             cont0:= cont0+1;
-                if cont0 = "1001" then
+                if cont0 = "1010" then
                     cont0:="0000";
                     cont1:= cont1+1;
+                    if cont1 = "1010" then
+                        cont1:="0000";
+                        cont2:= cont2+1;
+                        if cont2 = "1010" then
+                            cont2:="0000";
+                            cont3:= cont3+1;
+                            if cont3 = "1010" then
+                                cont3:="0000";
+                                cont4:= cont4+1;
+                                if cont4 = "1010" then
+                                    cont4:="0000";
+                                    cont5:= cont5+1;
+                                    
+                                end if; 
+                            end if; 
+                        end if; 
+                    end if; 
                 end if; 
         end if;
 	end process; 
