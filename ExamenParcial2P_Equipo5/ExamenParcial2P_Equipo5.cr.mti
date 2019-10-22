@@ -9,17 +9,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity segmentos7
 -- Compiling architecture Beh of segmentos7
 
-} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/BCD_counter.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/BCD_counter.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Compiling entity BCD_counter
--- Compiling architecture beh of BCD_counter
-
 } {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/bin_bcd.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/bin_bcd.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
