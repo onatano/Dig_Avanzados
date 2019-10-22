@@ -17,15 +17,15 @@ architecture Beh of Deco is
         process (stage) 
         begin
             case stage is 
-                when "001" =>
+                when "000" =>
                     clear <= '1';
                     enable <= '0';
                     store <= '0';
-                when "011" =>
+                when "010" =>
                     clear <= '0';
                     enable <= '1';
                     store <= '0';
-                when "101" =>
+                when "100" =>
                     clear <= '0';
                     enable <= '0';
                     store <= '1';
