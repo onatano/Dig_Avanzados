@@ -31,7 +31,6 @@ architecture Beh of Master is
         component CountMod6 is
             port (
                 Fi : in std_logic;
-                Fo : out std_logic;
                 stage : out std_logic_vector(2 downto 0)
             );
         end component;
@@ -51,7 +50,7 @@ architecture Beh of Master is
         end component;
 
         signal lim : integer;
-        signal Fo,Fo2: std_logic;
+        signal Fo: std_logic;
         signal stage : std_logic_vector(2 downto 0);
         signal bcd : std_logic_vector(4 downto 0);
     
@@ -59,7 +58,7 @@ architecture Beh of Master is
        
         U0: Mux port map (entrada,lim);
         U1: DIV1HZ port map (lim,Fi,Fo);
-        U2: CountMod6 port map (Fo,Fo2,stage);
+        U2: CountMod6 port map (Fo,stage);
         U3: Deco port map (stage,clear,enable,store);
         bcd <= ('0' & '0' & stage(2) & stage(1) & stage(1));
         U4: bin_bcd port map (bcd,s);
