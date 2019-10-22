@@ -7,13 +7,13 @@ entity Master is
     port (
         entrada: in std_logic_vector(2 downto 0);
         clear,enable,store : out std_logic;
+        Fi : in std_logic;
         s: out std_logic_vector (13 downto 0)
 	);
 end entity;
 
 architecture Beh of Master is
 
-    begin
         component Mux is
             port (
                 entrada: in std_logic_vector(2 downto 0);
@@ -53,14 +53,15 @@ architecture Beh of Master is
         signal lim : integer;
         signal Fo,Fo2: std_logic;
         signal stage : std_logic_vector(2 downto 0);
-        signal bcd : std_logic_vector(3 downto 0);
-
+        signal bcd : std_logic_vector(4 downto 0);
+    
+        begin
        
         U0: Mux port map (entrada,lim);
         U1: DIV1HZ port map (lim,Fi,Fo);
         U2: CountMod6 port map (Fo,Fo2,stage);
         U3: Deco port map (stage,clear,enable,store);
-        bcd <= ('0' & stage(2) & stage(1) & stage(1));
+        bcd <= ('0' & '0' & stage(2) & stage(1) & stage(1));
         U4: bin_bcd port map (bcd,s);
 
     

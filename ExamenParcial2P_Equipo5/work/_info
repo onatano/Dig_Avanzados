@@ -18,7 +18,7 @@ L7
 V8a8BS2J1zY8KD8fkI4AX10
 Z9 OV;C;10.1d;51
 32
-Z10 !s108 1571773677.096000
+Z10 !s108 1571774038.313000
 Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/bin_bcd.vhd|
 Z12 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/bin_bcd.vhd|
 Z13 o-work work -2002 -explicit -O0
@@ -59,7 +59,7 @@ L6
 VXQTOOQb@Y1za9U74_1mMH1
 R9
 32
-Z18 !s108 1571773677.301000
+Z18 !s108 1571774038.479000
 Z19 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/CountMod6.vhd|
 Z20 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/CountMod6.vhd|
 R13
@@ -100,7 +100,7 @@ L6
 VLkTMgmo7?FY5Sl^WMGNan1
 R9
 32
-Z24 !s108 1571773677.439000
+Z24 !s108 1571774038.678000
 Z25 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Deco.vhd|
 Z26 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Deco.vhd|
 R13
@@ -141,7 +141,7 @@ L6
 V97o6LKX3LPmJ6oC1Yjj8k1
 R9
 32
-Z30 !s108 1571773677.581000
+Z30 !s108 1571774038.932000
 Z31 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/DIV1Hz.vhd|
 Z32 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/DIV1Hz.vhd|
 R13
@@ -168,37 +168,56 @@ R14
 !s100 [kP0<EmlA=8^>E<V0a5Ea1
 !i10b 1
 Emaster
-w1571773672
+Z33 w1571774034
 R1
 R2
 R3
 R4
 R5
 R6
-8C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd
-FC:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd
+Z34 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd
+Z35 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd
 l0
 L6
-VY2JhCZbCiQB1[ldmD]H3M1
+VV=cLE?iZEYZDGRSDkkZbi2
 R9
 32
+Z36 !s108 1571774039.082000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd|
+Z38 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd|
 R13
 R14
-!s100 17faAH<a0VfdOmh3Z8MPY0
+!s100 ?g>Y3Ve?Di3VAmC;DcH>C1
 !i10b 1
-!s108 1571773677.758000
-!s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd|
-!s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd|
+Abeh
+R1
+R2
+R3
+R4
+R5
+DEx4 work 6 master 0 22 V=cLE?iZEYZDGRSDkkZbi2
+l58
+L15
+VhZ;Nb;gaYeRC5k7AhonLV2
+R9
+32
+R36
+R37
+R38
+R13
+R14
+!s100 O<n1V9:Q4AlkhDAo`e_k?2
+!i10b 1
 Emux
-Z33 w1571773410
+Z39 w1571773410
 R1
 R2
 R3
 R4
 R5
 R6
-Z34 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd
-Z35 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd
+Z40 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd
+Z41 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd
 l0
 L6
 V2NIb32]Te[YchEao<@C_k0
@@ -206,9 +225,9 @@ V2NIb32]Te[YchEao<@C_k0
 R9
 32
 !i10b 1
-Z36 !s108 1571773677.884000
-Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd|
-Z38 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd|
+Z42 !s108 1571774039.285000
+Z43 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd|
+Z44 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd|
 R13
 R14
 Abeh
@@ -217,16 +236,16 @@ R2
 R3
 R4
 R5
-Z39 DEx4 work 3 mux 0 22 2NIb32]Te[YchEao<@C_k0
+Z45 DEx4 work 3 mux 0 22 2NIb32]Te[YchEao<@C_k0
 l16
 L14
-Z40 Vn?8m]SK:^c2LRTnJo`@0[1
-Z41 !s100 4QPTaMH7Rdgoi4OgzBo9B0
+Z46 Vn?8m]SK:^c2LRTnJo`@0[1
+Z47 !s100 4QPTaMH7Rdgoi4OgzBo9B0
 R9
 32
 !i10b 1
-R36
-R37
-R38
+R42
+R43
+R44
 R13
 R14
