@@ -19,7 +19,7 @@ begin
 		if rising_edge (Fi) then
 			cont <= cont+1;
 			if cont = "101" then
-				cont :="000";
+				cont <="000";
 			end if;
 		end if;
 	end process;
