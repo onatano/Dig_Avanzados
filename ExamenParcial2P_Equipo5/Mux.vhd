@@ -5,8 +5,8 @@ use IEEE.numeric_std.all;
 
 entity Mux is
     port (
-        entrada: in std_logic_vector(2 down to 0);
-        lim: in integer;
+        entrada: in std_logic_vector(2 downto 0);
+        lim: out integer
     );
         
 end Mux;

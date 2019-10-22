@@ -33,7 +33,7 @@ architecture Beh of Deco is
                     clear <= '0';
                     enable <= '0';
                     store <= '0';
-                
-
+            end case;
+        end process;
     
 end Beh;

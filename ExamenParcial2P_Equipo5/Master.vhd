@@ -5,9 +5,9 @@ use IEEE.numeric_std.all;
 
 entity Master is
     port (
-        entrada : in std_logic_vector(2 downto 0);
-        clear,enable,store : out std_logic
-        s: out std_logic_vector (13 downto 0) -- 14 salidas
+        entrada: in std_logic_vector(2 downto 0);
+        clear,enable,store : out std_logic;
+        s: out std_logic_vector (13 downto 0)
 	);
 end entity;
 
@@ -16,11 +16,9 @@ architecture Beh of Master is
     begin
         component Mux is
             port (
-                entrada: in std_logic_vector(2 down to 0);
-                lim: in integer;
-                Fi : in std_logic    
+                entrada: in std_logic_vector(2 downto 0);
+                lim: out integer
             );
-                
         end component;
 
         component Deco is

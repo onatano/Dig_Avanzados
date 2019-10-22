@@ -6,13 +6,13 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity SumRes
 -- Compiling architecture Beh of SumRes
 
-} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/HalfAdd.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/HalfAdd.vhd
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/FullAdd.vhd {1 {vcom -work work -2002 -explicit {C:\Users\Yola\Documents\TEC\Dig_Avanzados\Sum_Res\FullAdd.vhd}
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity HalfAdd
--- Compiling architecture Beh of HalfAdd
+-- Compiling entity Fulladd
+-- Compiling architecture Beh of Fulladd
 
 } {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/SumRes_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/SumRes_tb.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -24,12 +24,12 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity SumRes_tb
 -- Compiling architecture tb of SumRes_tb
 
-} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/FullAdd.vhd {1 {vcom -work work -2002 -explicit {C:\Users\Yola\Documents\TEC\Dig_Avanzados\Sum_Res\FullAdd.vhd}
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/HalfAdd.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/Sum_Res/HalfAdd.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity Fulladd
--- Compiling architecture Beh of Fulladd
+-- Compiling entity HalfAdd
+-- Compiling architecture Beh of HalfAdd
 
 } {} {}}
