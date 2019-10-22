@@ -11,22 +11,15 @@ entity CountMod6 is
 end entity;
 
 architecture beh of CountMod6 is
-	signal clk_div : std_logic;
+	signal cont : std_logic_vector (2 downto 0):= "000";
 
 begin
 	process (Fi)
-	variable cont : integer:=0;
 	begin
-
 		if rising_edge (Fi) then
-		cont:= cont+1;
-		stage <= std_logic_vector(to_unsigned(cont, stage'length));
-			if cont = 6 then
-				cont:=0;
-			end if;
-		else
-		 	cont:= cont;
+			cont <= cont+1;
 		end if;
-	end process; 
+	end process;
+	stage <= cont;
 
 end architecture beh;

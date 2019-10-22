@@ -62,6 +62,5 @@ architecture Beh of Master is
         U3: Deco port map (stage,clear,enable,store);
         bcd <= ('0' & '0' & stage(2) & stage(1) & stage(0));
         U4: bin_bcd port map (bcd,s);
-
     
 end Beh;

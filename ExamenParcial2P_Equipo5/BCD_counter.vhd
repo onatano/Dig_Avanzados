@@ -31,9 +31,7 @@ begin
     variable cont6 : integer:=0;
     variable cont7 : integer:=0;
 	begin
-        process (Fi)
-        variable cont : integer:=0;
-        begin
+        
 		if rising_edge (Fi) then
             cont0:= cont0+1;
             HEX0 <= std_logic_vector(to_unsigned(cont0, HEX0'length));
@@ -74,7 +72,14 @@ begin
                                                 cont2:=0;
                                                 cont1:=0;
                                                 cont0:=0;
-                                                HEX1 <= std_logic_vector(to_unsigned(cont0, HEX1'length));
+                                                HEX0 <= "0000000";
+                                                HEX1 <= "0000000";
+                                                HEX2 <= "0000000";
+                                                HEX3 <= "0000000";
+                                                HEX4 <= "0000000";
+                                                HEX5 <= "0000000";
+                                                HEX6 <= "0000000";
+                                                HEX7 <= "0000000";
                                             end if;
                                         end if;
                                     end if;
@@ -84,8 +89,7 @@ begin
                     end if;
                 end if;
             else
-                 cont:= cont;
+                 cont0:= cont0;
             end if;
 	end process; 
-    Fo <= clk_div;
 end architecture beh;
