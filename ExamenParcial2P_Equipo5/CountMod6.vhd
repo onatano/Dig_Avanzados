@@ -18,7 +18,7 @@ begin
 	begin
 		if rising_edge (Fi) then
 			cont <= cont+1;
-			if cont = "100" then
+			if cont = "101" then
 				cont :="000";
 			end if;
 		end if;
