@@ -6,9 +6,15 @@ use IEEE.numeric_std.all;
 entity Master is
     port (
         entrada: in std_logic_vector(2 downto 0);
-        clear,enable,store : out std_logic;
-        Fi : in std_logic;
-        s: out std_logic_vector (13 downto 0)
+        Fi,Fmedir : in std_logic;
+        HEX0 : out std_logic_vector (6 downto 0);
+        HEX1 : out std_logic_vector (6 downto 0);
+        HEX2 : out std_logic_vector (6 downto 0);
+        HEX3 : out std_logic_vector (6 downto 0);
+        HEX4 : out std_logic_vector (6 downto 0);
+        HEX5 : out std_logic_vector (6 downto 0);
+        HEX6 : out std_logic_vector (6 downto 0);
+        HEX7 : out std_logic_vector (6 downto 0)
 	);
 end entity;
 
@@ -43,16 +49,25 @@ architecture Beh of Master is
             );
         end component;
 
-        component bin_bcd is
-            port (a: in std_logic_vector (4 downto 0); --5 entradas
-                s: out std_logic_vector (13 downto 0) -- 14 salidas
-                );
+        component BCD_counter is
+            port (
+                Fmedir,enable,clear : in std_logic;
+                num0,num1,num2,num3,num4,num5,num6,num7 : out std_logic_vector (3 downto 0)
+            );
+        end component;
+
+        component Display is
+            port (
+                store: in std_logic;
+                num0,num1,num2,num3,num4,num5,num6,num7 : in std_logic_vector (3 downto 0);
+                HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7 : out std_logic_vector (6 downto 0)
+            );
         end component;
 
         signal lim : integer;
-        signal Fo: std_logic;
+        signal Fo,clear,enable,store: std_logic;
         signal stage : std_logic_vector(2 downto 0);
-        signal bcd : std_logic_vector(4 downto 0);
+        signal num0,num1,num2,num3,num4,num5,num6,num7 : std_logic_vector(3 downto 0);
     
         begin
        
@@ -60,7 +75,7 @@ architecture Beh of Master is
         U1: DIV1HZ port map (lim,Fi,Fo);
         U2: CountMod6 port map (Fo,stage);
         U3: Deco port map (stage,clear,enable,store);
-        bcd <= ('0' & '0' & stage(2) & stage(1) & stage(0));
-        U4: bin_bcd port map (bcd,s);
+        U4: BCD_counter port map (Fmedir,enable,clear,num0,num1,num2,num3,num4,num5,num6,num7);
+        U5: Display port map (store,num0,num1,num2,num3,num4,num5,num6,num7,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
     
 end Beh;

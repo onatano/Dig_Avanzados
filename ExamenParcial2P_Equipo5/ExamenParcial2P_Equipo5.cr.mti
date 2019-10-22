@@ -1,4 +1,4 @@
-C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd
+C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/bin_bcd.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/bin_bcd.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -6,8 +6,8 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package std_logic_arith
 -- Loading package STD_LOGIC_UNSIGNED
 -- Loading package NUMERIC_STD
--- Compiling entity Master
--- Compiling architecture Beh of Master
+-- Compiling entity bin_bcd
+-- Compiling architecture Beh of bin_bcd
 
 } {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
@@ -30,5 +30,27 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity DIV1Hz
 -- Compiling architecture beh of DIV1Hz
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Deco.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Deco.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Deco
+-- Compiling architecture Beh of Deco
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/CountMod6.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/CountMod6.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity CountMod6
+-- Compiling architecture beh of CountMod6
 
 } {} {}}
