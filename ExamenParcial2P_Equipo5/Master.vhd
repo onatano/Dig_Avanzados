@@ -67,7 +67,7 @@ architecture Beh of Master is
        
         U0: Mux port map (entrada,lim);
         U1: DIV1HZ port map (lim,Fi,Fo);
-        U7: DIV1HZ port map (375000,Fmedir,prueba);
+        U7: DIV1HZ port map (1,Fmedir,prueba);
         U2: CountMod6 port map (Fo,stage);
         U3: Deco port map (stage,clear,enable,store);
         U4: BCD_counter port map (prueba,enable,clear,num0,num1,num2,num3,num4,num5,num6,num7);
