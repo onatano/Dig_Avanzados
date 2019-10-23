@@ -61,16 +61,14 @@ architecture Beh of Master is
         signal Fo,clear,enable,store: std_logic;
         signal stage : std_logic_vector(2 downto 0);
         signal num0,num1,num2,num3,num4,num5,num6,num7 : std_logic_vector(3 downto 0);
-        signal prueba : std_logic;
     
         begin
        
         U0: Mux port map (entrada,lim);
         U1: DIV1HZ port map (lim,Fi,Fo);
-        U7: DIV1HZ port map (2,Fmedir,prueba);
         U2: CountMod6 port map (Fo,stage);
         U3: Deco port map (stage,clear,enable,store);
-        U4: BCD_counter port map (prueba,enable,clear,num0,num1,num2,num3,num4,num5,num6,num7);
+        U4: BCD_counter port map (Fmedir,enable,clear,num0,num1,num2,num3,num4,num5,num6,num7);
         U5: Display port map (store,num0,num1,num2,num3,num4,num5,num6,num7,HEX0,HEX1,HEX2,HEX3,HEX4,HEX5,HEX6,HEX7);
     
 end Beh;
