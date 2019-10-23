@@ -19,17 +19,17 @@ architecture Beh of Mux is
         begin
             case entrada is 
                 when "000" => --1Hz
-                    lim <= 25000000;
+                    lim <= 50000000;
                 when "001" => --10Hz
-                    lim <= 2500000;
+                    lim <= 5000000;
                 when "010" => --100Hz
-                    lim <= 250000;
+                    lim <= 500000;
                 when "011" => --1KHz
-                    lim <= 25000;
+                    lim <= 50000;
                 when "100" => --10KHz
-                    lim <= 2500;
+                    lim <= 5000;
                 when "101" => --100KHz
-                    lim <= 250;
+                    lim <= 500;
                 when others =>
                     lim <= 1;
             end case;
