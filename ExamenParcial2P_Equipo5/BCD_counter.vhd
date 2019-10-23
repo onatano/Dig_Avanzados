@@ -49,15 +49,15 @@ begin
                                         if cont6 = "1001" then
                                             cont6<="0000";
                                             cont7<= cont7+1;
-                                            if cont7 >= "1001" then
-                                                cont7<="1001";
-                                                cont6<="1001";
-                                                cont5<="1001";
-                                                cont4<="1001";
-                                                cont3<="1001";
-                                                cont2<="1001";
-                                                cont1<="1001";
-                                                cont0<="1001";
+                                            if cont7 = "1001" then
+                                                cont7<="0000";
+                                                cont6<="0000";
+                                                cont5<="0000";
+                                                cont4<="0000";
+                                                cont3<="0000";
+                                                cont2<="0000";
+                                                cont1<="0000";
+                                                cont0<="0000";
                                             end if; 
                                         end if; 
                                     end if; 
