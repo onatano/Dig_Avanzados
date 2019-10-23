@@ -9,17 +9,6 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity BCD_counter
 -- Compiling architecture beh of BCD_counter
 
-} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Master.vhd
-Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package std_logic_arith
--- Loading package STD_LOGIC_UNSIGNED
--- Loading package NUMERIC_STD
--- Compiling entity Master
--- Compiling architecture Beh of Master
-
 } {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/segmentos7.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/segmentos7.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package STANDARD
@@ -41,6 +30,17 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Loading package NUMERIC_STD
 -- Compiling entity bin_bcd
 -- Compiling architecture Beh of bin_bcd
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Mux.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_arith
+-- Loading package STD_LOGIC_UNSIGNED
+-- Loading package NUMERIC_STD
+-- Compiling entity Mux
+-- Compiling architecture Beh of Mux
 
 } {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Display.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/ExamenParcial2P_Equipo5/Display.vhd
 Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
