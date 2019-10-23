@@ -27,28 +27,28 @@ begin
 	begin
         if enable='1' then
             if rising_edge (Fmedir) then
-                cont0<= cont0+1;
+                cont0<= cont0+2;
                 if cont0 = "1001" then
                     cont0<="0000";
-                    cont1<= cont1+1;
+                    cont1<= cont1+2;
                     if cont1 = "1001" then
                         cont1<="0000";
-                        cont2<= cont2+1;
+                        cont2<= cont2+2;
                         if cont2 = "1001" then
                             cont2<="0000";
-                            cont3<= cont3+1;
+                            cont3<= cont3+2;
                             if cont3 = "1001" then
                                 cont3<="0000";
-                                cont4<= cont4+1;
+                                cont4<= cont4+2;
                                 if cont4 = "1001" then
                                     cont4<="0000";
-                                    cont5<= cont5+1;
+                                    cont5<= cont5+2;
                                     if cont5 = "1001" then
                                         cont5<="0000";
-                                        cont6<= cont6+1;
+                                        cont6<= cont6+2;
                                         if cont6 = "1001" then
                                             cont6<="0000";
-                                            cont7<= cont7+1;
+                                            cont7<= cont7+2;
                                             if cont7 = "1001" then
                                                 cont7<="0000";
                                                 cont6<="0000";
@@ -79,13 +79,13 @@ begin
         end if;
     end process; 
     
-    num7<=cont7+cont7;
-    num6<=cont6+cont6;
-    num5<=cont5+cont5;
-    num4<=cont4+cont4;
-    num3<=cont3+cont3;
-    num2<=cont2+cont2;
-    num1<=cont1+cont1;
-    num0<=cont0+cont0;
+    num7<=cont7;
+    num6<=cont6;
+    num5<=cont5;
+    num4<=cont4;
+    num3<=cont3;
+    num2<=cont2;
+    num1<=cont1;
+    num0<=cont0;
 
 end architecture beh;
