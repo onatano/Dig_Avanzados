@@ -26,7 +26,48 @@ begin
     
 	begin
         if enable='1' then
-            if rising_edge (Fmedir) or falling_edge (Fmedir) then
+            if rising_edge (Fmedir) then
+                cont0<= cont0+1;
+                if cont0 = "1001" then
+                    cont0<="0000";
+                    cont1<= cont1+1;
+                    if cont1 = "1001" then
+                        cont1<="0000";
+                        cont2<= cont2+1;
+                        if cont2 = "1001" then
+                            cont2<="0000";
+                            cont3<= cont3+1;
+                            if cont3 = "1001" then
+                                cont3<="0000";
+                                cont4<= cont4+1;
+                                if cont4 = "1001" then
+                                    cont4<="0000";
+                                    cont5<= cont5+1;
+                                    if cont5 = "1001" then
+                                        cont5<="0000";
+                                        cont6<= cont6+1;
+                                        if cont6 = "1001" then
+                                            cont6<="0000";
+                                            cont7<= cont7+1;
+                                            if cont7 = "1001" then
+                                                cont7<="0000";
+                                                cont6<="0000";
+                                                cont5<="0000";
+                                                cont4<="0000";
+                                                cont3<="0000";
+                                                cont2<="0000";
+                                                cont1<="0000";
+                                                cont0<="0000";
+                                            end if; 
+                                        end if; 
+                                    end if; 
+                                end if; 
+                            end if; 
+                        end if; 
+                    end if; 
+                end if; 
+            end if;
+            if falling_edge (Fmedir) then
                 cont0<= cont0+1;
                 if cont0 = "1001" then
                     cont0<="0000";
