@@ -1,0 +1,101 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vgaBLUE[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaBLUE[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaBLUE[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaBLUE[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaHS",
+					"strict" : false
+				},
+				{
+					"name" : "vgaVS",
+					"strict" : false
+				},
+				{
+					"name" : "hPW",
+					"strict" : false
+				},
+				{
+					"name" : "hBP",
+					"strict" : false
+				},
+				{
+					"name" : "hDT",
+					"strict" : false
+				},
+				{
+					"name" : "hFP",
+					"strict" : false
+				},
+				{
+					"name" : "vPW",
+					"strict" : false
+				},
+				{
+					"name" : "vBP",
+					"strict" : false
+				},
+				{
+					"name" : "vDT",
+					"strict" : false
+				},
+				{
+					"name" : "vFP",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,173 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Fi'
+Slack : -7.011
+TNS   : -160.164
+
+Type  : Slow 1200mV 85C Model Setup 'CountMod6:U2|cont[0]'
+Slack : -6.466
+TNS   : -413.965
+
+Type  : Slow 1200mV 85C Model Setup 'Fmedir'
+Slack : -6.286
+TNS   : -186.941
+
+Type  : Slow 1200mV 85C Model Setup 'DIV1Hz:U1|clk_div'
+Slack : -1.328
+TNS   : -3.036
+
+Type  : Slow 1200mV 85C Model Hold 'CountMod6:U2|cont[0]'
+Slack : -0.054
+TNS   : -0.061
+
+Type  : Slow 1200mV 85C Model Hold 'DIV1Hz:U1|clk_div'
+Slack : 0.450
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Fi'
+Slack : 0.633
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'Fmedir'
+Slack : 0.741
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'Fmedir'
+Slack : -3.996
+TNS   : -124.762
+
+Type  : Slow 1200mV 85C Model Removal 'Fmedir'
+Slack : 0.736
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Fi'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Fmedir'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CountMod6:U2|cont[0]'
+Slack : -1.285
+TNS   : -71.960
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'DIV1Hz:U1|clk_div'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Slow 1200mV 0C Model Setup 'Fi'
+Slack : -6.358
+TNS   : -142.416
+
+Type  : Slow 1200mV 0C Model Setup 'CountMod6:U2|cont[0]'
+Slack : -6.018
+TNS   : -385.918
+
+Type  : Slow 1200mV 0C Model Setup 'Fmedir'
+Slack : -5.733
+TNS   : -169.111
+
+Type  : Slow 1200mV 0C Model Setup 'DIV1Hz:U1|clk_div'
+Slack : -1.147
+TNS   : -2.554
+
+Type  : Slow 1200mV 0C Model Hold 'CountMod6:U2|cont[0]'
+Slack : -0.038
+TNS   : -0.038
+
+Type  : Slow 1200mV 0C Model Hold 'DIV1Hz:U1|clk_div'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Fi'
+Slack : 0.579
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'Fmedir'
+Slack : 0.657
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'Fmedir'
+Slack : -3.493
+TNS   : -108.898
+
+Type  : Slow 1200mV 0C Model Removal 'Fmedir'
+Slack : 0.560
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Fi'
+Slack : -3.000
+TNS   : -45.405
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Fmedir'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CountMod6:U2|cont[0]'
+Slack : -1.285
+TNS   : -71.960
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'DIV1Hz:U1|clk_div'
+Slack : -1.285
+TNS   : -3.855
+
+Type  : Fast 1200mV 0C Model Setup 'CountMod6:U2|cont[0]'
+Slack : -2.946
+TNS   : -186.261
+
+Type  : Fast 1200mV 0C Model Setup 'Fi'
+Slack : -2.940
+TNS   : -62.316
+
+Type  : Fast 1200mV 0C Model Setup 'Fmedir'
+Slack : -2.837
+TNS   : -82.759
+
+Type  : Fast 1200mV 0C Model Setup 'DIV1Hz:U1|clk_div'
+Slack : -0.361
+TNS   : -0.626
+
+Type  : Fast 1200mV 0C Model Hold 'CountMod6:U2|cont[0]'
+Slack : -0.072
+TNS   : -0.098
+
+Type  : Fast 1200mV 0C Model Hold 'DIV1Hz:U1|clk_div'
+Slack : 0.257
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Fi'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'Fmedir'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'Fmedir'
+Slack : -1.720
+TNS   : -53.601
+
+Type  : Fast 1200mV 0C Model Removal 'Fmedir'
+Slack : 0.563
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Fmedir'
+Slack : -3.000
+TNS   : -46.487
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Fi'
+Slack : -3.000
+TNS   : -45.596
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CountMod6:U2|cont[0]'
+Slack : -1.000
+TNS   : -56.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'DIV1Hz:U1|clk_div'
+Slack : -1.000
+TNS   : -3.000
+
+------------------------------------------------------------
