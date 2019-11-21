@@ -1,0 +1,219 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.0sp1
+Eaddanti
+Z0 w1574374694
+Z1 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z2 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z3 dC:\Users\Yola\Documents\TEC\Dig_Avanzados\Mult4x4
+Z4 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/AddAnti.vhd
+Z5 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/AddAnti.vhd
+l0
+L4
+VW^CzfnSDZHoDlLfTc1o4R2
+Z6 OV;C;10.1d;51
+32
+Z7 !s108 1574377129.310000
+Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/AddAnti.vhd|
+Z9 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/AddAnti.vhd|
+Z10 o-work work -2002 -explicit -O0
+Z11 tExplicit 1
+!s100 NdYL[N2b`o13g>ZdD@@]J3
+!i10b 1
+Abeh
+R1
+R2
+DEx4 work 7 addanti 0 22 W^CzfnSDZHoDlLfTc1o4R2
+l22
+L11
+VOM`DYXo_bKz=I33mbmAHK2
+R6
+32
+R7
+R8
+R9
+R10
+R11
+!s100 gV3:0>mA>HCDf]a5ReIl=0
+!i10b 1
+Eanticipo
+Z12 w1574356909
+R1
+R2
+R3
+Z13 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Anticipo.vhd
+Z14 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Anticipo.vhd
+l0
+L4
+V=DX^>@V[Xg_z0Qe1o2:892
+R6
+32
+Z15 !s108 1574377129.475000
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Anticipo.vhd|
+Z17 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Anticipo.vhd|
+R10
+R11
+!s100 nW36hWm6OLm?LLL4E4kcD1
+!i10b 1
+Abeh
+R1
+R2
+DEx4 work 8 anticipo 0 22 =DX^>@V[Xg_z0Qe1o2:892
+l15
+L11
+V<bloCS?L0H2GhcjB0XG`;3
+R6
+32
+R15
+R16
+R17
+R10
+R11
+!s100 WBGjE>zGO?fQCc_B?28BS2
+!i10b 1
+Efulladd
+Z18 w1567432289
+R1
+R2
+R3
+Z19 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/FullAdd.vhd
+Z20 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/FullAdd.vhd
+l0
+L4
+VF4;En75HGD3DK94`6mYAo3
+R6
+32
+Z21 !s108 1574377129.679000
+Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/FullAdd.vhd|
+Z23 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/FullAdd.vhd|
+R10
+R11
+!s100 P1clAa<bC_f:lN9GSL;F62
+!i10b 1
+Abeh
+R1
+R2
+DEx4 work 7 fulladd 0 22 F4;En75HGD3DK94`6mYAo3
+l24
+L12
+Vnc`R[19bLg7hQN21z8Ro60
+R6
+32
+R21
+R22
+R23
+R10
+R11
+!s100 A<9=oTMhXe6;CdBmGNalj2
+!i10b 1
+Ehalfadd
+Z24 w1567432288
+R1
+R2
+R3
+Z25 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/HalfAdd.vhd
+Z26 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/HalfAdd.vhd
+l0
+L4
+Vz6a5@dSm;:5O`[NJRKL<N2
+R6
+32
+Z27 !s108 1574377129.860000
+Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/HalfAdd.vhd|
+Z29 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/HalfAdd.vhd|
+R10
+R11
+!s100 EAkdI=:>^b4`@3mE@[zC80
+!i10b 1
+Abeh
+R1
+R2
+DEx4 work 7 halfadd 0 22 z6a5@dSm;:5O`[NJRKL<N2
+l14
+L12
+V9MWTKQ5cD_5T2NW5c]e8O1
+R6
+32
+R27
+R28
+R29
+R10
+R11
+!s100 `SaU>`]3SH_0@ZW5EJi8b1
+!i10b 1
+Emult4x4
+Z30 w1574375267
+R1
+R2
+R3
+Z31 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4.vhd
+Z32 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4.vhd
+l0
+L4
+Vlf]lhGbbz9hYYondTkPIO3
+R6
+32
+Z33 !s108 1574377130.025000
+Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4.vhd|
+Z35 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4.vhd|
+R10
+R11
+!s100 e2K[Tfh1:oVVK_@Y=GXGR0
+!i10b 1
+Abeh
+R1
+R2
+DEx4 work 7 mult4x4 0 22 lf]lhGbbz9hYYondTkPIO3
+l39
+L11
+V2Im3CKz`W2L[95?NbeoOX2
+R6
+32
+R33
+R34
+R35
+R10
+R11
+!s100 6gUc:<?ZJX6[n9JPzl[2I1
+!i10b 1
+Emult4x4_tb
+Z36 w1574375361
+Z37 DPx4 ieee 9 math_real 0 22 :iME`dTX54_U49lJNF5JI3
+Z38 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R1
+R2
+R3
+Z39 8C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4_tb.vhd
+Z40 FC:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4_tb.vhd
+l0
+L6
+Vl4NAM1SPEML;eziHjc;O_0
+!s100 ^^Efe<470<oQzc_XMSakk2
+R6
+32
+!i10b 1
+Z41 !s108 1574377130.279000
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4_tb.vhd|
+Z43 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4_tb.vhd|
+R10
+R11
+Atb
+R37
+R38
+R1
+R2
+DEx4 work 10 mult4x4_tb 0 22 l4NAM1SPEML;eziHjc;O_0
+l29
+L9
+V1GanAcFALneg8ARzbJ>n32
+!s100 C0CcndCWfd0VFDHPL>[<C1
+R6
+32
+!i10b 1
+R41
+R42
+R43
+R10
+R11

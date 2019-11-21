@@ -16,4 +16,20 @@ Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 -- Compiling entity Anticipo_4bit
 -- Compiling architecture Beh of Anticipo_4bit
 
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/SumAnti_4bit/Anticipo.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/SumAnti_4bit/Anticipo.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Anticipo
+-- Compiling architecture Beh of Anticipo
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/SumAnti_4bit/SumAnti_4bit.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/SumAnti_4bit/SumAnti_4bit.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SumAnti_4bit
+-- Compiling architecture Beh of SumAnti_4bit
+
 } {} {}}
