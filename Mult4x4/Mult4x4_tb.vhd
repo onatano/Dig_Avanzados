@@ -12,7 +12,7 @@ ARCHITECTURE tb OF Mult4x4_tb IS
     component Mult4x4 is
         port (
             a,b: in std_logic_vector (3 downto 0);
-            res: out std_logic_vector (7 downto 0)
+            res: out std_logic_vector (8 downto 0)
         );	
     end component;
 
@@ -24,7 +24,7 @@ ARCHITECTURE tb OF Mult4x4_tb IS
 	signal clk 	: std_logic;
     signal stop_clk	: boolean;
     signal A,B: std_logic_vector (3 downto 0);
-	signal S: std_logic_vector (7 downto 0);
+	signal S: std_logic_vector (8 downto 0);
 
 begin
 

@@ -12,18 +12,19 @@ architecture Beh of AddAnti is
 
     component Anticipo is
         port (
-            a,b,Cin: in std_logic;
-            p,Cout: out std_logic
+            a,b: in std_logic;
+            p,g: out std_logic
         );
     end component;
     
-    signal p: std_logic;
+    signal p,g: std_logic;
 
 begin
 	
 	
-	U0: Anticipo port map (a, b, Cin, p, Cout);
+	U0: Anticipo port map (a, b, p, g);
 	s <= (p xor Cin);
+	Cout <= (g or (p and Cin));
 		
 	
 end Beh;

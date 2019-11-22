@@ -7,7 +7,7 @@ USE IEEE.MATH_REAL.ALL;
 entity Mult4x4 is
 port (
 	a,b: in std_logic_vector (3 downto 0);
-	res: out std_logic_vector (7 downto 0)
+	res: out std_logic_vector (8 downto 0)
 );	
 end Mult4x4;
 
@@ -55,7 +55,7 @@ begin
 	U11: AddAnti port map (s(7), c(6), q(0), q(1), res(4));
 	U12: AddAnti port map (s(8), c(7), q(1), q(2), res(5));
 	U13: AddAnti port map (s(9), c(8), q(2), q(3), res(6));
-	U14: AddAnti port map (c(9), q(3), '0', q(3), res(7));
+	U14: AddAnti port map (c(9), q(3), '0', res(8), res(7));
 	
 	res(0) <= (a(0) and b(0));
 	an(0) <= (a(1) and b(0));
