@@ -15,7 +15,7 @@ L4
 VW^CzfnSDZHoDlLfTc1o4R2
 Z6 OV;C;10.1d;51
 32
-Z7 !s108 1574377129.310000
+Z7 !s108 1574388043.823000
 Z8 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/AddAnti.vhd|
 Z9 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/AddAnti.vhd|
 Z10 o-work work -2002 -explicit -O0
@@ -50,7 +50,7 @@ L4
 V=DX^>@V[Xg_z0Qe1o2:892
 R6
 32
-Z15 !s108 1574377129.475000
+Z15 !s108 1574388044.427000
 Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Anticipo.vhd|
 Z17 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Anticipo.vhd|
 R10
@@ -85,7 +85,7 @@ L4
 VF4;En75HGD3DK94`6mYAo3
 R6
 32
-Z21 !s108 1574377129.679000
+Z21 !s108 1574388045.828000
 Z22 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/FullAdd.vhd|
 Z23 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/FullAdd.vhd|
 R10
@@ -120,7 +120,7 @@ L4
 Vz6a5@dSm;:5O`[NJRKL<N2
 R6
 32
-Z27 !s108 1574377129.860000
+Z27 !s108 1574388046.235000
 Z28 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/HalfAdd.vhd|
 Z29 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/HalfAdd.vhd|
 R10
@@ -144,7 +144,7 @@ R11
 !s100 `SaU>`]3SH_0@ZW5EJi8b1
 !i10b 1
 Emult4x4
-Z30 w1574375267
+Z30 w1574377913
 R1
 R2
 R3
@@ -155,7 +155,7 @@ L4
 Vlf]lhGbbz9hYYondTkPIO3
 R6
 32
-Z33 !s108 1574377130.025000
+Z33 !s108 1574388046.732000
 Z34 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4.vhd|
 Z35 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4.vhd|
 R10
@@ -168,7 +168,8 @@ R2
 DEx4 work 7 mult4x4 0 22 lf]lhGbbz9hYYondTkPIO3
 l39
 L11
-V2Im3CKz`W2L[95?NbeoOX2
+V0Onif7g>inXmM@0PfoD1_2
+!s100 [nz3cggM;PV=F`F5FfagB0
 R6
 32
 R33
@@ -176,7 +177,6 @@ R34
 R35
 R10
 R11
-!s100 6gUc:<?ZJX6[n9JPzl[2I1
 !i10b 1
 Emult4x4_tb
 Z36 w1574375361
@@ -194,7 +194,7 @@ Vl4NAM1SPEML;eziHjc;O_0
 R6
 32
 !i10b 1
-Z41 !s108 1574377130.279000
+Z41 !s108 1574388047.083000
 Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4_tb.vhd|
 Z43 !s107 C:/Users/Yola/Documents/TEC/Dig_Avanzados/Mult4x4/Mult4x4_tb.vhd|
 R10
@@ -204,11 +204,11 @@ R37
 R38
 R1
 R2
-DEx4 work 10 mult4x4_tb 0 22 l4NAM1SPEML;eziHjc;O_0
+Z44 DEx4 work 10 mult4x4_tb 0 22 l4NAM1SPEML;eziHjc;O_0
 l29
 L9
-V1GanAcFALneg8ARzbJ>n32
-!s100 C0CcndCWfd0VFDHPL>[<C1
+Z45 V1GanAcFALneg8ARzbJ>n32
+Z46 !s100 C0CcndCWfd0VFDHPL>[<C1
 R6
 32
 !i10b 1
