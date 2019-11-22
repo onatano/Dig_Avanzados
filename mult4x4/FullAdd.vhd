@@ -1,15 +1,15 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity Fulladd is
+entity FullAdd is
 port (
 	a,b,ci: in std_logic;
 	co,s: out std_logic
 );
 	
-end Fulladd;
+end FullAdd;
 
-architecture Beh of Fulladd is
+architecture Beh of FullAdd is
 
 component HalfAdd is
 	port (
