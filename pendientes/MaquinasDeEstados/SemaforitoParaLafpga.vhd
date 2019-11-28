@@ -3,7 +3,7 @@ use IEEE.STD_LOGIC_1164.all;
 
 entity SemaforitoParaLafpga is
     port(
-        clk,reset,test: in std_logic;
+        clkIn,reset,test: in std_logic;
         rojo,amarillo,verde: out std_logic
     );
 end SemaforitoParaLafpga;
@@ -18,9 +18,18 @@ architecture BeH of SemaforitoParaLafpga is
     type FSM is(S0,S1,S2);
     signal current_state, next_state : FSM;
     signal temp: integer range 0 to tiempoMax;
+    signal clk: std_logic;
+
+    component DIV1Hz is
+        port (
+            Fi : in std_logic;
+            Fo : out std_logic 
+        );
+    end component;
 
     begin
 
+        U0: DIV1Hz port map (clkIn,clk);
         process(clk, reset)
             variable cont: integer range 0 to tiempoMax;
         begin
