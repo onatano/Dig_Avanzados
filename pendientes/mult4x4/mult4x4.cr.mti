@@ -1,0 +1,53 @@
+C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/HalfAdd.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/HalfAdd.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity HalfAdd
+-- Compiling architecture Beh of HalfAdd
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/FullAdd.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/FullAdd.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity FullAdd
+-- Compiling architecture Beh of FullAdd
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/AddAnti.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/AddAnti.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity AddAnti
+-- Compiling architecture Beh of AddAnti
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/Mult4x4.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/Mult4x4.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Mult4x4
+-- Compiling architecture Beh of Mult4x4
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/Mult4x4_tb.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/Mult4x4_tb.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Compiling entity Mult4x4_tb
+-- Compiling architecture tb of Mult4x4_tb
+
+} {} {}} C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/Anticipo.vhd {1 {vcom -work work -2002 -explicit C:/Users/Yola/Documents/TEC/Dig_Avanzados/mult4x4_tb/Anticipo.vhd
+Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity Anticipo
+-- Compiling architecture Beh of Anticipo
+
+} {} {}}
