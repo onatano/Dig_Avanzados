@@ -29,6 +29,8 @@ begin
 
 			current_state <= IDLE;
 
+		else
+
 			if (rising_edge(btn)) then
 
 				case (current_state) is
