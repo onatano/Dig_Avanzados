@@ -42,12 +42,21 @@ architecture beh of Data is
 		);
 	end component ;
 
+	component antirebote is
+		port (
+			btn: in std_logic;
+			response: out std_logic
+		);
+	end component;
+
 	signal x: std_logic_vector (2 downto 0);
 	signal y, w: std_logic_vector (10 downto 0);
 	signal z: std_logic_vector (12 downto 0);
+	signal sendRebot: std_Logic;
 
 begin
 
+	U2: antirebote port map (send,sendRebot);
 	En <= (z(12) or x(2));
 	RSout <= (x(1) or z(11));
 	RW <= (x(0) or z(10));
