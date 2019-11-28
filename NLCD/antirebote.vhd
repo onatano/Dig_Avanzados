@@ -15,7 +15,8 @@ end antirebote;
 
 architecture beh of antirebote is
 
-	type FSM is (IDLE, cont, btn_on);
+	type FSM is (cont, btn_on);
+	signal IDLE: FSM;
 	signal current_state: FSM;
 
 begin
