@@ -20,11 +20,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "test",
 					"strict" : false
 				},
 				{
-					"name" : "test",
+					"name" : "clkIn",
 					"strict" : false
 				}
 			]

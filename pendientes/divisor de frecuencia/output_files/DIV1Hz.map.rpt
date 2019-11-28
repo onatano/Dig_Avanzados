@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DIV1Hz
-Thu Oct 17 09:29:39 2019
+Wed Nov 27 18:37:17 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Oct 17 09:29:39 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 27 18:37:17 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; DIV1Hz                                      ;
 ; Top-level Entity Name              ; DIV1Hz                                      ;
@@ -162,13 +162,13 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                   ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                      ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------+---------+
-; div1hz.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/divisor de frecuencia/div1hz.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                             ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------+---------+
+; div1hz.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/divisor de frecuencia/div1hz.vhd ;         ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------+
@@ -254,7 +254,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -264,13 +264,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Oct 17 09:29:04 2019
+    Info: Processing started: Wed Nov 27 18:36:52 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DIV1Hz -c DIV1Hz
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file div1hz.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: DIV1Hz-beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/divisor de frecuencia/div1hz.vhd Line: 13
-    Info (12023): Found entity 1: DIV1Hz File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/divisor de frecuencia/div1hz.vhd Line: 6
+    Info (12022): Found design unit 1: DIV1Hz-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/divisor de frecuencia/div1hz.vhd Line: 13
+    Info (12023): Found entity 1: DIV1Hz File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/divisor de frecuencia/div1hz.vhd Line: 6
 Info (12127): Elaborating entity "DIV1Hz" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -280,9 +280,9 @@ Info (21057): Implemented 78 device resources after synthesis - the final resour
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 76 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 4821 megabytes
-    Info: Processing ended: Thu Oct 17 09:29:40 2019
-    Info: Elapsed time: 00:00:36
-    Info: Total CPU time (on all processors): 00:00:26
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Wed Nov 27 18:37:17 2019
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:32
 
 

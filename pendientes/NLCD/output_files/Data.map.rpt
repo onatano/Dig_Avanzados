@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Data
-Thu Nov 29 09:48:59 2018
+Wed Nov 27 19:34:31 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -47,7 +47,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 29 09:48:59 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Nov 27 19:34:31 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Data                                        ;
 ; Top-level Entity Name              ; Data                                        ;
@@ -167,16 +167,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                    ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                       ; Library ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------+---------+
-; data.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/data.vhd     ;         ;
-; nlcd.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/nlcd.vhd     ;         ;
-; div5ms.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/div5ms.vhd   ;         ;
-; lcd_data.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/lcd_data.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                 ; Library ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------+---------+
+; data.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/data.vhd     ;         ;
+; nlcd.vhd                         ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/nlcd.vhd     ;         ;
+; div5ms.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/div5ms.vhd   ;         ;
+; lcd_data.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/lcd_data.vhd ;         ;
++----------------------------------+-----------------+-----------------------+------------------------------------------------------------------------------+---------+
 
 
 +---------------------------------------------------------+
@@ -378,29 +378,29 @@ Encoding Type:  One-Hot
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Nov 29 09:48:47 2018
+    Info: Processing started: Wed Nov 27 19:34:19 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Data -c Data
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file data.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: Data-beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/data.vhd Line: 18
-    Info (12023): Found entity 1: Data File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/data.vhd Line: 6
+    Info (12022): Found design unit 1: Data-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/data.vhd Line: 18
+    Info (12023): Found entity 1: Data File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/data.vhd Line: 6
 Info (12127): Elaborating entity "Data" for the top level hierarchy
 Warning (12125): Using design file nlcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: NLCD-Beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/nlcd.vhd Line: 17
-    Info (12023): Found entity 1: NLCD File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/nlcd.vhd Line: 6
-Info (12128): Elaborating entity "NLCD" for hierarchy "NLCD:U0" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/data.vhd Line: 55
+    Info (12022): Found design unit 1: NLCD-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/nlcd.vhd Line: 17
+    Info (12023): Found entity 1: NLCD File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/nlcd.vhd Line: 6
+Info (12128): Elaborating entity "NLCD" for hierarchy "NLCD:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/data.vhd Line: 55
 Warning (12125): Using design file div5ms.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: div5MS-beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/div5ms.vhd Line: 13
-    Info (12023): Found entity 1: div5MS File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/div5ms.vhd Line: 6
-Info (12128): Elaborating entity "div5MS" for hierarchy "NLCD:U0|div5MS:U0" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/nlcd.vhd Line: 31
+    Info (12022): Found design unit 1: div5MS-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/div5ms.vhd Line: 13
+    Info (12023): Found entity 1: div5MS File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/div5ms.vhd Line: 6
+Info (12128): Elaborating entity "div5MS" for hierarchy "NLCD:U0|div5MS:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/nlcd.vhd Line: 31
 Warning (12125): Using design file lcd_data.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: LCD_data-Beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/lcd_data.vhd Line: 21
-    Info (12023): Found entity 1: LCD_data File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/lcd_data.vhd Line: 6
-Info (12128): Elaborating entity "LCD_data" for hierarchy "LCD_data:U1" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/data.vhd Line: 56
-Warning (10492): VHDL Process Statement warning at lcd_data.vhd(40): signal "T" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/lcd_data.vhd Line: 40
+    Info (12022): Found design unit 1: LCD_data-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/lcd_data.vhd Line: 21
+    Info (12023): Found entity 1: LCD_data File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/lcd_data.vhd Line: 6
+Info (12128): Elaborating entity "LCD_data" for hierarchy "LCD_data:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/data.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at lcd_data.vhd(40): signal "T" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/lcd_data.vhd Line: 40
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "RW" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/NLCD/data.vhd Line: 12
+    Warning (13410): Pin "RW" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/NLCD/data.vhd Line: 12
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 1 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
@@ -410,8 +410,8 @@ Info (21057): Implemented 169 device resources after synthesis - the final resou
     Info (21059): Implemented 11 output pins
     Info (21061): Implemented 147 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Thu Nov 29 09:48:59 2018
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Wed Nov 27 19:34:31 2019
     Info: Elapsed time: 00:00:12
     Info: Total CPU time (on all processors): 00:00:25
 

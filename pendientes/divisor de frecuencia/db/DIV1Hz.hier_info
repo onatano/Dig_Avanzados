@@ -32,6 +32,6 @@ Fi => cont[28].CLK
 Fi => cont[29].CLK
 Fi => cont[30].CLK
 Fi => cont[31].CLK
-Fo <= clk_div.DB_MAX_OUTPUT_PORT_TYPE
+Fo << clk_div.DB_MAX_OUTPUT_PORT_TYPE
 
 
