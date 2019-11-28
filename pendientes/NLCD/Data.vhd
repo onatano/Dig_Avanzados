@@ -42,18 +42,28 @@ architecture beh of Data is
 		);
 	end component ;
 
+	component antirebote is
+		port (
+			btn: in std_logic;
+			response: out std_logic
+		);
+	end component;
+
 	signal x: std_logic_vector (2 downto 0);
 	signal y, w: std_logic_vector (10 downto 0);
 	signal z: std_logic_vector (12 downto 0);
+	signal sendRebot: std_Logic;
 
 begin
 
+	
 	En <= (z(12) or x(2));
 	RSout <= (x(1) or z(11));
 	RW <= (x(0) or z(10));
 	DBout (7 downto 0) <= (y(7 downto 0) or z(7 downto 0));
-	U0: NLCD port map (clk, X(2), X(1), x(0), y(7 downto 0), y(8), y(9), y(10));
-	U1: LCD_data port map (clk, y(10), send, rsin, db(7 downto 0), z(12), z(11), z(10), z(7 downto 0), z(9), z(8));
+	U0: antirebote port map (send,sendRebot);
+	U1: NLCD port map (clk, X(2), X(1), x(0), y(7 downto 0), y(8), y(9), y(10));
+	U2: LCD_data port map (clk, y(10), sendRebot, rsin, db(7 downto 0), z(12), z(11), z(10), z(7 downto 0), z(9), z(8));
 
 
 
