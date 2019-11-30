@@ -15,17 +15,19 @@ end antirebote;
 
 architecture beh of antirebote is
 
-	type FSM is (IDLE, cont, btn_on);
+	type FSM is (cont, btn_on);
+	signal IDLE: FSM;
 	signal current_state: FSM;
+	signal contador: integer := 0;
+
 
 begin
 	
 	process(btn,current_state, btn_on)
-	signal contador integer := '0';
 
 	begin
 
-		if(IDLE = '0') then
+		if(IDLE = 0) then
 
 			current_state <= IDLE;
 
@@ -56,7 +58,7 @@ begin
 
 							else
 								response <= '0';
-								current_state <= btn_on
+								current_state <= btn_on;
 								
 							end if;
 
@@ -72,19 +74,19 @@ begin
 					when btn_on =>
 
 						if (btn = '1') then
-							response = '1';
+							response <= '1';
 							current_state <= IDLE;
 
 						else
 
-							response = '0';
+							response <= '0';
 							current_state <= IDLE;
 							
 						end if;
 
 
 					when others =>
-					response <= '0'
+					response <= '0';
 					current_state <= IDLE;
 				end case;
 			else

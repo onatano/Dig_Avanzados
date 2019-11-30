@@ -1,16 +1,16 @@
 |Data
-clk => NLCD:U0.clk
-clk => LCD_data:U1.clk
-RSin => LCD_data:U1.rsin
-DB[0] => LCD_data:U1.dbin[0]
-DB[1] => LCD_data:U1.dbin[1]
-DB[2] => LCD_data:U1.dbin[2]
-DB[3] => LCD_data:U1.dbin[3]
-DB[4] => LCD_data:U1.dbin[4]
-DB[5] => LCD_data:U1.dbin[5]
-DB[6] => LCD_data:U1.dbin[6]
-DB[7] => LCD_data:U1.dbin[7]
-send => LCD_data:U1.send
+clk => NLCD:U1.clk
+clk => LCD_data:U2.clk
+RSin => LCD_data:U2.rsin
+DB[0] => LCD_data:U2.dbin[0]
+DB[1] => LCD_data:U2.dbin[1]
+DB[2] => LCD_data:U2.dbin[2]
+DB[3] => LCD_data:U2.dbin[3]
+DB[4] => LCD_data:U2.dbin[4]
+DB[5] => LCD_data:U2.dbin[5]
+DB[6] => LCD_data:U2.dbin[6]
+DB[7] => LCD_data:U2.dbin[7]
+send => LCD_data:U2.send
 En <= En.DB_MAX_OUTPUT_PORT_TYPE
 RSout <= RSout.DB_MAX_OUTPUT_PORT_TYPE
 RW <= RW.DB_MAX_OUTPUT_PORT_TYPE
@@ -24,7 +24,7 @@ DBout[6] <= DBout.DB_MAX_OUTPUT_PORT_TYPE
 DBout[7] <= DBout.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Data|NLCD:U0
+|Data|NLCD:U1
 clk => div5MS:U0.Fi
 enableS <= enableS~reg0.DB_MAX_OUTPUT_PORT_TYPE
 rS <= rS~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -42,7 +42,7 @@ bcdON <= <VCC>
 T <= T~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Data|NLCD:U0|div5MS:U0
+|Data|NLCD:U1|div5MS:U0
 Fi => Fo~reg0.CLK
 Fi => clk_div.CLK
 Fi => cont[0].CLK
@@ -80,7 +80,7 @@ Fi => cont[31].CLK
 Fo <= Fo~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Data|LCD_data:U1
+|Data|LCD_data:U2
 clk => div5MS:U0.Fi
 T => enableS~reg0.ENA
 T => rS~reg0.ENA
@@ -130,7 +130,7 @@ lcdbinlon <= <VCC>
 bcdON <= <VCC>
 
 
-|Data|LCD_data:U1|div5MS:U0
+|Data|LCD_data:U2|div5MS:U0
 Fi => Fo~reg0.CLK
 Fi => clk_div.CLK
 Fi => cont[0].CLK
