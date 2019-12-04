@@ -43,16 +43,6 @@ begin
 
     contM_u <= contM_u + 1 when clk_1s='1';
     contM_d <= contM_d + 1 when contM_u="1001";
-<<<<<<< HEAD
-    contM_u <= "0000" when contM_u="1001";
-=======
-    with contM_u select
-        contM_uR <= "1001" when "1001";
-        contM_uR <= "0000" when "0000";
-    end 
-    contM_u <= "0000" when contM_uR="1001";
-    
->>>>>>> 1be7387b3b1fb3acac8cc1fc20192801cb6f38a1
     contH_u <= contH_u + 1 when contM_d = "0110";
     contM_d <="0000" when contM_d = "0110";
     contH_d <= contH_d + 1 when contH_u = "1001";
