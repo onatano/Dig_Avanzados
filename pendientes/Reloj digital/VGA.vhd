@@ -45,10 +45,10 @@ architecture Beh of VGA is
 
 	--El reloj de pantalla funciona a 25MHz
 	U0: vga25MHz port map (clk, clkS);
-	U1: segmentos7 port map ("1111",hora_d);
-	U2: segmentos7 port map ("1111",hora_u);
-	U3: segmentos7 port map ("1111",min_d);
-	U4: segmentos7 port map ("1111",min_u);
+	U1: segmentos7 port map ("1000",hora_d);
+	U2: segmentos7 port map ("1000",hora_u);
+	U3: segmentos7 port map ("1000",min_d);
+	U4: segmentos7 port map ("1000",min_u);
 	clkvga<=clkS;
 
 
