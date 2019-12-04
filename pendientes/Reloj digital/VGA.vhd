@@ -6,8 +6,8 @@ use IEEE.numeric_std.all;
 entity VGA is
 port(
 	clk: in std_logic;
-	vgaBLUE, vgaRED, vgaGREEN: out std_logic_vector(7 downto 0);
 	num_horu, num_minu, num_mind, num_hord : in std_logic_vector (6 downto 0);
+	vgaBLUE, vgaRED, vgaGREEN: out std_logic_vector(7 downto 0);
 	vgaHS, vgaVS: out std_logic;
 	clkvga: out std_logic;
 	vgaBLANK, vgaSYNC: out std_logic
