@@ -38,10 +38,10 @@ architecture Beh of VGA is
 	
 	begin
 
-	hora_u <= num_horu;
-	hora_d <= num_hord;
-	min_u <= num_minu;
-	min_d <= num_mind;
+	--hora_u <= num_horu;
+	--hora_d <= num_hord;
+	--min_u <= num_minu;
+	--min_d <= num_mind;
 
 	--El reloj de pantalla funciona a 25MHz
 	U0: vga25MHz port map (clk, clkS);
