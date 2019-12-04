@@ -117,31 +117,31 @@ architecture Beh of VGA is
 
 			-- PRIMER SEGMENTO -- DECENAS HORAS posicion vertical VS posicion horizontal con una entrada de activacion de cada funcion para un funcionamiento similar al 7 segmentos
 			
-			if ((contadorH > 209 and contadorH < 269) and (contadorV > 71 and contadorV < 91) and (hora_d(6) = '1')) then -- a1
+			if ((contadorH > 209 and contadorH < 269) and (contadorV > 71 and contadorV < 91) and (hora_d(6) = '0')) then -- a1
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 249 and contadorH < 269) and (contadorV > 91 and contadorV < 151) and (hora_d(5) = '1')) then -- b1
+			elsif ((contadorH > 249 and contadorH < 269) and (contadorV > 91 and contadorV < 151) and (hora_d(5) = '0')) then -- b1
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 249 and contadorH < 269) and (contadorV > 151 and contadorV < 211) and (hora_d(4) = '1')) then -- c1
+			elsif ((contadorH > 249 and contadorH < 269) and (contadorV > 151 and contadorV < 211) and (hora_d(4) = '0')) then -- c1
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 209 and contadorH < 269) and (contadorV > 211 and contadorV < 231) and (hora_d(3) = '1')) then -- d1
+			elsif ((contadorH > 209 and contadorH < 269) and (contadorV > 211 and contadorV < 231) and (hora_d(3) = '0')) then -- d1
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 209 and contadorH < 229) and (contadorV > 151 and contadorV < 211) and (hora_d(2) = '1')) then -- e1
+			elsif ((contadorH > 209 and contadorH < 229) and (contadorV > 151 and contadorV < 211) and (hora_d(2) = '0')) then -- e1
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 209 and contadorH < 229) and (contadorV > 91 and contadorV < 151) and (hora_d(1) = '1')) then -- f1
+			elsif ((contadorH > 209 and contadorH < 229) and (contadorV > 91 and contadorV < 151) and (hora_d(1) = '0')) then -- f1
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 229 and contadorH < 249) and (contadorV > 141 and contadorV < 161) and (hora_d(0) = '1')) then -- g1
+			elsif ((contadorH > 229 and contadorH < 249) and (contadorV > 141 and contadorV < 161) and (hora_d(0) = '0')) then -- g1
 				tDispx <= '1';
 				tDispy <= '1';
 				
@@ -151,31 +151,31 @@ architecture Beh of VGA is
 			
 			-- Segundo segmento -- UNIDADES HORAS posicion vertical VS posicion horizontal con una entrada de activacion de cada funcion para un funcionamiento similar al 7 segmentos
 			
-			elsif ((contadorH > 314 and contadorH < 374) and (contadorV > 71 and contadorV < 91) and (hora_u(6) = '1')) then -- a2
+			elsif ((contadorH > 314 and contadorH < 374) and (contadorV > 71 and contadorV < 91) and (hora_u(6) = '0')) then -- a2
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 354 and contadorH < 374) and (contadorV > 91 and contadorV < 151) and (hora_u(5) = '1')) then -- b2
+			elsif ((contadorH > 354 and contadorH < 374) and (contadorV > 91 and contadorV < 151) and (hora_u(5) = '0')) then -- b2
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 354 and contadorH < 374) and (contadorV > 151 and contadorV < 211) and (hora_u(4) = '1')) then -- c2
+			elsif ((contadorH > 354 and contadorH < 374) and (contadorV > 151 and contadorV < 211) and (hora_u(4) = '0')) then -- c2
 				tDispx <= '1';
 				tDispy <= '1';
 			
-			elsif ((contadorH > 314 and contadorH < 374) and (contadorV > 211 and contadorV < 231) and (hora_u(3) = '1')) then -- d2
+			elsif ((contadorH > 314 and contadorH < 374) and (contadorV > 211 and contadorV < 231) and (hora_u(3) = '0')) then -- d2
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 314 and contadorH < 334) and (contadorV > 151 and contadorV < 211) and (hora_u(2) = '1')) then -- e2
+			elsif ((contadorH > 314 and contadorH < 334) and (contadorV > 151 and contadorV < 211) and (hora_u(2) = '0')) then -- e2
 				tDispx <= '1';
 				tDispy <= '1';
 			
-			elsif ((contadorH > 314 and contadorH < 334) and (contadorV > 91 and contadorV < 151) and (hora_u(1) = '1')) then -- f2
+			elsif ((contadorH > 314 and contadorH < 334) and (contadorV > 91 and contadorV < 151) and (hora_u(1) = '0')) then -- f2
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 334 and contadorH < 354) and (contadorV > 141 and contadorV < 161) and (hora_u(0) = '1'))then -- g2
+			elsif ((contadorH > 334 and contadorH < 354) and (contadorV > 141 and contadorV < 161) and (hora_u(0) = '0'))then -- g2
 				tDispx <= '1';
 				tDispy <= '1';
 				
@@ -185,31 +185,31 @@ architecture Beh of VGA is
 
 				-- Tercer segmento -- DECENAS MIN posicion vertical VS posicion horizontal con una entrada de activacion de cada funcion para un funcionamiento similar al 7 segmentos
 			
-			elsif ((contadorH > 544 and contadorH < 604) and (contadorV > 71 and contadorV < 91) and (min_d(6) = '1')) then -- a3
+			elsif ((contadorH > 544 and contadorH < 604) and (contadorV > 71 and contadorV < 91) and (min_d(6) = '0')) then -- a3
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 584 and contadorH < 604) and (contadorV > 91 and contadorV < 151) and (min_d(5) = '1')) then -- b3
+			elsif ((contadorH > 584 and contadorH < 604) and (contadorV > 91 and contadorV < 151) and (min_d(5) = '0')) then -- b3
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 584 and contadorH < 604) and (contadorV > 151 and contadorV < 211) and (min_d(4) = '1')) then -- c3
+			elsif ((contadorH > 584 and contadorH < 604) and (contadorV > 151 and contadorV < 211) and (min_d(4) = '0')) then -- c3
 				tDispx <= '1';
 				tDispy <= '1';
 			
-			elsif ((contadorH > 544 and contadorH < 604) and (contadorV > 211 and contadorV < 231) and (min_d(3) = '1')) then -- d3
+			elsif ((contadorH > 544 and contadorH < 604) and (contadorV > 211 and contadorV < 231) and (min_d(3) = '0')) then -- d3
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 544 and contadorH < 564) and (contadorV > 151 and contadorV < 211) and (min_d(2) = '1')) then -- e3
+			elsif ((contadorH > 544 and contadorH < 564) and (contadorV > 151 and contadorV < 211) and (min_d(2) = '0')) then -- e3
 				tDispx <= '1';
 				tDispy <= '1';
 			
-			elsif ((contadorH > 544 and contadorH < 564) and (contadorV > 91 and contadorV < 151) and (min_d(1) = '1')) then -- f3
+			elsif ((contadorH > 544 and contadorH < 564) and (contadorV > 91 and contadorV < 151) and (min_d(1) = '0')) then -- f3
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 564 and contadorH < 584) and (contadorV > 141 and contadorV < 161) and (min_d(0) = '1'))then -- g3
+			elsif ((contadorH > 564 and contadorH < 584) and (contadorV > 141 and contadorV < 161) and (min_d(0) = '0'))then -- g3
 				tDispx <= '1';
 				tDispy <= '1';
 				
@@ -219,31 +219,31 @@ architecture Beh of VGA is
 
 					-- Cuarto segmento -- UNIDADES MIN posicion vertical VS posicion horizontal con una entrada de activacion de cada funcion para un funcionamiento similar al 7 segmentos
 		
-			elsif ((contadorH > 649 and contadorH < 709) and (contadorV > 71 and contadorV < 91) and (min_u(6) = '1')) then -- a4
+			elsif ((contadorH > 649 and contadorH < 709) and (contadorV > 71 and contadorV < 91) and (min_u(6) = '0')) then -- a4
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 689 and contadorH < 709) and (contadorV > 91 and contadorV < 151) and (min_u(5) = '1')) then -- b4
+			elsif ((contadorH > 689 and contadorH < 709) and (contadorV > 91 and contadorV < 151) and (min_u(5) = '0')) then -- b4
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 689 and contadorH < 709) and (contadorV > 151 and contadorV < 211) and (min_u(4) = '1')) then -- c4
+			elsif ((contadorH > 689 and contadorH < 709) and (contadorV > 151 and contadorV < 211) and (min_u(4) = '0')) then -- c4
 				tDispx <= '1';
 				tDispy <= '1';
 			
-			elsif ((contadorH > 649 and contadorH < 709) and (contadorV > 211 and contadorV < 231) and (min_u(3) = '1')) then -- d4
+			elsif ((contadorH > 649 and contadorH < 709) and (contadorV > 211 and contadorV < 231) and (min_u(3) = '0')) then -- d4
 				tDispx <= '1';
 				tDispy <= '1';
 
-			elsif ((contadorH > 649 and contadorH < 669) and (contadorV > 151 and contadorV < 211) and (min_u(2) = '1')) then -- e4
+			elsif ((contadorH > 649 and contadorH < 669) and (contadorV > 151 and contadorV < 211) and (min_u(2) = '0')) then -- e4
 				tDispx <= '1';
 				tDispy <= '1';
 			
-			elsif ((contadorH > 649 and contadorH < 669) and (contadorV > 91 and contadorV < 151) and (min_u(1) = '1')) then -- f4
+			elsif ((contadorH > 649 and contadorH < 669) and (contadorV > 91 and contadorV < 151) and (min_u(1) = '0')) then -- f4
 				tDispx <= '1';
 				tDispy <= '1';
 				
-			elsif ((contadorH > 669 and contadorH < 689) and (contadorV > 141 and contadorV < 161) and (min_u(0) = '1'))then -- g4
+			elsif ((contadorH > 669 and contadorH < 689) and (contadorV > 141 and contadorV < 161) and (min_u(0) = '0'))then -- g4
 				tDispx <= '1';
 				tDispy <= '1';
 				
