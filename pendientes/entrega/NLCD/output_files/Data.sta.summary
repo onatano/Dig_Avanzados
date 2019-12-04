@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -6.122
+TNS   : -91.129
+
+Type  : Slow 1200mV 85C Model Setup 'LCD_data:U2|div5MS:U0|Fo'
+Slack : -0.636
+TNS   : -6.360
+
+Type  : Slow 1200mV 85C Model Setup 'NLCD:U1|div5MS:U0|Fo'
+Slack : -0.238
+TNS   : -0.713
+
+Type  : Slow 1200mV 85C Model Hold 'NLCD:U1|div5MS:U0|Fo'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'LCD_data:U2|div5MS:U0|Fo'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -47.975
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'LCD_data:U2|div5MS:U0|Fo'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'NLCD:U1|div5MS:U0|Fo'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -5.519
+TNS   : -78.288
+
+Type  : Slow 1200mV 0C Model Setup 'LCD_data:U2|div5MS:U0|Fo'
+Slack : -0.466
+TNS   : -4.660
+
+Type  : Slow 1200mV 0C Model Setup 'NLCD:U1|div5MS:U0|Fo'
+Slack : -0.111
+TNS   : -0.213
+
+Type  : Slow 1200mV 0C Model Hold 'NLCD:U1|div5MS:U0|Fo'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'LCD_data:U2|div5MS:U0|Fo'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.365
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -47.975
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'LCD_data:U2|div5MS:U0|Fo'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'NLCD:U1|div5MS:U0|Fo'
+Slack : -1.285
+TNS   : -12.850
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -2.500
+TNS   : -27.737
+
+Type  : Fast 1200mV 0C Model Setup 'LCD_data:U2|div5MS:U0|Fo'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'NLCD:U1|div5MS:U0|Fo'
+Slack : 0.393
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'NLCD:U1|div5MS:U0|Fo'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'LCD_data:U2|div5MS:U0|Fo'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
+Slack : -3.000
+TNS   : -48.200
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'LCD_data:U2|div5MS:U0|Fo'
+Slack : -1.000
+TNS   : -10.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'NLCD:U1|div5MS:U0|Fo'
+Slack : -1.000
+TNS   : -10.000
+
+------------------------------------------------------------

@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "salidaMINUf[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINUf[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINUf[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINUf[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINUf[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINUf[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINUf[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaMINDf[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORUf[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salidaHORDf[6]",
+					"strict" : false
+				},
+				{
+					"name" : "nRESETEOf",
+					"strict" : false
+				},
+				{
+					"name" : "entradaOPf",
+					"strict" : false
+				},
+				{
+					"name" : "clkRTf",
+					"strict" : false
+				},
+				{
+					"name" : "inMINf",
+					"strict" : false
+				},
+				{
+					"name" : "inHORf",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

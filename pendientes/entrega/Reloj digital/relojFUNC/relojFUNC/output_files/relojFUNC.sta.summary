@@ -1,0 +1,305 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'entradaOPf'
+Slack : -17.229
+TNS   : -923.721
+
+Type  : Slow 1200mV 85C Model Setup 'clkRTf'
+Slack : -6.530
+TNS   : -95.324
+
+Type  : Slow 1200mV 85C Model Setup 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : -5.629
+TNS   : -419.668
+
+Type  : Slow 1200mV 85C Model Setup 'inHORf'
+Slack : -3.961
+TNS   : -91.205
+
+Type  : Slow 1200mV 85C Model Setup 'inMINf'
+Slack : -3.474
+TNS   : -80.696
+
+Type  : Slow 1200mV 85C Model Setup 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : -2.940
+TNS   : -70.685
+
+Type  : Slow 1200mV 85C Model Setup 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : -2.811
+TNS   : -60.451
+
+Type  : Slow 1200mV 85C Model Hold 'entradaOPf'
+Slack : -6.251
+TNS   : -44.557
+
+Type  : Slow 1200mV 85C Model Hold 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : -0.002
+TNS   : -0.002
+
+Type  : Slow 1200mV 85C Model Hold 'clkRTf'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : 0.386
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : 0.637
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inHORf'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'inMINf'
+Slack : 0.693
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'inHORf'
+Slack : -6.581
+TNS   : -173.306
+
+Type  : Slow 1200mV 85C Model Recovery 'inMINf'
+Slack : -5.962
+TNS   : -187.920
+
+Type  : Slow 1200mV 85C Model Removal 'inHORf'
+Slack : 0.614
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'inMINf'
+Slack : 2.102
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'entradaOPf'
+Slack : -3.128
+TNS   : -931.647
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clkRTf'
+Slack : -3.000
+TNS   : -46.690
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inHORf'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'inMINf'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : -1.285
+TNS   : -123.360
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : 0.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'entradaOPf'
+Slack : -16.031
+TNS   : -855.324
+
+Type  : Slow 1200mV 0C Model Setup 'clkRTf'
+Slack : -5.828
+TNS   : -82.323
+
+Type  : Slow 1200mV 0C Model Setup 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : -5.003
+TNS   : -370.194
+
+Type  : Slow 1200mV 0C Model Setup 'inHORf'
+Slack : -3.618
+TNS   : -84.267
+
+Type  : Slow 1200mV 0C Model Setup 'inMINf'
+Slack : -3.143
+TNS   : -73.631
+
+Type  : Slow 1200mV 0C Model Setup 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : -2.591
+TNS   : -60.429
+
+Type  : Slow 1200mV 0C Model Setup 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : -2.486
+TNS   : -51.300
+
+Type  : Slow 1200mV 0C Model Hold 'entradaOPf'
+Slack : -5.655
+TNS   : -39.777
+
+Type  : Slow 1200mV 0C Model Hold 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : -0.036
+TNS   : -0.036
+
+Type  : Slow 1200mV 0C Model Hold 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clkRTf'
+Slack : 0.339
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : 0.569
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inHORf'
+Slack : 0.632
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'inMINf'
+Slack : 0.632
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'inHORf'
+Slack : -5.983
+TNS   : -156.637
+
+Type  : Slow 1200mV 0C Model Recovery 'inMINf'
+Slack : -5.403
+TNS   : -170.525
+
+Type  : Slow 1200mV 0C Model Removal 'inHORf'
+Slack : 0.625
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'inMINf'
+Slack : 2.011
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'entradaOPf'
+Slack : -3.000
+TNS   : -831.678
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clkRTf'
+Slack : -3.000
+TNS   : -46.690
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inHORf'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'inMINf'
+Slack : -3.000
+TNS   : -44.120
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : -1.285
+TNS   : -123.360
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : 0.404
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : 0.420
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'entradaOPf'
+Slack : -7.979
+TNS   : -432.708
+
+Type  : Fast 1200mV 0C Model Setup 'clkRTf'
+Slack : -2.682
+TNS   : -30.190
+
+Type  : Fast 1200mV 0C Model Setup 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : -2.324
+TNS   : -160.898
+
+Type  : Fast 1200mV 0C Model Setup 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : -1.495
+TNS   : -34.743
+
+Type  : Fast 1200mV 0C Model Setup 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : -1.337
+TNS   : -28.617
+
+Type  : Fast 1200mV 0C Model Setup 'inHORf'
+Slack : -1.316
+TNS   : -23.768
+
+Type  : Fast 1200mV 0C Model Setup 'inMINf'
+Slack : -1.089
+TNS   : -19.333
+
+Type  : Fast 1200mV 0C Model Hold 'entradaOPf'
+Slack : -3.341
+TNS   : -32.120
+
+Type  : Fast 1200mV 0C Model Hold 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : 0.108
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clkRTf'
+Slack : 0.174
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : 0.289
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inMINf'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'inHORf'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'inHORf'
+Slack : -2.862
+TNS   : -72.006
+
+Type  : Fast 1200mV 0C Model Recovery 'inMINf'
+Slack : -2.555
+TNS   : -80.377
+
+Type  : Fast 1200mV 0C Model Removal 'inHORf'
+Slack : -0.203
+TNS   : -5.530
+
+Type  : Fast 1200mV 0C Model Removal 'inMINf'
+Slack : 0.517
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'entradaOPf'
+Slack : -3.000
+TNS   : -400.610
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inHORf'
+Slack : -3.000
+TNS   : -42.956
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'inMINf'
+Slack : -3.000
+TNS   : -41.718
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clkRTf'
+Slack : -3.000
+TNS   : -39.085
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0|Fo'
+Slack : -1.000
+TNS   : -96.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0]'
+Slack : 0.366
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0]'
+Slack : 0.368
+TNS   : 0.000
+
+------------------------------------------------------------

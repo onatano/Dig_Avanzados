@@ -1,0 +1,57 @@
+|SemaforitoParaLafpga
+clkIn => DIV1Hz:U0.Fi
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => current_state.OUTPUTSELECT
+reset => cont.OUTPUTSELECT
+reset => cont.OUTPUTSELECT
+reset => cont.OUTPUTSELECT
+reset => cont.OUTPUTSELECT
+reset => cont.OUTPUTSELECT
+test => temp[0].DATAA
+test => temp[4].DATAB
+test => temp[3].DATAB
+test => temp[2].DATAB
+test => Selector0.IN1
+rojo << rojo.DB_MAX_OUTPUT_PORT_TYPE
+amarillo << amarillo.DB_MAX_OUTPUT_PORT_TYPE
+verde << verde.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|SemaforitoParaLafpga|DIV1Hz:U0
+Fi => clk_div.CLK
+Fi => cont[0].CLK
+Fi => cont[1].CLK
+Fi => cont[2].CLK
+Fi => cont[3].CLK
+Fi => cont[4].CLK
+Fi => cont[5].CLK
+Fi => cont[6].CLK
+Fi => cont[7].CLK
+Fi => cont[8].CLK
+Fi => cont[9].CLK
+Fi => cont[10].CLK
+Fi => cont[11].CLK
+Fi => cont[12].CLK
+Fi => cont[13].CLK
+Fi => cont[14].CLK
+Fi => cont[15].CLK
+Fi => cont[16].CLK
+Fi => cont[17].CLK
+Fi => cont[18].CLK
+Fi => cont[19].CLK
+Fi => cont[20].CLK
+Fi => cont[21].CLK
+Fi => cont[22].CLK
+Fi => cont[23].CLK
+Fi => cont[24].CLK
+Fi => cont[25].CLK
+Fi => cont[26].CLK
+Fi => cont[27].CLK
+Fi => cont[28].CLK
+Fi => cont[29].CLK
+Fi => cont[30].CLK
+Fi => cont[31].CLK
+Fo <= clk_div.DB_MAX_OUTPUT_PORT_TYPE
+
+
