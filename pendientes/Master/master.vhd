@@ -39,25 +39,17 @@ begin
     U0: DIV1Hz port map (clk,clk_1s);
     U1: display port map (clk,contH_d,contH_u,contM_d,contM_u,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
-	when (rising_edge Fi) then
-        contM_u <= contM_u + 1;
-        when contM_u = "1001" then
-            contM_u <="0000";
-            contM_d <= contM_d + 1;
-            when contM_d = "0110" then
-                contM_d <="0000";
-                contH_u <= contH_u + 1;
-                when contH_u = "1001" then
-                    contH_u <="0000";
-                    contH_d <= contH_d + 1;
-                    when contH_d = "0010" and contH_u = "0100" then
-                        contM_d <="0000";
-                        contM_u <="0000";
-                        contH_d <="0000";
-                        contH_u <="0000";
-                    end;
-                end;
-            end;
-        end;
-    end;
+
+    contM_u <= contM_u + 1 when clk_1s='1';
+    contM_d <= contM_d + 1 when contM_u="1001";
+    contM_u <= "0000" when contM_u="1001";
+    contH_u <= contH_u + 1 when contM_d = "0110";
+    contM_d <="0000" when contM_d = "0110";
+    contH_d <= contH_d + 1 when contH_u = "1001";
+    contH_u <="0000" when contH_u = "1001";
+    contM_d <="0000" when contH_d = "0010" and contH_u = "0100";
+    contM_u <="0000" when contH_d = "0010" and contH_u = "0100";
+    contH_u <="0000" when contH_d = "0010" and contH_u = "0100";
+    contH_d <="0000" when contH_d = "0010" and contH_u = "0100";
+	
 end architecture Beh;
