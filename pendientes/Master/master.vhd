@@ -39,7 +39,7 @@ begin
     U0: DIV1Hz port map (clk,clk_1s);
     U1: display port map (clk,contH_d,contH_u,contM_d,contM_u,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
-	when rising_edge (Fi) then
+	when (rising_edge Fi) then
         contM_u <= contM_u + 1;
         when contM_u = "1001" then
             contM_u <="0000";
