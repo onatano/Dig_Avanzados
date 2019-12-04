@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Wed Dec 04 17:51:54 2019
+Wed Dec 04 17:57:01 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Dec 04 17:51:54 2019           ;
+; Analysis & Synthesis Status        ; Failed - Wed Dec 04 17:57:01 2019           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; Master                                      ;
@@ -161,17 +161,81 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 17:51:43 2019
+    Info: Processing started: Wed Dec 04 17:56:50 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file master.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: master-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 16
     Info (12023): Found entity 1: master File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 6
-Error (10327): VHDL error at master.vhd(47): can't determine definition of operator ""<="" -- found 0 possible definitions File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 47
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
+Info (12127): Elaborating entity "Master" for the top level hierarchy
+Info (10041): Inferred latch for "contH_d[0]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Info (10041): Inferred latch for "contH_d[1]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Info (10041): Inferred latch for "contH_d[2]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Info (10041): Inferred latch for "contH_d[3]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Info (10041): Inferred latch for "contH_u[0]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Info (10041): Inferred latch for "contH_u[1]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Info (10041): Inferred latch for "contH_u[2]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Info (10041): Inferred latch for "contH_u[3]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Info (10041): Inferred latch for "contM_u[0]" at master.vhd(56) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 56
+Info (10041): Inferred latch for "contM_u[1]" at master.vhd(56) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 56
+Info (10041): Inferred latch for "contM_u[2]" at master.vhd(56) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 56
+Info (10041): Inferred latch for "contM_u[3]" at master.vhd(56) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 56
+Info (10041): Inferred latch for "contM_d[0]" at master.vhd(55) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 55
+Info (10041): Inferred latch for "contM_d[1]" at master.vhd(55) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 55
+Info (10041): Inferred latch for "contM_d[2]" at master.vhd(55) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 55
+Info (10041): Inferred latch for "contM_d[3]" at master.vhd(55) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 55
+Info (10041): Inferred latch for "contH_u[0]" at master.vhd(54) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 54
+Info (10041): Inferred latch for "contH_u[1]" at master.vhd(54) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 54
+Info (10041): Inferred latch for "contH_u[2]" at master.vhd(54) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 54
+Info (10041): Inferred latch for "contH_u[3]" at master.vhd(54) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 54
+Info (10041): Inferred latch for "contH_d[0]" at master.vhd(53) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 53
+Info (10041): Inferred latch for "contH_d[1]" at master.vhd(53) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 53
+Info (10041): Inferred latch for "contH_d[2]" at master.vhd(53) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 53
+Info (10041): Inferred latch for "contH_d[3]" at master.vhd(53) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 53
+Info (10041): Inferred latch for "contM_d[0]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Info (10041): Inferred latch for "contM_d[1]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Info (10041): Inferred latch for "contM_d[2]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Info (10041): Inferred latch for "contM_d[3]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Info (10041): Inferred latch for "contH_u[0]" at master.vhd(51) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 51
+Info (10041): Inferred latch for "contH_u[1]" at master.vhd(51) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 51
+Info (10041): Inferred latch for "contH_u[2]" at master.vhd(51) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 51
+Info (10041): Inferred latch for "contH_u[3]" at master.vhd(51) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 51
+Info (10041): Inferred latch for "contM_u[0]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Info (10041): Inferred latch for "contM_u[1]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Info (10041): Inferred latch for "contM_u[2]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Info (10041): Inferred latch for "contM_u[3]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Info (10041): Inferred latch for "contM_d[0]" at master.vhd(44) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
+Info (10041): Inferred latch for "contM_d[1]" at master.vhd(44) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
+Info (10041): Inferred latch for "contM_d[2]" at master.vhd(44) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
+Info (10041): Inferred latch for "contM_d[3]" at master.vhd(44) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
+Info (10041): Inferred latch for "contM_u[0]" at master.vhd(43) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 43
+Info (10041): Inferred latch for "contM_u[1]" at master.vhd(43) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 43
+Info (10041): Inferred latch for "contM_u[2]" at master.vhd(43) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 43
+Info (10041): Inferred latch for "contM_u[3]" at master.vhd(43) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 43
+Error (10028): Can't resolve multiple constant drivers for net "contH_d[3]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Error (10029): Constant driver at master.vhd(53) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 53
+Error (10028): Can't resolve multiple constant drivers for net "contH_d[2]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Error (10028): Can't resolve multiple constant drivers for net "contH_d[1]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Error (10028): Can't resolve multiple constant drivers for net "contH_d[0]" at master.vhd(58) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 58
+Error (10028): Can't resolve multiple constant drivers for net "contH_u[3]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Error (10029): Constant driver at master.vhd(51) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 51
+Error (10028): Can't resolve multiple constant drivers for net "contH_u[2]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Error (10028): Can't resolve multiple constant drivers for net "contH_u[1]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Error (10028): Can't resolve multiple constant drivers for net "contH_u[0]" at master.vhd(57) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 57
+Error (10028): Can't resolve multiple constant drivers for net "contM_d[3]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Error (10029): Constant driver at master.vhd(44) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
+Error (10028): Can't resolve multiple constant drivers for net "contM_d[2]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Error (10028): Can't resolve multiple constant drivers for net "contM_d[1]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Error (10028): Can't resolve multiple constant drivers for net "contM_d[0]" at master.vhd(52) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 52
+Error (10028): Can't resolve multiple constant drivers for net "contM_u[3]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Error (10029): Constant driver at master.vhd(43) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 43
+Error (10028): Can't resolve multiple constant drivers for net "contM_u[2]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Error (10028): Can't resolve multiple constant drivers for net "contM_u[1]" at master.vhd(49) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
+Error (12153): Can't elaborate top-level user hierarchy
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 20 errors, 2 warnings
     Error: Peak virtual memory: 4799 megabytes
-    Error: Processing ended: Wed Dec 04 17:51:54 2019
+    Error: Processing ended: Wed Dec 04 17:57:01 2019
     Error: Elapsed time: 00:00:11
     Error: Total CPU time (on all processors): 00:00:24
 

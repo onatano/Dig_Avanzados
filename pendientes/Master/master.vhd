@@ -44,10 +44,9 @@ begin
     contM_d <= contM_d + 1 when contM_u="1001";
     with contM_u select
         contM_uR <= "1001" when "1001",
-        contM_uR <= "0000" when "0000";
+						  "0000" when others;
     
     contM_u <= "0000" when contM_uR ="1001";
-    
     contH_u <= contH_u + 1 when contM_d = "0110";
     contM_d <="0000" when contM_d = "0110";
     contH_d <= contH_d + 1 when contH_u = "1001";
