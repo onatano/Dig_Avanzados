@@ -33,6 +33,7 @@ architecture Beh of master is
     end component;
 
     signal contH_d,contH_u,contM_d,contM_u: std_logic_vector (3 downto 0):= "0000";
+    signal contH_dR,contH_uR,contM_dR,contM_uR: std_logic_vector (3 downto 0):= "0000";
     signal clk_1s: std_logic;
 
 begin
@@ -41,8 +42,13 @@ begin
 
     contM_u <= contM_u + 1 when clk_1s='1';
     contM_d <= contM_d + 1 when contM_u="1001";
-    contM_u <= "0000" when contM_u="1001";
-    contH_u <= contH_u + 1 when contM_d = "0110"
+    with contM_u select
+        contM_uR <= "1001" when "1001";
+        contM_uR <= "0000" when "0000";
+    end 
+    contM_u <= "0000" when contM_uR="1001";
+    
+    contH_u <= contH_u + 1 when contM_d = "0110";
     contM_d <="0000" when contM_d = "0110";
     contH_d <= contH_d + 1 when contH_u = "1001";
     contH_u <="0000" when contH_u = "1001";
