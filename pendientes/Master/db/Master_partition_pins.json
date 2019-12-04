@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vgaHS",
+					"strict" : false
+				},
+				{
+					"name" : "vgaVS",
+					"strict" : false
+				},
+				{
+					"name" : "clkvga",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

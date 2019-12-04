@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Wed Dec 04 13:37:10 2019
+Wed Dec 04 15:01:10 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,9 +15,13 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+ 10. Port Connectivity Checks: "segmentos7:U4"
+ 11. Port Connectivity Checks: "segmentos7:U3"
+ 12. Port Connectivity Checks: "segmentos7:U2"
+ 13. Port Connectivity Checks: "segmentos7:U1"
+ 14. Post-Synthesis Netlist Statistics for Top Partition
+ 15. Elapsed Time Per Partition
+ 16. Analysis & Synthesis Messages
 
 
 
@@ -43,13 +47,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 13:37:10 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 15:01:10 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 290                                         ;
-;     Total combinational functions  ; 290                                         ;
+; Total logic elements               ; 158                                         ;
+;     Total combinational functions  ; 158                                         ;
 ;     Dedicated logic registers      ; 69                                          ;
 ; Total registers                    ; 69                                          ;
 ; Total pins                         ; 58                                          ;
@@ -163,14 +167,15 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                          ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------+---------+
-; vga.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd      ;         ;
-; vga25mhz.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                            ; Library ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------+---------+
+; vga.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd        ;         ;
+; vga25mhz.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd   ;         ;
+; segmentos7.vhd                   ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/segmentos7.vhd ;         ;
++----------------------------------+-----------------+-----------------------+-----------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -178,16 +183,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------+
 ; Resource                                    ; Usage               ;
 +---------------------------------------------+---------------------+
-; Estimated Total logic elements              ; 290                 ;
+; Estimated Total logic elements              ; 158                 ;
 ;                                             ;                     ;
-; Total combinational functions               ; 290                 ;
+; Total combinational functions               ; 158                 ;
 ; Logic element usage by number of LUT inputs ;                     ;
-;     -- 4 input functions                    ; 163                 ;
-;     -- 3 input functions                    ; 42                  ;
-;     -- <=2 input functions                  ; 85                  ;
+;     -- 4 input functions                    ; 69                  ;
+;     -- 3 input functions                    ; 12                  ;
+;     -- <=2 input functions                  ; 77                  ;
 ;                                             ;                     ;
 ; Logic elements by mode                      ;                     ;
-;     -- normal mode                          ; 228                 ;
+;     -- normal mode                          ; 96                  ;
 ;     -- arithmetic mode                      ; 62                  ;
 ;                                             ;                     ;
 ; Total registers                             ; 69                  ;
@@ -200,8 +205,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                     ;
 ; Maximum fan-out node                        ; vga25MHz:U0|clk_div ;
 ; Maximum fan-out                             ; 70                  ;
-; Total fan-out                               ; 1156                ;
-; Average fan-out                             ; 2.43                ;
+; Total fan-out                               ; 674                 ;
+; Average fan-out                             ; 1.97                ;
 +---------------------------------------------+---------------------+
 
 
@@ -210,7 +215,7 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |VGA                       ; 290 (289)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |VGA                ; VGA         ; work         ;
+; |VGA                       ; 158 (157)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 58   ; 0            ; |VGA                ; VGA         ; work         ;
 ;    |vga25MHz:U0|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |VGA|vga25MHz:U0    ; vga25MHz    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -241,6 +246,46 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
++-------------------------------------------+
+; Port Connectivity Checks: "segmentos7:U4" ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; a[2..0] ; Input ; Info     ; Stuck at GND ;
+; a[3]    ; Input ; Info     ; Stuck at VCC ;
++---------+-------+----------+--------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "segmentos7:U3" ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; a[2..0] ; Input ; Info     ; Stuck at GND ;
+; a[3]    ; Input ; Info     ; Stuck at VCC ;
++---------+-------+----------+--------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "segmentos7:U2" ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; a[2..0] ; Input ; Info     ; Stuck at GND ;
+; a[3]    ; Input ; Info     ; Stuck at VCC ;
++---------+-------+----------+--------------+
+
+
++-------------------------------------------+
+; Port Connectivity Checks: "segmentos7:U1" ;
++---------+-------+----------+--------------+
+; Port    ; Type  ; Severity ; Details      ;
++---------+-------+----------+--------------+
+; a[2..0] ; Input ; Info     ; Stuck at GND ;
+; a[3]    ; Input ; Info     ; Stuck at VCC ;
++---------+-------+----------+--------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
@@ -250,19 +295,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; cycloneiii_ff         ; 69                          ;
 ;     ENA               ; 4                           ;
 ;     plain             ; 65                          ;
-; cycloneiii_lcell_comb ; 292                         ;
+; cycloneiii_lcell_comb ; 160                         ;
 ;     arith             ; 62                          ;
 ;         2 data inputs ; 61                          ;
 ;         3 data inputs ; 1                           ;
-;     normal            ; 230                         ;
+;     normal            ; 98                          ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 21                          ;
-;         3 data inputs ; 41                          ;
-;         4 data inputs ; 163                         ;
+;         2 data inputs ; 13                          ;
+;         3 data inputs ; 11                          ;
+;         4 data inputs ; 69                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 12.16                       ;
+; Average LUT depth     ; 13.83                       ;
 +-----------------------+-----------------------------+
 
 
@@ -281,7 +326,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 13:36:53 2019
+    Info: Processing started: Wed Dec 04 15:00:57 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -292,9 +337,14 @@ Info (12127): Elaborating entity "VGA" for the top level hierarchy
 Warning (12125): Using design file vga25mhz.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: vga25MHz-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 13
     Info (12023): Found entity 1: vga25MHz File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 6
-Info (12128): Elaborating entity "vga25MHz" for hierarchy "vga25MHz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 41
+Info (12128): Elaborating entity "vga25MHz" for hierarchy "vga25MHz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 47
 Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(23): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 23
 Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(25): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 25
+Warning (12125): Using design file segmentos7.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: segmentos7-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/segmentos7.vhd Line: 12
+    Info (12023): Found entity 1: segmentos7 File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/segmentos7.vhd Line: 6
+Info (12128): Elaborating entity "segmentos7" for hierarchy "segmentos7:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 48
+Warning (10812): VHDL warning at segmentos7.vhd(14): sensitivity list already contains a File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/segmentos7.vhd Line: 14
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "vgaBLUE[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
     Warning (13410): Pin "vgaBLUE[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
@@ -317,14 +367,43 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 404 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 28 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "num_horu[0]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_horu[1]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_horu[2]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_horu[3]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_horu[4]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_horu[5]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_horu[6]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[0]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[1]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[2]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[3]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[4]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[5]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_minu[6]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[0]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[1]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[2]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[3]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[4]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[5]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_mind[6]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[0]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[1]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[2]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[3]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[4]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[5]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+    Warning (15610): No output dependent on input pin "num_hord[6]" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 10
+Info (21057): Implemented 272 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 29 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 346 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4814 megabytes
-    Info: Processing ended: Wed Dec 04 13:37:10 2019
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:28
+    Info (21061): Implemented 214 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
+    Info: Peak virtual memory: 4810 megabytes
+    Info: Processing ended: Wed Dec 04 15:01:10 2019
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:26
 
 
