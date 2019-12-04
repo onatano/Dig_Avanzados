@@ -22,6 +22,12 @@ architecture Beh of VGA is
 		Fo : out std_logic 
 	);
 	end Component vga25MHz;
+
+	component segmentos7 is
+		port (a: in std_logic_vector (3 downto 0); --4 entradas
+			s: out std_logic_vector (6 downto 0) -- 7 salidas
+			);
+	end component;
 -- señales para determinar el movimiento vertical y horizontal
 	signal clkS : std_logic;
 	signal vgaHSA, vgaVSA: std_logic;
@@ -39,6 +45,10 @@ architecture Beh of VGA is
 
 	--El reloj de pantalla funciona a 25MHz
 	U0: vga25MHz port map (clk, clkS);
+	U1: segmentos7 port map ("1111",hora_d);
+	U2: segmentos7 port map ("1111",hora_u);
+	U3: segmentos7 port map ("1111",min_d);
+	U4: segmentos7 port map ("1111",min_u);
 	clkvga<=clkS;
 
 
