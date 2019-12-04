@@ -1,5 +1,5 @@
 Analysis & Synthesis report for VGA
-Wed Nov 28 15:57:44 2018
+Wed Dec 04 13:37:10 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Nov 28 15:57:44 2018       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 13:37:10 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; VGA                                         ;
 ; Top-level Entity Name              ; VGA                                         ;
@@ -163,14 +163,14 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------+---------+
-; vga.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd      ;         ;
-; vga25mhz.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga25mhz.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------------+---------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                       ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                          ; Library ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------+---------+
+; vga.vhd                          ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd      ;         ;
+; vga25mhz.vhd                     ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd ;         ;
++----------------------------------+-----------------+-----------------------+---------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------+
@@ -281,39 +281,39 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Nov 28 15:57:31 2018
+    Info: Processing started: Wed Dec 04 13:36:53 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off VGA -c VGA
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file vga.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: VGA-Beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 17
-    Info (12023): Found entity 1: VGA File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 6
+    Info (12022): Found design unit 1: VGA-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 17
+    Info (12023): Found entity 1: VGA File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 6
 Info (12127): Elaborating entity "VGA" for the top level hierarchy
 Warning (12125): Using design file vga25mhz.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: vga25MHz-beh File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga25mhz.vhd Line: 13
-    Info (12023): Found entity 1: vga25MHz File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga25mhz.vhd Line: 6
-Info (12128): Elaborating entity "vga25MHz" for hierarchy "vga25MHz:U0" File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(23): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga25mhz.vhd Line: 23
-Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(25): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga25mhz.vhd Line: 25
+    Info (12022): Found design unit 1: vga25MHz-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 13
+    Info (12023): Found entity 1: vga25MHz File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 6
+Info (12128): Elaborating entity "vga25MHz" for hierarchy "vga25MHz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(23): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 23
+Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(25): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga25mhz.vhd Line: 25
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vgaBLUE[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLUE[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaGREEN[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 9
-    Warning (13410): Pin "vgaBLANK" is stuck at VCC File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 13
-    Warning (13410): Pin "vgaSYNC" is stuck at GND File: C:/Users/OsmarBW/Documents/TEC CCM/DIgitales/Digitales avanzados/Reloj digital/vga.vhd Line: 13
+    Warning (13410): Pin "vgaBLUE[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLUE[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaGREEN[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 9
+    Warning (13410): Pin "vgaBLANK" is stuck at VCC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 13
+    Warning (13410): Pin "vgaSYNC" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Reloj digital/vga.vhd Line: 13
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -322,9 +322,9 @@ Info (21057): Implemented 404 device resources after synthesis - the final resou
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 346 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 24 warnings
-    Info: Peak virtual memory: 4816 megabytes
-    Info: Processing ended: Wed Nov 28 15:57:44 2018
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:27
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Wed Dec 04 13:37:10 2019
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:28
 
 
