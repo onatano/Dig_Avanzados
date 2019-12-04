@@ -1,0 +1,227 @@
+|Master
+clk => VGA:U4.clk
+vgaHS << VGA:U4.vgaHS
+vgaVS << VGA:U4.vgaVS
+clkvga << VGA:U4.clkvga
+vgaBLANK << VGA:U4.vgaBLANK
+vgaSYNC << VGA:U4.vgaSYNC
+
+
+|Master|segmentos7:U0
+a[0] => Mux0.IN19
+a[0] => Mux1.IN19
+a[0] => Mux2.IN19
+a[0] => Mux3.IN19
+a[0] => Mux4.IN19
+a[0] => Mux5.IN19
+a[0] => Mux6.IN19
+a[1] => Mux0.IN18
+a[1] => Mux1.IN18
+a[1] => Mux2.IN18
+a[1] => Mux3.IN18
+a[1] => Mux4.IN18
+a[1] => Mux5.IN18
+a[1] => Mux6.IN18
+a[2] => Mux0.IN17
+a[2] => Mux1.IN17
+a[2] => Mux2.IN17
+a[2] => Mux3.IN17
+a[2] => Mux4.IN17
+a[2] => Mux5.IN17
+a[2] => Mux6.IN17
+a[3] => Mux0.IN16
+a[3] => Mux1.IN16
+a[3] => Mux2.IN16
+a[3] => Mux3.IN16
+a[3] => Mux4.IN16
+a[3] => Mux5.IN16
+a[3] => Mux6.IN16
+s[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Master|segmentos7:U1
+a[0] => Mux0.IN19
+a[0] => Mux1.IN19
+a[0] => Mux2.IN19
+a[0] => Mux3.IN19
+a[0] => Mux4.IN19
+a[0] => Mux5.IN19
+a[0] => Mux6.IN19
+a[1] => Mux0.IN18
+a[1] => Mux1.IN18
+a[1] => Mux2.IN18
+a[1] => Mux3.IN18
+a[1] => Mux4.IN18
+a[1] => Mux5.IN18
+a[1] => Mux6.IN18
+a[2] => Mux0.IN17
+a[2] => Mux1.IN17
+a[2] => Mux2.IN17
+a[2] => Mux3.IN17
+a[2] => Mux4.IN17
+a[2] => Mux5.IN17
+a[2] => Mux6.IN17
+a[3] => Mux0.IN16
+a[3] => Mux1.IN16
+a[3] => Mux2.IN16
+a[3] => Mux3.IN16
+a[3] => Mux4.IN16
+a[3] => Mux5.IN16
+a[3] => Mux6.IN16
+s[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Master|segmentos7:U2
+a[0] => Mux0.IN19
+a[0] => Mux1.IN19
+a[0] => Mux2.IN19
+a[0] => Mux3.IN19
+a[0] => Mux4.IN19
+a[0] => Mux5.IN19
+a[0] => Mux6.IN19
+a[1] => Mux0.IN18
+a[1] => Mux1.IN18
+a[1] => Mux2.IN18
+a[1] => Mux3.IN18
+a[1] => Mux4.IN18
+a[1] => Mux5.IN18
+a[1] => Mux6.IN18
+a[2] => Mux0.IN17
+a[2] => Mux1.IN17
+a[2] => Mux2.IN17
+a[2] => Mux3.IN17
+a[2] => Mux4.IN17
+a[2] => Mux5.IN17
+a[2] => Mux6.IN17
+a[3] => Mux0.IN16
+a[3] => Mux1.IN16
+a[3] => Mux2.IN16
+a[3] => Mux3.IN16
+a[3] => Mux4.IN16
+a[3] => Mux5.IN16
+a[3] => Mux6.IN16
+s[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Master|segmentos7:U3
+a[0] => Mux0.IN19
+a[0] => Mux1.IN19
+a[0] => Mux2.IN19
+a[0] => Mux3.IN19
+a[0] => Mux4.IN19
+a[0] => Mux5.IN19
+a[0] => Mux6.IN19
+a[1] => Mux0.IN18
+a[1] => Mux1.IN18
+a[1] => Mux2.IN18
+a[1] => Mux3.IN18
+a[1] => Mux4.IN18
+a[1] => Mux5.IN18
+a[1] => Mux6.IN18
+a[2] => Mux0.IN17
+a[2] => Mux1.IN17
+a[2] => Mux2.IN17
+a[2] => Mux3.IN17
+a[2] => Mux4.IN17
+a[2] => Mux5.IN17
+a[2] => Mux6.IN17
+a[3] => Mux0.IN16
+a[3] => Mux1.IN16
+a[3] => Mux2.IN16
+a[3] => Mux3.IN16
+a[3] => Mux4.IN16
+a[3] => Mux5.IN16
+a[3] => Mux6.IN16
+s[0] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+s[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Master|VGA:U4
+clk => vga25MHz:U0.Fi
+vgaBLUE[0] <= <GND>
+vgaBLUE[1] <= <GND>
+vgaBLUE[2] <= <GND>
+vgaBLUE[3] <= <GND>
+vgaBLUE[4] <= <GND>
+vgaBLUE[5] <= <GND>
+vgaBLUE[6] <= <GND>
+vgaBLUE[7] <= <GND>
+vgaRED[0] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[1] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[2] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[3] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[4] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[5] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[6] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaRED[7] <= tDisp.DB_MAX_OUTPUT_PORT_TYPE
+vgaGREEN[0] <= <GND>
+vgaGREEN[1] <= <GND>
+vgaGREEN[2] <= <GND>
+vgaGREEN[3] <= <GND>
+vgaGREEN[4] <= <GND>
+vgaGREEN[5] <= <GND>
+vgaGREEN[6] <= <GND>
+vgaGREEN[7] <= <GND>
+num_horu[0] => process_0.IN1
+num_horu[1] => process_0.IN1
+num_horu[2] => process_0.IN1
+num_horu[3] => process_0.IN1
+num_horu[4] => process_0.IN1
+num_horu[5] => process_0.IN1
+num_horu[6] => process_0.IN1
+num_minu[0] => process_0.IN1
+num_minu[1] => process_0.IN1
+num_minu[2] => process_0.IN1
+num_minu[3] => process_0.IN1
+num_minu[4] => process_0.IN1
+num_minu[5] => process_0.IN1
+num_minu[6] => process_0.IN1
+num_mind[0] => process_0.IN1
+num_mind[1] => process_0.IN1
+num_mind[2] => process_0.IN1
+num_mind[3] => process_0.IN1
+num_mind[4] => process_0.IN1
+num_mind[5] => process_0.IN1
+num_mind[6] => process_0.IN1
+num_hord[0] => process_0.IN1
+num_hord[1] => process_0.IN1
+num_hord[2] => process_0.IN1
+num_hord[3] => process_0.IN1
+num_hord[4] => process_0.IN1
+num_hord[5] => process_0.IN1
+num_hord[6] => process_0.IN1
+vgaHS <= vgaHSA.DB_MAX_OUTPUT_PORT_TYPE
+vgaVS <= vgaVSA.DB_MAX_OUTPUT_PORT_TYPE
+clkvga <= vga25MHz:U0.Fo
+vgaBLANK <= <VCC>
+vgaSYNC <= <GND>
+
+
+|Master|VGA:U4|vga25MHz:U0
+Fi => clk_div.CLK
+Fo <= clk_div.DB_MAX_OUTPUT_PORT_TYPE
+
+
