@@ -1,6 +1,10 @@
 |Master
 clk => DIV1Hz:U0.Fi
 clk => display:U1.clk
+min_up => ~NO_FANOUT~
+min_dw => ~NO_FANOUT~
+hora_up => ~NO_FANOUT~
+hora_dw => ~NO_FANOUT~
 vgaBLUE[0] <= display:U1.vgaBLUE[0]
 vgaBLUE[1] <= display:U1.vgaBLUE[1]
 vgaBLUE[2] <= display:U1.vgaBLUE[2]
