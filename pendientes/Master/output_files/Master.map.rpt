@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Wed Dec 04 21:59:20 2019
+Wed Dec 04 22:10:18 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Dec 04 21:59:20 2019           ;
+; Analysis & Synthesis Status        ; Failed - Wed Dec 04 22:10:18 2019           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; Master                                      ;
@@ -161,7 +161,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 21:59:09 2019
+    Info: Processing started: Wed Dec 04 22:10:07 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -169,12 +169,51 @@ Warning (12125): Using design file master.vhd, which is not specified as a desig
     Info (12022): Found design unit 1: master-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 16
     Info (12023): Found entity 1: master File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 6
 Info (12127): Elaborating entity "Master" for the top level hierarchy
-Error (10385): VHDL error at master.vhd(55): index value 4 is outside the range (3 downto 0) of object "contH_u" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 55
-Error (10658): VHDL Operator error at master.vhd(55): failed to evaluate call to operator ""and"" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at master.vhd(66): signal "min_dw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at master.vhd(67): signal "contM_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at master.vhd(68): signal "contM_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 68
+Warning (10492): VHDL Process Statement warning at master.vhd(70): signal "contM_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 70
+Warning (10492): VHDL Process Statement warning at master.vhd(71): signal "contM_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 71
+Warning (10492): VHDL Process Statement warning at master.vhd(77): signal "hora_dw" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at master.vhd(78): signal "contH_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 78
+Warning (10492): VHDL Process Statement warning at master.vhd(79): signal "contH_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 79
+Warning (10492): VHDL Process Statement warning at master.vhd(81): signal "contH_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 81
+Warning (10492): VHDL Process Statement warning at master.vhd(82): signal "contH_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at master.vhd(88): signal "min_up" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 88
+Warning (10492): VHDL Process Statement warning at master.vhd(89): signal "contM_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 89
+Warning (10492): VHDL Process Statement warning at master.vhd(90): signal "contM_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 90
+Warning (10492): VHDL Process Statement warning at master.vhd(92): signal "contM_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 92
+Warning (10492): VHDL Process Statement warning at master.vhd(93): signal "contM_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 93
+Warning (10492): VHDL Process Statement warning at master.vhd(99): signal "hora_up" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at master.vhd(100): signal "contH_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 100
+Warning (10492): VHDL Process Statement warning at master.vhd(101): signal "contH_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 101
+Warning (10492): VHDL Process Statement warning at master.vhd(103): signal "contH_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 103
+Warning (10492): VHDL Process Statement warning at master.vhd(104): signal "contH_d" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at master.vhd(104): signal "contH_u" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 104
+Warning (10492): VHDL Process Statement warning at master.vhd(105): signal "and2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 105
+Warning (10631): VHDL Process Statement warning at master.vhd(42): inferring latch(es) for signal or variable "and2", which holds its previous value in one or more paths through the process File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Info (10041): Inferred latch for "and2" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(77): can't infer register for "contH_d[0]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 77
+Info (10041): Inferred latch for "contH_d[0]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(77): can't infer register for "contH_d[1]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 77
+Info (10041): Inferred latch for "contH_d[1]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(77): can't infer register for "contH_d[2]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 77
+Info (10041): Inferred latch for "contH_d[2]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(77): can't infer register for "contH_d[3]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 77
+Info (10041): Inferred latch for "contH_d[3]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(66): can't infer register for "contM_d[0]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 66
+Info (10041): Inferred latch for "contM_d[0]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(66): can't infer register for "contM_d[1]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 66
+Info (10041): Inferred latch for "contM_d[1]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(66): can't infer register for "contM_d[2]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 66
+Info (10041): Inferred latch for "contM_d[2]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10821): HDL error at master.vhd(66): can't infer register for "contM_d[3]" because its behavior does not match any supported register model File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 66
+Info (10041): Inferred latch for "contM_d[3]" at master.vhd(42) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 42
+Error (10822): HDL error at master.vhd(44): couldn't implement registers for assignments on this clock edge File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 3 errors, 2 warnings
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 10 errors, 25 warnings
     Error: Peak virtual memory: 4797 megabytes
-    Error: Processing ended: Wed Dec 04 21:59:20 2019
+    Error: Processing ended: Wed Dec 04 22:10:18 2019
     Error: Elapsed time: 00:00:11
     Error: Total CPU time (on all processors): 00:00:24
 
