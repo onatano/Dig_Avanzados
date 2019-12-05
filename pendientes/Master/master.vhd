@@ -33,7 +33,7 @@ architecture Beh of master is
     end component;
 
     signal contH_d,contH_u,contM_d,contM_u: std_logic_vector (3 downto 0):= "0000";
-    signal clk_1s,and1: std_logic;
+    signal clk_1s,and1,and2: std_logic;
 
 begin
     U0: DIV1Hz port map (clk,clk_1s);
@@ -52,8 +52,8 @@ begin
                     if contH_u = "1001" then
                         contH_u <="0000";
                         contH_d <= contH_d + 1;
-                        and1 <= (contH_d = "0010" and contH_u = "0011"); 
-                        if and1 then
+                        and1 <= (contH_d(3) and contH_u(3) and contH_u(4))  ; 
+                        if and1='1' then
                             contM_u <="0000";
                             contM_d <="0000";
                             contH_u <="0000";
@@ -101,8 +101,8 @@ begin
             if contH_u = "1001" then
                 contH_u <="0000";
                 contH_d <= contH_d + 1;
-                and1 <= (contH_d = "0010" and contH_u = "0011"); 
-                if and1='1' then
+                and2 <= (contH_d(3) and contH_u(3) and contH_u(4))  ; 
+                if and2='1' then
                     contH_u <="0000";
                     contH_d <="0000";
                 end if;
