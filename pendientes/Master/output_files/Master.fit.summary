@@ -1,4 +1,4 @@
-Fitter Status : Successful - Wed Dec 04 19:25:34 2019
+Fitter Status : Successful - Wed Dec 04 22:28:16 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : Master
 Top-level Entity Name : master
@@ -9,7 +9,7 @@ Total logic elements : 391 / 114,480 ( < 1 % )
     Total combinational functions : 389 / 114,480 ( < 1 % )
     Dedicated logic registers : 118 / 114,480 ( < 1 % )
 Total registers : 118
-Total pins : 30 / 529 ( 6 % )
+Total pins : 34 / 529 ( 6 % )
 Total virtual pins : 0
 Total memory bits : 0 / 3,981,312 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )

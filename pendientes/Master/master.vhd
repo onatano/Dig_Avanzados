@@ -42,7 +42,7 @@ begin
     process (clk_1s)
     begin
 
-        if rising_edge (clk_1s)='1' then
+        if rising_edge (clk_1s) then
             contM_u <= contM_u + 1;
             if contM_u = "1001" then
                 contM_u <="0000";
