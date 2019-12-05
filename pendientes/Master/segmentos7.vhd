@@ -17,7 +17,7 @@ begin
 			entrada:=a;
 			case entrada is
 				when "0000" =>
-					s(6 downto 0) <= "1000000";
+					s(6 downto 0) <= "0000001";
 				when "0001" =>
 					s(6 downto 0) <= "1111001";
 				when "0010" =>
