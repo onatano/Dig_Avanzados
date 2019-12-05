@@ -42,20 +42,20 @@ begin
     process (clk_1s)
     begin
         or1 <= (clk_1s or min_up); 
-        if or1 then
+        if or1='1' then
             contM_u <= contM_u + 1;
             if contM_u = "1001" then
                 contM_u <="0000";
                 contM_d <= contM_d + 1;
                 or2 <= (contM_d = "0101" or hora_up);
-                if or2 then
+                if or2='1' then
                     contM_d <="0000";
                     contH_u <= contH_u + 1;
                     if contH_u = "1001" then
                         contH_u <="0000";
                         contH_d <= contH_d + 1;
                         and1 <= (contH_d = "0010" and contH_u = "0011"); 
-                        if and1 then
+                        if and1='1' then
                             contM_u <="0000";
                             contM_d <="0000";
                             contH_u <="0000";
@@ -71,7 +71,7 @@ begin
                 contM_u <="1001";
                 contM_d <= contM_d - 1;
                 or3 <= (contM_d = "0000" or hora_dw);
-                if or3 then
+                if or3='1' then
                     contM_d <="0101";
                     contH_u <= contH_u - 1;
                     if contH_u = "0000" then
