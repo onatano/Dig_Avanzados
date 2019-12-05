@@ -17,25 +17,25 @@ begin
 			entrada:=a;
 			case entrada is
 				when "0000" =>
-					s(6 downto 0) <= "0000001";
+					s(6 downto 0) <= "1111110";
 				when "0001" =>
-					s(6 downto 0) <= "1111001";
+					s(6 downto 0) <= "0110000";
 				when "0010" =>
-					s(6 downto 0) <= "0100100";	
+					s(6 downto 0) <= "1101101";	
 				when "0011" =>
-					s(6 downto 0) <= "0110000"; 
+					s(6 downto 0) <= "1111001"; 
 				when "0100" =>
-					s(6 downto 0) <= "0011001"; 
+					s(6 downto 0) <= "0110011"; 
 				when "0101" =>
-					s(6 downto 0) <= "0010010"; 
+					s(6 downto 0) <= "1011011"; 
 				when "0110" =>
-					s(6 downto 0) <= "0000010"; 
+					s(6 downto 0) <= "1111101"; 
 				when "0111" =>
-					s(6 downto 0) <= "1111000"; 
+					s(6 downto 0) <= "1110000"; 
 				when "1000" =>
-					s(6 downto 0) <= "0000000"; 
+					s(6 downto 0) <= "1111111"; 
 				when "1001" =>
-					s(6 downto 0) <= "0010000"; 
+					s(6 downto 0) <= "1110011"; 
            	when others =>
            		s(6 downto 0) <= "0101010";
 				end case;
