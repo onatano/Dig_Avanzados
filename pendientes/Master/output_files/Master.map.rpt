@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Wed Dec 04 19:14:08 2019
+Wed Dec 04 19:25:18 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 19:14:08 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 19:25:18 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; master                                      ;
@@ -159,8 +159,7 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -187,9 +186,9 @@ refer to the applicable agreement for further details.
 ;                                             ;                                       ;
 ; Total combinational functions               ; 389                                   ;
 ; Logic element usage by number of LUT inputs ;                                       ;
-;     -- 4 input functions                    ; 219                                   ;
+;     -- 4 input functions                    ; 218                                   ;
 ;     -- 3 input functions                    ; 39                                    ;
-;     -- <=2 input functions                  ; 131                                   ;
+;     -- <=2 input functions                  ; 132                                   ;
 ;                                             ;                                       ;
 ; Logic elements by mode                      ;                                       ;
 ;     -- normal mode                          ; 296                                   ;
@@ -205,8 +204,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                       ;
 ; Maximum fan-out node                        ; display:U1|VGA:U4|vga25MHz:U0|clk_div ;
 ; Maximum fan-out                             ; 70                                    ;
-; Total fan-out                               ; 1536                                  ;
-; Average fan-out                             ; 2.71                                  ;
+; Total fan-out                               ; 1533                                  ;
+; Average fan-out                             ; 2.70                                  ;
 +---------------------------------------------+---------------------------------------+
 
 
@@ -268,13 +267,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         3 data inputs ; 1                           ;
 ;     normal            ; 298                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 6                           ;
+;         1 data inputs ; 7                           ;
 ;         2 data inputs ; 33                          ;
 ;         3 data inputs ; 38                          ;
-;         4 data inputs ; 219                         ;
+;         4 data inputs ; 218                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 18.00                       ;
-; Average LUT depth     ; 11.12                       ;
+; Average LUT depth     ; 11.10                       ;
 +-----------------------+-----------------------------+
 
 
@@ -293,7 +292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 19:13:55 2019
+    Info: Processing started: Wed Dec 04 19:25:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -351,8 +350,8 @@ Info (21057): Implemented 495 device resources after synthesis - the final resou
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 465 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
-    Info: Peak virtual memory: 4824 megabytes
-    Info: Processing ended: Wed Dec 04 19:14:09 2019
+    Info: Peak virtual memory: 4813 megabytes
+    Info: Processing ended: Wed Dec 04 19:25:18 2019
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:26
 
