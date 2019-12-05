@@ -57,11 +57,11 @@ begin
                     if contH_u = "1001" then
                         contH_u <="0000";
                         contH_d <= contH_d + 1;
-                        if contH_d = "0010" and contH_u = "0011" then
-                            contM_d <="0000";
+                        if (contH_d = "0010" and contH_u = "0011") then
                             contM_u <="0000";
-                            contH_d <="0000";
+                            contM_d <="0000";
                             contH_u <="0000";
+                            contH_d <="0000";
                         end if;
                     end if;
                 end if;
