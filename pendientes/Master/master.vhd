@@ -52,7 +52,7 @@ begin
                     if contH_u = "1001" then
                         contH_u <="0000";
                         contH_d <= contH_d + 1;
-                        and1 <= (contH_d(3) and contH_u(3) and contH_u(4))  ; 
+                        and1 <= (contH_d(2) and contH_u(2) and contH_u(3))  ; 
                         if and1='1' then
                             contM_u <="0000";
                             contM_d <="0000";
@@ -101,7 +101,7 @@ begin
             if contH_u = "1001" then
                 contH_u <="0000";
                 contH_d <= contH_d + 1;
-                and2 <= (contH_d(3) and contH_u(3) and contH_u(4))  ; 
+                and2 <= (contH_d(2) and contH_u(2) and contH_u(3))  ; 
                 if and2='1' then
                     contH_u <="0000";
                     contH_d <="0000";
