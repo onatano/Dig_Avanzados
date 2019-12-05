@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 
 entity master is
     port(
-        clk: in std_logic;
+        clk,min_up,min_dw,hora_up,hora_dw: in std_logic;
         vgaBLUE, vgaRED, vgaGREEN: out std_logic_vector(7 downto 0);
         vgaHS, vgaVS: out std_logic;
         clkvga: out std_logic;
@@ -39,9 +39,13 @@ begin
     U0: DIV1Hz port map (clk,clk_1s);
     U1: display port map (clk,contH_d,contH_u,contM_d,contM_u,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
+    contM_u <= contM_u + 1 when min_up='1';
+    contM_u <= contM_u - 1 when min_dw='1';
+    contH_u <= contH_u + 1 when hora_up='1';
+    contH_u <= contH_u - 1 when hora_dw='1';
+
     process (clk_1s)
     begin
-    
         if rising_edge (clk_1s) then
             contM_u <= contM_u + 1;
             if contM_u = "1001" then
@@ -63,7 +67,23 @@ begin
                 end if;
             end if;
         end if;
-
+        if contM_u = "0000" then
+            contM_u <="1001";
+            contM_d <= contM_d - 1;
+            if contM_d = "0000" then
+                contM_d <="0101";
+                contH_u <= contH_u - 1;
+                if contH_u = "0000" then
+                    contH_u <="1001";
+                    contH_d <= contH_d - 1;
+                    if contH_d = "0000" then
+                        contM_u <="1001";
+                        contM_d <="0101";
+                        contH_u <="0011";
+                        contH_d <="0010";
+                    end if;
+                end if;
+            end if;
+        end if;
     end process; 
-	
 end architecture Beh;
