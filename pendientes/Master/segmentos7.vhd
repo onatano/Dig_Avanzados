@@ -29,7 +29,7 @@ begin
 				when "0101" =>
 					s(6 downto 0) <= "1011011"; 
 				when "0110" =>
-					s(6 downto 0) <= "1111101"; 
+					s(6 downto 0) <= "1011111"; 
 				when "0111" =>
 					s(6 downto 0) <= "1110000"; 
 				when "1000" =>
