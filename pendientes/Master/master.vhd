@@ -33,7 +33,7 @@ architecture Beh of master is
     end component;
 
     signal contH_d,contH_u,contM_d,contM_u: std_logic_vector (3 downto 0):= "0000";
-    signal clk_1s: std_logic;
+    signal clk_1s, or1, or2, or3, and1: std_logic;
 
 begin
     U0: DIV1Hz port map (clk,clk_1s);
