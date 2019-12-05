@@ -41,13 +41,13 @@ begin
 
     process (clk_1s)
     begin
-        or1 <= (rising_edge (clk_1s) or min_up='1'); 
+        or1 <= (rising_edge (clk_1s) or min_up); 
         if or1 then
             contM_u <= contM_u + 1;
             if contM_u = "1001" then
                 contM_u <="0000";
                 contM_d <= contM_d + 1;
-                or2 <= (contM_d = "0101" or hora_up='1');
+                or2 <= (contM_d = "0101" or hora_up);
                 if or2 then
                     contM_d <="0000";
                     contH_u <= contH_u + 1;
@@ -70,7 +70,7 @@ begin
             if contM_u = "0000" then
                 contM_u <="1001";
                 contM_d <= contM_d - 1;
-                or3 <= (contM_d = "0000" or hora_dw='1');
+                or3 <= (contM_d = "0000" or hora_dw);
                 if or3 then
                     contM_d <="0101";
                     contH_u <= contH_u - 1;
@@ -86,6 +86,6 @@ begin
                     end if;
                 end if;
             end if;
-        end if;5
+        end if;
     end process; 
 end architecture Beh;
