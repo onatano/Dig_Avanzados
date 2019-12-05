@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Wed Dec 04 21:30:16 2019
+Wed Dec 04 21:34:32 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Wed Dec 04 21:30:16 2019           ;
+; Analysis & Synthesis Status        ; Failed - Wed Dec 04 21:34:31 2019           ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; Master                                      ;
@@ -161,18 +161,18 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 21:30:05 2019
+    Info: Processing started: Wed Dec 04 21:34:20 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Warning (12125): Using design file master.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: master-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 16
     Info (12023): Found entity 1: master File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 6
-Error (10511): VHDL Qualified Expression error at master.vhd(44): rising_edge type specified in Qualified Expression must match std_ulogic type that is implied for expression by context File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 44
+Error (10476): VHDL error at master.vhd(45): type of identifier "or1" does not agree with its usage as "boolean" type File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 45
 Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 2 warnings
     Error: Peak virtual memory: 4797 megabytes
-    Error: Processing ended: Wed Dec 04 21:30:16 2019
-    Error: Elapsed time: 00:00:11
-    Error: Total CPU time (on all processors): 00:00:22
+    Error: Processing ended: Wed Dec 04 21:34:32 2019
+    Error: Elapsed time: 00:00:12
+    Error: Total CPU time (on all processors): 00:00:25
 
 
