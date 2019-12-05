@@ -41,7 +41,7 @@ begin
 
     process (clk_1s)
     begin
-        if rising_edge (clk_1s) then
+        if rising_edge (clk_1s)='1' then
             contM_u <= contM_u + 1;
             if contM_u = "1001" then
                 contM_u <="0000";
@@ -52,7 +52,7 @@ begin
                     if contH_u = "1001" then
                         contH_u <="0000";
                         contH_d <= contH_d + 1;
-                        and1 <= (contH_d(2) and contH_u(2) and contH_u(3))  ; 
+                        and1 <= (contH_d(2) and contH_u(2) and contH_u(3)); 
                         if and1='1' then
                             contM_u <="0000";
                             contM_d <="0000";
@@ -60,51 +60,6 @@ begin
                             contH_d <="0000";
                         end if;
                     end if;
-                end if;
-            end if;
-        end if;
-        if min_dw='1' then
-            contM_u <= contM_u - 1;
-            if contM_u = "0000" then
-                contM_u <="1001";
-                contM_d <= contM_d - 1;
-                if contM_d="0000" then
-                    contM_u <="1001";
-                    contM_d <="0101";
-                end if;
-            end if;
-        end if;
-        if hora_dw='1' then
-            contH_u <= contH_u - 1;
-            if contH_u = "0000" then
-                contH_u <="1001";
-                contH_d <= contH_d - 1;
-                if contH_d="0000" then
-                    contH_u <="0011";
-                    contH_d <="0010";
-                end if;
-            end if;
-        end if;
-        if min_up='1' then
-            contM_u <= contM_u + 1;
-            if contM_u = "1001" then
-                contM_u <="0000";
-                contM_d <= contM_d + 1;
-                if contM_d="0101" then
-                    contM_u <="0000";
-                    contM_d <="0000";
-                end if;
-            end if;
-        end if;
-        if hora_up='1' then
-            contH_u <= contH_u + 1;
-            if contH_u = "1001" then
-                contH_u <="0000";
-                contH_d <= contH_d + 1;
-                and2 <= (contH_d(2) and contH_u(2) and contH_u(3))  ; 
-                if and2='1' then
-                    contH_u <="0000";
-                    contH_d <="0000";
                 end if;
             end if;
         end if;
