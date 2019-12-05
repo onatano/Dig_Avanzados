@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Wed Dec 04 18:44:56 2019
+Wed Dec 04 19:25:18 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 04 18:44:56 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 19:25:18 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; master                                      ;
@@ -204,8 +204,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                       ;
 ; Maximum fan-out node                        ; display:U1|VGA:U4|vga25MHz:U0|clk_div ;
 ; Maximum fan-out                             ; 70                                    ;
-; Total fan-out                               ; 1534                                  ;
-; Average fan-out                             ; 2.71                                  ;
+; Total fan-out                               ; 1533                                  ;
+; Average fan-out                             ; 2.70                                  ;
 +---------------------------------------------+---------------------------------------+
 
 
@@ -217,12 +217,12 @@ refer to the applicable agreement for further details.
 ; |master                    ; 389 (22)            ; 118 (16)                  ; 0           ; 0            ; 0       ; 0         ; 30   ; 0            ; |master                               ; master      ; work         ;
 ;    |DIV1Hz:U0|             ; 56 (56)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|DIV1Hz:U0                     ; DIV1Hz      ; work         ;
 ;    |display:U1|            ; 311 (0)             ; 69 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1                    ; display     ; work         ;
-;       |VGA:U4|             ; 289 (288)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|VGA:U4             ; VGA         ; work         ;
+;       |VGA:U4|             ; 285 (284)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|VGA:U4             ; VGA         ; work         ;
 ;          |vga25MHz:U0|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|VGA:U4|vga25MHz:U0 ; vga25MHz    ; work         ;
-;       |segmentos7:U0|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U0      ; segmentos7  ; work         ;
-;       |segmentos7:U1|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U1      ; segmentos7  ; work         ;
-;       |segmentos7:U2|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U2      ; segmentos7  ; work         ;
-;       |segmentos7:U3|      ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U3      ; segmentos7  ; work         ;
+;       |segmentos7:U0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U0      ; segmentos7  ; work         ;
+;       |segmentos7:U1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U1      ; segmentos7  ; work         ;
+;       |segmentos7:U2|      ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U2      ; segmentos7  ; work         ;
+;       |segmentos7:U3|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U1|segmentos7:U3      ; segmentos7  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -267,8 +267,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;         3 data inputs ; 1                           ;
 ;     normal            ; 298                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 6                           ;
-;         2 data inputs ; 34                          ;
+;         1 data inputs ; 7                           ;
+;         2 data inputs ; 33                          ;
 ;         3 data inputs ; 38                          ;
 ;         4 data inputs ; 218                         ;
 ;                       ;                             ;
@@ -292,7 +292,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed Dec 04 18:44:42 2019
+    Info: Processing started: Wed Dec 04 19:25:04 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -351,7 +351,7 @@ Info (21057): Implemented 495 device resources after synthesis - the final resou
     Info (21061): Implemented 465 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 4813 megabytes
-    Info: Processing ended: Wed Dec 04 18:44:56 2019
+    Info: Processing ended: Wed Dec 04 19:25:18 2019
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:26
 
