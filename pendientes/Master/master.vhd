@@ -41,12 +41,12 @@ begin
 
     process (clk_1s)
     begin
-        if (rising_edge (clk_1s) or min_up='1') then
+        if rising_edge (clk_1s) then
             contM_u <= contM_u + 1;
             if contM_u = "1001" then
                 contM_u <="0000";
                 contM_d <= contM_d + 1;
-                if (contM_d = "0101" or hora_up='1') then
+                if contM_d = "0101" then
                     contM_d <="0000";
                     contH_u <= contH_u + 1;
                     if contH_u = "1001" then
@@ -67,7 +67,7 @@ begin
             if contM_u = "0000" then
                 contM_u <="1001";
                 contM_d <= contM_d - 1;
-                if (contM_d = "0000" or hora_dw='1') then
+                if contM_d = "0000" then
                     contM_d <="0101";
                     contH_u <= contH_u - 1;
                     if contH_u = "0000" then
