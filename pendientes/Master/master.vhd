@@ -64,15 +64,15 @@ begin
                         contHu <="0000";
                         contHd <= contHd + 1;
                         or1 <= contHu(1) and contHd(1) and contHu(0);
-                        if or1 = '1' then
-                            contMu <="0000";
-                            contMd <="0000";
-                            contHu <="0000";
-                            contHd <="0000";
-                        end if;
                     end if;
                 end if;
             end if;
+        end if;
+        if or1 = '1' then
+            contMu <="0000";
+            contMd <="0000";
+            contHu <="0000";
+            contHd <="0000";
         end if;
     end process; 
 end architecture Beh;
