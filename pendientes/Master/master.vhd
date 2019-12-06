@@ -5,7 +5,7 @@ use IEEE.numeric_std.all;
 
 entity master is
     port(
-        clk,min_up,min_dw,hora_up,hora_dw: in std_logic;
+        clk,minup,mindw,horaup,horadw: in std_logic;
         vgaBLUE, vgaRED, vgaGREEN: out std_logic_vector(7 downto 0);
         vgaHS, vgaVS: out std_logic;
         clkvga: out std_logic;
@@ -32,63 +32,40 @@ architecture Beh of master is
         );
     end component;
 
-    signal contH_d,contH_u,contM_d,contM_u: std_logic_vector (3 downto 0):= "0000";
-    signal clk_1s,or1,and1,and2: std_logic;
+    signal contHd,contHu,contMd,contMu: std_logic_vector (3 downto 0):= "0000";
+    signal clk1s,or1,and1,and2: std_logic;
 
 begin
-    U0: DIV1Hz port map (clk,clk_1s);
-    U1: display port map (clk,contH_d,contH_u,contM_d,contM_u,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
+    U0: DIV1Hz port map (clk,clk1s);
+    U1: display port map (clk,contHd,contHu,contMd,contMu,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
-    process (min_up,min_dw,hora_up,hora_dw)
-    begin
-        if min_up='1' then
-            contM_u <= contM_u + 1;
-            if contM_u = "1001" then
-                contM_u <="0000";
-                contM_d <= contM_d + 1;
-                if contM_d = "0101" then
-                    contM_u <="0000";
-                    contM_d <="0000";
-                end if;
-            end if;
-        end if;
-        if min_dw='1' then
-            contM_u <= contM_u - 1;
-            if contM_u = "0000" then
-                contM_u <="1001";
-                contM_d <= contM_d - 1;
-                if contM_d = "0000" then
-                    contM_u <="1001";
-                    contM_d <="0101";
-                end if;
-            end if;
-        end if;
-    end process; 
+    
 
-    process (clk_1s, contH_d,contH_u,contM_d,contM_u)
-    begin
-        if rising_edge (clk_1s) then
-            contM_u <= contM_u + 1;
-			or1<= contH_u(2) and contH_u(3) and contH_d(2);
-            if contM_u = "1001" then
-                contM_u <="0000";
-                contM_d <= contM_d + 1;
-                if contM_d = "0101" then
-                    contM_d <="0000";
-                    contH_u <= contH_u + 1;
-                    if contH_u = "1001" then
-                        contH_u <="0000";
-                        contH_d <= contH_d + 1;
-                        if or1 = '1' then
-                            contM_u <="0000";
-                            contM_d <="0000";
-                            contH_u <="0000";
-                            contH_d <="0000";
-                        end if;
+   process (clk1s, contHd,contHu,contMd,contMu)
+   begin
+        if rising_edge (clk1s) then
+            contMu <= contMu + 1;
+				or1<= contHu(2) and contHu(3) and contHd(2);
+            if contMu = "1001" then
+                contMu <="0000";
+                contMd <= contMd + 1;
+                if contMd = "0101" then
+                    contMd <="0000";
+                    contHu <= contHu + 1;
+                    if contHu = "1001" then
+                        contHu <="0000";
+                        contHd <= contHd + 1;
+
                     end if;
                 end if;
             end if;
         end if;
+		if or1 = '1' then
+			contMu <="0000";
+         contMd <="0000";
+         contHu <="0000";
+         contHd <="0000";
+		end if;
     end process; 
 	
 end architecture Beh;
