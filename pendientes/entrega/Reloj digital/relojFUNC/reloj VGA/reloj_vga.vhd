@@ -23,6 +23,7 @@ architecture beh of reloj_vga is
 		port (
 			clk: in std_logic;
 			num_horu, num_minu, num_mind, num_hord : in std_logic_vector (6 downto 0);
+			fondoR, fondoG, fondoB: in std_logic_vector(7 downto 0);
 			vgaBLUE, vgaRED, vgaGREEN: out std_logic_vector(7 downto 0);
 			vgaHS, vgaVS: out std_logic;
 			clkvga: out std_logic;
@@ -40,13 +41,18 @@ architecture beh of reloj_vga is
 			salidaMINUf: out std_logic_vector(6 downto 0);        --SEG0 
 			salidaMINDf: out std_logic_vector(6 downto 0);        --SEG1   
 			salidaHORUf: out std_logic_vector(6 downto 0);        --SEG2 
-			salidaHORDf: out std_logic_vector(6 downto 0)         --SEG3  
+			salidaHORDf: out std_logic_vector(6 downto 0);        --SEG3  
+			fondoR: out std_logic_vector(7 downto 0);
+			fondoG: out std_logic_vector(7 downto 0);
+			fondoB: out std_logic_vector(7 downto 0)
 		);
 	end component relojFUNC;
 
 	signal minuni, mindec, horuni, hordec: std_logic_vector (6 downto 0);
+	signal fondoR, fondoG, fondoB: std_logic_vector(7 downto 0);
+
 begin
 		-- se hace la interconeccion entre ambos componentes 
-	U0: VGA port map (clok, horuni, minuni, mindec, hordec,vgaBLUE, vgaRED, vgaGREEN, vgaHS, vgaVS, clkvga, vgaBLANK, vgaSYNC);
-	U1: relojFUNC port map (clkRTf, nRESETEOf, entradaOPf, inMINf, inHORf, minuni, mindec, horuni, hordec);
+	U0: VGA port map (clok,horuni,minuni,mindec,hordec,fondoR,fondoG,fondoB,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
+	U1: relojFUNC port map (clkRTf,nRESETEOf,entradaOPf,inMINf,inHORf,minuni,mindec,horuni,hordec,fondoR,fondoG,fondoB);
 end architecture beh;

@@ -5,15 +5,14 @@ use IEEE.numeric_std.all;
 entity relojFUNCIONA is
 port (
 	clkRT: in std_logic; --reloj normal
-
 	nRESETEO: in std_logic; --SW0
-	
 	entradaOP: in std_logic;  --enviarDATOS   SW1
-
 	inMIN: in std_logic; --boton0
 	inHOR: in std_logic; --boton1
-
-	minutosCOMPUESTO, horasCOMPUESTO: out integer
+	minutosCOMPUESTO, horasCOMPUESTO: out integer;
+	fondoR: out std_logic_vector(7 downto 0);
+	fondoG: out std_logic_vector(7 downto 0);
+	fondoB: out std_logic_vector(7 downto 0)
 );
 end relojFUNCIONA;
 
@@ -23,7 +22,10 @@ architecture Beh of relojFUNCIONA is
 	port (
 		clkINS: in std_logic;
 		nRes: in std_logic;
-		minutos, horas: out integer
+		minutos, horas: out integer;
+		fondoR: out std_logic_vector(7 downto 0);
+		fondoG: out std_logic_vector(7 downto 0);
+		fondoB: out std_logic_vector(7 downto 0)
 	);
 	end Component relojTOTAL;
 
@@ -49,9 +51,9 @@ architecture Beh of relojFUNCIONA is
 
 	begin
 
-	U0: relojTOTAL port map (clkRT, nRESETEO, minC, horC);
-	U1: fijarHora port map (nRESETEO, inMIN, contCM);
-	U2: fijarHora2 port map (nRESETEO, inHOR, contCH);
+	U0: relojTOTAL port map (clkRT,nRESETEO,minC,horC,fondoR,fondoG,fondoB);
+	U1: fijarHora port map (nRESETEO,inMIN,contCM);
+	U2: fijarHora2 port map (nRESETEO,inHOR,contCH);
 	
 	process(nRESETEO, entradaOP, minC,horC)
 	variable contCMf, contCHf: integer:=0;

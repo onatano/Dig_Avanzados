@@ -12,7 +12,10 @@ port (
 	salidaMINUf: out std_logic_vector(6 downto 0);        --SEG0 
 	salidaMINDf: out std_logic_vector(6 downto 0);        --SEG1   
 	salidaHORUf: out std_logic_vector(6 downto 0);        --SEG2 
-	salidaHORDf: out std_logic_vector(6 downto 0)         --SEG3  
+	salidaHORDf: out std_logic_vector(6 downto 0);        --SEG3  
+	fondoR: out std_logic_vector(7 downto 0);
+	fondoG: out std_logic_vector(7 downto 0);
+	fondoB: out std_logic_vector(7 downto 0)
 );
 end relojFUNC;
 
@@ -25,7 +28,10 @@ architecture Beh of relojFUNC is
 		entradaOP: in std_logic;  --enviarDATOS   SW1
 		inMIN: in std_logic; --boton0
 		inHOR: in std_logic; --boton1
-		minutosCOMPUESTO, horasCOMPUESTO: out integer
+		minutosCOMPUESTO, horasCOMPUESTO: out integer;
+		fondoR: out std_logic_vector(7 downto 0);
+		fondoG: out std_logic_vector(7 downto 0);
+		fondoB: out std_logic_vector(7 downto 0)
 	);
 	end Component relojFUNCIONA;
 
@@ -51,8 +57,8 @@ architecture Beh of relojFUNC is
 
 begin
 
-	U0: relojFUNCIONA port map (clkRTf, nRESETEOf, entradaOPf, inMINf, inHORf, minutosCOMPF, horasCOMPF);
-	U1: bcd7SEGMIN port map (nRESETEOf, minutosCOMPF, salidaMINUf, salidaMINDf);
-	U2: bcd7SEGHOR port map (nRESETEOf, horasCOMPF, salidaHORUf, salidaHORDf);
+	U0: relojFUNCIONA port map (clkRTf,nRESETEOf,entradaOPf,inMINf,inHORf,minutosCOMPF,horasCOMPF,fondoR,fondoG,fondoB);
+	U1: bcd7SEGMIN port map (nRESETEOf,minutosCOMPF,salidaMINUf,salidaMINDf);
+	U2: bcd7SEGHOR port map (nRESETEOf,horasCOMPF,salidaHORUf,salidaHORDf);
 	
 end architecture Beh;

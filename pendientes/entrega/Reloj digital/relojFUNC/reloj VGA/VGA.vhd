@@ -7,6 +7,7 @@ entity VGA is
 port(
 	clk: in std_logic;
 	num_horu, num_minu, num_mind, num_hord : in std_logic_vector (6 downto 0);
+	fondoR, fondoG, fondoB: in std_logic_vector(7 downto 0);
 	vgaBLUE, vgaRED, vgaGREEN: out std_logic_vector(7 downto 0);
 	vgaHS, vgaVS: out std_logic;
 	clkvga: out std_logic;
@@ -266,9 +267,9 @@ architecture Beh of VGA is
 		   B_aux <= "00000000";
 		   
 			
-		   vgaRED <= R_aux when tDisp = '1' else "00000000";
-		   vgaGREEN <= G_aux when tDisp = '1' else "00000000";
-		   vgaBLUE <= B_aux when tDisp = '1' else "00000000";
+		   vgaRED <= R_aux when tDisp = '1' else fondoR;
+		   vgaGREEN <= G_aux when tDisp = '1' else fondoG;
+		   vgaBLUE <= B_aux when tDisp = '1' else fondoB;
 
 
 

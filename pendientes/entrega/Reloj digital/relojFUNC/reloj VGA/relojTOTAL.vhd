@@ -12,6 +12,9 @@ port (
 --	minutosENTRADA: in integer;
 --	horasENTRADA: in integer; --NUEVOS
 	minutos, horas: out integer
+	fondoR: out std_logic_vector(7 downto 0);
+	fondoG: out std_logic_vector(7 downto 0);
+	fondoB: out std_logic_vector(7 downto 0)
 );
 end relojTOTAL;
 
@@ -28,6 +31,7 @@ architecture Beh of relojTOTAL is
 	signal clkSEG: std_logic;
 	signal sumarMIN, sumarHOR: integer:=0;
 	signal contadorSEG, contadorMIN, contadorHOR: integer:=0;
+	signal contR,contG,contB: std_logic_vector(7 downto 0):="00000000";
 
 	begin
 	U0: divisor60SEG port map (clkINS, nRes, clkSEG);
@@ -42,7 +46,10 @@ architecture Beh of relojTOTAL is
 					if(contadorSEG=59)then
 						contadorSEG <= 0;
 						contadorMIN <= contadorMIN+1+sumarMIN;
-						
+						contR <= contR+1;
+						contG <= contG+1;
+						contB <= contB+1;
+
 						if(contadorMIN=59)then
 							contadorMIN <= 0;
 							contadorHOR<=contadorHOR+1+sumarHOR;
@@ -72,6 +79,9 @@ architecture Beh of relojTOTAL is
 			end if;
 	end process;
 	
+	fondoR <= contR;
+	fondoG <= contG;
+	fondoB <= contB;
 	minutos <= contadorMIN;
 	horas <= contadorHOR;
 	
