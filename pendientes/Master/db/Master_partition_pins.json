@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "vgaRED[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaRED[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaHS",
+					"strict" : false
+				},
+				{
+					"name" : "vgaVS",
+					"strict" : false
+				},
+				{
+					"name" : "clkvga",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

@@ -45,7 +45,7 @@ begin
    begin
         if rising_edge (clk1s) then
             contMu <= contMu + 1;
-				or1<= contHu(2) and contHu(3) and contHd(2);
+				
             if contMu = "1001" then
                 contMu <="0000";
                 contMd <= contMd + 1;
@@ -55,11 +55,12 @@ begin
                     if contHu = "1001" then
                         contHu <="0000";
                         contHd <= contHd + 1;
-
+								or1 <= contHu(0) and contHd(0);-- and contHu(0);
                     end if;
                 end if;
             end if;
         end if;
+		
 		if or1 = '1' then
 			contMu <="0000";
          contMd <="0000";
