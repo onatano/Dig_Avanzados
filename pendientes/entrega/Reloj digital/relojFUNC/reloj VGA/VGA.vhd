@@ -262,14 +262,15 @@ architecture Beh of VGA is
 
 		tDisp <= tDispx and tDispy and aux;
 			
-		   R_aux <= "11111111";-- determina el color del display antes creado
+		   R_aux <= "00000000";-- determina el color del display antes creado
 		   G_aux <= "00000000";
-		   B_aux <= "00000000";
+		   B_aux <= "11111111";
 		   
 			
 		   vgaRED <= R_aux when tDisp = '1' else fondoR;
 		   vgaGREEN <= G_aux when tDisp = '1' else fondoG;
 		   vgaBLUE <= B_aux when tDisp = '1' else fondoB;
+
 
 
 

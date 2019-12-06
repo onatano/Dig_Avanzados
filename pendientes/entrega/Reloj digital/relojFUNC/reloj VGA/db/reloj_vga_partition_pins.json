@@ -4,35 +4,67 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "vgaRED[0]",
+					"name" : "vgaBLUE[0]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[1]",
+					"name" : "vgaBLUE[1]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[2]",
+					"name" : "vgaBLUE[2]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[3]",
+					"name" : "vgaBLUE[3]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[4]",
+					"name" : "vgaBLUE[4]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[5]",
+					"name" : "vgaBLUE[5]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[6]",
+					"name" : "vgaBLUE[6]",
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[7]",
+					"name" : "vgaBLUE[7]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[1]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[3]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[4]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[5]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[6]",
+					"strict" : false
+				},
+				{
+					"name" : "vgaGREEN[7]",
 					"strict" : false
 				},
 				{
@@ -60,7 +92,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "inHORf",
+					"name" : "inMINf",
 					"strict" : false
 				},
 				{
@@ -68,7 +100,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "inMINf",
+					"name" : "inHORf",
 					"strict" : false
 				}
 			]
