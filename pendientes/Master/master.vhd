@@ -47,7 +47,7 @@ architecture Beh of master is
 begin
     U0: DIV1Hz port map (clk,clk1s);
     --U1: UpDown port map (contHd,contHu,contMd,contMu,minup,mindw,horaup,horadw,numHd,numHu,numMd,numMu);
-    U2: display port map (clk,contHu, contMu, contMd, contHd,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
+    U2: display port map (clk,contHd,contHu,contMd,contMu,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
    process (clk1s)
    begin
