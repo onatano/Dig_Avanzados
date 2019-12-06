@@ -34,9 +34,9 @@ architecture Beh of master is
 
     component UpDown is
         port(
-            contHd,contHu,contMd,contMu: in std_logic_vector (3 downto 0);
-            minup,mindw,horaup,horadw: in std_logic;
-            numHd,numHu,numMd,numMu: out std_logic_vector (3 downto 0)
+            contMd,contMu: in std_logic_vector (3 downto 0);
+            minup,mindw: in std_logic;
+            numMd,numMu: out std_logic_vector (3 downto 0)
         );
     end component;
 
@@ -46,8 +46,8 @@ architecture Beh of master is
 
 begin
     U0: DIV1Hz port map (clk,clk1s);
-    U1: UpDown port map (contHd,contHu,contMd,contMu,minup,mindw,horaup,horadw,numHd,numHu,numMd,numMu);
-    U2: display port map (clk,numHd,numHu,numMd,numMu,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
+    U1: UpDown port map (contMd,contMu,minup,mindw,numMd,numMu);
+    U2: display port map (clk,contHd,contHu,numMd,numMu,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
    process (clk1s)
    begin

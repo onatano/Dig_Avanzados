@@ -5,23 +5,21 @@ use IEEE.numeric_std.all;
 
 entity UpDown is
     port(
-        contHd,contHu,contMd,contMu: in std_logic_vector (3 downto 0);
-        minup,mindw,horaup,horadw: in std_logic;
-        numHd,numHu,numMd,numMu: out std_logic_vector (3 downto 0)
+        contMd,contMu: in std_logic_vector (3 downto 0);
+        minup,mindw: in std_logic;
+        numMd,numMu: out std_logic_vector (3 downto 0)
     );
 end UpDown;
 
 architecture Beh of UpDown is
 
-    signal parHd,parHu,parMd,parMu: std_logic_vector (3 downto 0);
+    signal parMd,parMu: std_logic_vector (3 downto 0);
 
 begin
-    process(minup,mindw,horaup,horadw)
+    process(minup,mindw)
     begin
         parMu <= contMu;
         parMd <= contMd;
-        parHu <= contHu;
-        parHd <= contHd;
         if minup='1' then
             parMu <= parMu+1;
             if parMu = "1001" then
@@ -44,31 +42,7 @@ begin
                 end if;
             end if;
         end if;
-        if horaup='1' then
-            parHu <= parHu+1;
-            if parHu = "1001" then
-                parHu <="0000";
-                parHd <= parHd + 1;
-                if parHd = "0001" and parHu = "0011" then
-                    parHu <="0000";
-                    parHd <="0000";
-                end if;
-            end if;
-        end if;
-        if horadw='1' then
-            parHu <= parHu-1;
-            if parHu = "0000" then
-                parHu <="1001";
-                parHd <= parHd - 1;
-                if parHd = "0000" then
-                    parHu <="0011";
-                    parHd <="0010";
-                end if;
-            end if;
-        end if;
         numMu <= parMu;
         numMd <= parMd;
-        numHu <= parHu;
-        numHd <= parHd;
     end process;
 end Beh;
