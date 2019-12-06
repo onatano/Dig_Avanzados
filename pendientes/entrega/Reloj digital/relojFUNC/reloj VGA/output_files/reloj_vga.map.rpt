@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reloj_vga
-Fri Dec 06 09:29:40 2019
+Fri Dec 06 10:16:00 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -44,13 +44,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 06 09:29:40 2019       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 06 10:16:00 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; reloj_vga                                   ;
 ; Top-level Entity Name              ; reloj_vga                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,414                                       ;
-;     Total combinational functions  ; 1,414                                       ;
+; Total logic elements               ; 1,403                                       ;
+;     Total combinational functions  ; 1,403                                       ;
 ;     Dedicated logic registers      ; 263                                         ;
 ; Total registers                    ; 263                                         ;
 ; Total pins                         ; 35                                          ;
@@ -190,16 +190,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Estimated Total logic elements              ; 1,414           ;
+; Estimated Total logic elements              ; 1,403           ;
 ;                                             ;                 ;
-; Total combinational functions               ; 1414            ;
+; Total combinational functions               ; 1403            ;
 ; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 583             ;
-;     -- 3 input functions                    ; 519             ;
-;     -- <=2 input functions                  ; 312             ;
+;     -- 4 input functions                    ; 619             ;
+;     -- 3 input functions                    ; 469             ;
+;     -- <=2 input functions                  ; 315             ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 900             ;
+;     -- normal mode                          ; 889             ;
 ;     -- arithmetic mode                      ; 514             ;
 ;                                             ;                 ;
 ; Total registers                             ; 263             ;
@@ -211,9 +211,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0               ;
 ;                                             ;                 ;
 ; Maximum fan-out node                        ; nRESETEOf~input ;
-; Maximum fan-out                             ; 470             ;
-; Total fan-out                               ; 5335            ;
-; Average fan-out                             ; 3.05            ;
+; Maximum fan-out                             ; 488             ;
+; Total fan-out                               ; 5343            ;
+; Average fan-out                             ; 3.08            ;
 +---------------------------------------------+-----------------+
 
 
@@ -222,13 +222,13 @@ refer to the applicable agreement for further details.
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                    ; Entity Name   ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+---------------+--------------+
-; |reloj_vga                    ; 1414 (0)            ; 263 (0)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |reloj_vga                                                             ; reloj_vga     ; work         ;
-;    |VGA:U0|                   ; 329 (328)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|VGA:U0                                                      ; VGA           ; work         ;
+; |reloj_vga                    ; 1403 (0)            ; 263 (0)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |reloj_vga                                                             ; reloj_vga     ; work         ;
+;    |VGA:U0|                   ; 317 (316)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|VGA:U0                                                      ; VGA           ; work         ;
 ;       |vga25MHz:U0|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|VGA:U0|vga25MHz:U0                                          ; vga25MHz      ; work         ;
-;    |relojFUNC:U1|             ; 1085 (0)            ; 194 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1                                                ; relojFUNC     ; work         ;
+;    |relojFUNC:U1|             ; 1086 (0)            ; 194 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1                                                ; relojFUNC     ; work         ;
 ;       |bcd7SEGHOR:U2|         ; 197 (197)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2                                  ; bcd7SEGHOR    ; work         ;
-;       |bcd7SEGMIN:U1|         ; 387 (387)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1                                  ; bcd7SEGMIN    ; work         ;
-;       |relojFUNCIONA:U0|      ; 501 (156)           ; 194 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0                               ; relojFUNCIONA ; work         ;
+;       |bcd7SEGMIN:U1|         ; 392 (392)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1                                  ; bcd7SEGMIN    ; work         ;
+;       |relojFUNCIONA:U0|      ; 497 (152)           ; 194 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0                               ; relojFUNCIONA ; work         ;
 ;          |fijarHora2:U2|      ; 76 (76)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2                 ; fijarHora2    ; work         ;
 ;          |fijarHora:U1|       ; 76 (76)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1                  ; fijarHora     ; work         ;
 ;          |relojTOTAL:U0|      ; 193 (140)           ; 130 (96)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0                 ; relojTOTAL    ; work         ;
@@ -242,10 +242,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------------------------------------------+----------------------------------------------------+------------------------+
 ; Latch Name                                                ; Latch Enable Signal                                ; Free of Timing Hazards ;
 +-----------------------------------------------------------+----------------------------------------------------+------------------------+
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[3]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[2]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[1]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[0]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[3]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[4]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[5]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[6]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
@@ -274,74 +274,74 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[29] ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[30] ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[31] ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[7]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[6]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[5]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[4]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[3]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[2]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[1]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[0]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[9]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[10]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[11]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[12]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[13]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[14]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[15]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[16]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[17]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[18]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[19]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[20]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[21]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[22]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[23]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[24]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[25]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[26]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[27]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[28]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[29]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[30]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[31]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[8]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]        ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[31]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[30]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[29]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[28]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[27]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[26]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[25]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[24]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[23]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[22]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[21]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[20]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[19]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[18]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[17]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[16]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[15]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[14]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[13]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[12]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[11]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[10]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[9]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[8]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[7]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[6]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[5]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[4]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[3]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[7]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[6]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[5]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[4]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[3]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[2]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[1]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[0]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[9]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[10]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[11]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[12]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[13]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[14]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[15]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[16]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[17]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[18]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[19]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[20]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[21]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[22]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[23]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[24]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[25]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[26]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[27]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[28]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[29]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[30]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[31]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[8]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[2]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[1]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[0]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
-; relojFUNC:U1|bcd7SEGMIN:U1|resta[11]                      ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[4]           ; yes                    ;
-; relojFUNC:U1|bcd7SEGMIN:U1|resta[10]                      ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[4]           ; yes                    ;
-; relojFUNC:U1|bcd7SEGMIN:U1|resta[9]                       ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[4]           ; yes                    ;
-; relojFUNC:U1|bcd7SEGMIN:U1|resta[8]                       ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[4]           ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[3]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[4]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[5]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[6]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[7]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[8]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[9]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[10]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[11]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[12]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[13]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[14]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[15]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[16]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[17]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[18]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[19]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[20]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[21]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[22]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[23]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[24]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[25]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[26]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[27]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[28]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[29]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[30]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[31]  ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
+; relojFUNC:U1|bcd7SEGMIN:U1|resta[11]                      ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[1]           ; yes                    ;
+; relojFUNC:U1|bcd7SEGMIN:U1|resta[10]                      ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[1]           ; yes                    ;
+; relojFUNC:U1|bcd7SEGMIN:U1|resta[9]                       ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[1]           ; yes                    ;
+; relojFUNC:U1|bcd7SEGMIN:U1|resta[8]                       ; relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[1]           ; yes                    ;
 ; Number of user-specified and inferred latches = 128       ;                                                    ;                        ;
 +-----------------------------------------------------------+----------------------------------------------------+------------------------+
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -369,13 +369,13 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_vga|VGA:U0|bH                                         ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_vga|VGA:U0|bV                                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[4]          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[0]       ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[1]          ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]       ;
 ; 3:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|resta[21]              ;
 ; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|minutosCOMPUESTO[1] ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|horasCOMPUESTO[28]  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHORD[6]      ;
-; 6:1                ; 28 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|resta[10]              ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|horasCOMPUESTO[27]  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHORD[2]      ;
+; 6:1                ; 28 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|resta[7]               ;
 ; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|salida7SEGD[4]         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 
@@ -391,19 +391,19 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ;     ENA               ; 4                           ;
 ;     ENA CLR           ; 64                          ;
 ;     plain             ; 66                          ;
-; cycloneiii_lcell_comb ; 1416                        ;
+; cycloneiii_lcell_comb ; 1406                        ;
 ;     arith             ; 514                         ;
 ;         2 data inputs ; 243                         ;
 ;         3 data inputs ; 271                         ;
-;     normal            ; 902                         ;
+;     normal            ; 892                         ;
 ;         0 data inputs ; 2                           ;
-;         1 data inputs ; 11                          ;
-;         2 data inputs ; 58                          ;
-;         3 data inputs ; 248                         ;
-;         4 data inputs ; 583                         ;
+;         1 data inputs ; 12                          ;
+;         2 data inputs ; 61                          ;
+;         3 data inputs ; 198                         ;
+;         4 data inputs ; 619                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.20                       ;
-; Average LUT depth     ; 12.22                       ;
+; Max LUT depth         ; 19.80                       ;
+; Average LUT depth     ; 12.51                       ;
 +-----------------------+-----------------------------+
 
 
@@ -422,7 +422,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Dec 06 09:29:25 2019
+    Info: Processing started: Fri Dec 06 10:15:45 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_vga -c reloj_vga
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -625,14 +625,14 @@ Info (10041): Inferred latch for "resta[28]" at bcd7seghor.vhd(19) File: C:/User
 Info (10041): Inferred latch for "resta[29]" at bcd7seghor.vhd(19) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 19
 Info (10041): Inferred latch for "resta[30]" at bcd7seghor.vhd(19) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 19
 Info (10041): Inferred latch for "resta[31]" at bcd7seghor.vhd(19) File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 19
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[3] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[3] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[2] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[2] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[1] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[1] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[0] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[0] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[3] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[3] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[4] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|contadorHOR[4] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[5] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 21
@@ -753,70 +753,70 @@ Warning (13012): Latch relojFUNC:U1|bcd7SEGHOR:U2|resta[31] has unsafe behavior 
     Warning (13013): Ports D and ENA on the latch are fed by the same signal nRESETEOf File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 9
 Warning (13012): Latch relojFUNC:U1|bcd7SEGHOR:U2|resta[8] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 19
     Warning (13013): Ports D and ENA on the latch are fed by the same signal nRESETEOf File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 9
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[31] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[31] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[30] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[30] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[29] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[29] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[28] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[28] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[27] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[27] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[26] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[26] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[25] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[25] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[24] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[24] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[23] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[23] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[22] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[22] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[21] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[21] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[20] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[20] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[19] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[19] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[18] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[18] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[17] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[17] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[16] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[16] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[15] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[15] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[14] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[14] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[13] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[13] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[12] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[12] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[11] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[11] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[10] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[10] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[9] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[9] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[8] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[8] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[7] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[7] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[6] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[6] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[5] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[5] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[4] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[4] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
-Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[3] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[3] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[2] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[2] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[1] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[1] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[0] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
     Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[0] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[3] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[3] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[4] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[4] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[5] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[5] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[6] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[6] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[7] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[7] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[8] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[8] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[9] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[9] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[10] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[10] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[11] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[11] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[12] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[12] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[13] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[13] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[14] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[14] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[15] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[15] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[16] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[16] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[17] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[17] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[18] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[18] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[19] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[19] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[20] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[20] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[21] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[21] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[22] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[22] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[23] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[23] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[24] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[24] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[25] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[25] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[26] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[26] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[27] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[27] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[28] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[28] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[29] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[29] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[30] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[30] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
+Warning (13012): Latch relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[31] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 21
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|contadorMIN[31] File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 29
 Warning (13012): Latch relojFUNC:U1|bcd7SEGMIN:U1|resta[11] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 19
     Warning (13013): Ports D and ENA on the latch are fed by the same signal nRESETEOf File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 9
 Warning (13012): Latch relojFUNC:U1|bcd7SEGMIN:U1|resta[10] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 19
@@ -882,34 +882,26 @@ Warning (13012): Latch relojFUNC:U1|bcd7SEGMIN:U1|resta[30] has unsafe behavior 
 Warning (13012): Latch relojFUNC:U1|bcd7SEGMIN:U1|resta[31] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 19
     Warning (13013): Ports D and ENA on the latch are fed by the same signal nRESETEOf File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vgaBLUE[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaBLUE[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaGREEN[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
+    Warning (13410): Pin "vgaRED[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
     Warning (13410): Pin "vgaBLANK" is stuck at VCC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 16
     Warning (13410): Pin "vgaSYNC" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1529 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1518 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 1494 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 314 warnings
-    Info: Peak virtual memory: 4818 megabytes
-    Info: Processing ended: Fri Dec 06 09:29:40 2019
+    Info (21061): Implemented 1483 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 306 warnings
+    Info: Peak virtual memory: 4822 megabytes
+    Info: Processing ended: Fri Dec 06 10:16:00 2019
     Info: Elapsed time: 00:00:15
     Info: Total CPU time (on all processors): 00:00:28
 

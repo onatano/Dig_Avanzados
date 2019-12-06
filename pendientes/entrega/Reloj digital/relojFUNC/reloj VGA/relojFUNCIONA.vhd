@@ -61,13 +61,13 @@ architecture Beh of relojFUNCIONA is
 				contCMf :=  minC+contCM;
 				contCHf := horC+contCH;
 				
-					if(contCMf=60)then
+					if(contCMf>59)then
 						contCMf := 0;
 					else
 						contCMf :=contCMf;
 					end if;
 					
-					if(contCHf=24)then
+					if(contCHf>23)then
 						contCHf:=0;
 					else
 						contCHf:=contCHf;
