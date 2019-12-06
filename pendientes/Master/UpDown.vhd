@@ -11,7 +11,7 @@ entity UpDown is
     );
 end UpDown;
 
-architecture Beh of master is
+architecture Beh of UpDown is
 
     signal parHd,parHu,parMd,parMu: std_logic_vector (3 downto 0);
 
@@ -30,7 +30,7 @@ begin
                 if parMd = "0101" then
                     parMu <="0000";
                     parMd <="0000";
-                enad if;
+                end if;
             end if;
         end if;
         if mindw='1' then
