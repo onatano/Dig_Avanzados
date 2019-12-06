@@ -1,0 +1,11 @@
+
+State Machine - |nombres|current_state
+Name current_state.Estado7 current_state.Estado6 current_state.Estado5 current_state.Estado4 current_state.Estado3 current_state.Estado2 current_state.Estado1 current_state.Estado0 
+current_state.Estado0 0 0 0 0 0 0 0 0 
+current_state.Estado1 0 0 0 0 0 0 1 1 
+current_state.Estado2 0 0 0 0 0 1 0 1 
+current_state.Estado3 0 0 0 0 1 0 0 1 
+current_state.Estado4 0 0 0 1 0 0 0 1 
+current_state.Estado5 0 0 1 0 0 0 0 1 
+current_state.Estado6 0 1 0 0 0 0 0 1 
+current_state.Estado7 1 0 0 0 0 0 0 1 

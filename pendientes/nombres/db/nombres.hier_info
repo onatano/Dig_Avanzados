@@ -1,0 +1,17 @@
+|nombres
+clk => RW~reg0.CLK
+clk => Enable~reg0.CLK
+clk => current_state~2.DATAIN
+Enable <= Enable~reg0.DB_MAX_OUTPUT_PORT_TYPE
+RSout <= RSout.DB_MAX_OUTPUT_PORT_TYPE
+RW <= RW~reg0.DB_MAX_OUTPUT_PORT_TYPE
+DBout[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+DBout[1] <= DBout[1].DB_MAX_OUTPUT_PORT_TYPE
+DBout[2] <= DBout[2].DB_MAX_OUTPUT_PORT_TYPE
+DBout[3] <= DBout[3].DB_MAX_OUTPUT_PORT_TYPE
+DBout[4] <= DBout[4].DB_MAX_OUTPUT_PORT_TYPE
+DBout[5] <= DBout[5].DB_MAX_OUTPUT_PORT_TYPE
+DBout[6] <= DBout[6].DB_MAX_OUTPUT_PORT_TYPE
+DBout[7] <= DBout[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

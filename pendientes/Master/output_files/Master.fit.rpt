@@ -1,5 +1,5 @@
 Fitter report for Master
-Wed Dec 04 22:28:16 2019
+Wed Dec 04 22:59:02 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Wed Dec 04 22:28:16 2019       ;
+; Fitter Status                      ; Successful - Wed Dec 04 22:59:02 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; master                                      ;
@@ -160,7 +160,8 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.3%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-4         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -1844,7 +1845,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; DIV1Hz:U0|clk_div                     ; FF_X43_Y6_N15      ; 16      ; Clock        ; yes    ; Global Clock         ; GCLK18           ; --                        ;
 ; Equal0~0                              ; LCCOMB_X42_Y59_N30 ; 7       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; clk                                   ; PIN_Y2             ; 34      ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; contH_d[0]~5                          ; LCCOMB_X41_Y59_N18 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; contH_d[1]~5                          ; LCCOMB_X41_Y59_N18 ; 4       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; display:U1|VGA:U4|bH~1                ; LCCOMB_X48_Y57_N20 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; display:U1|VGA:U4|bV~3                ; LCCOMB_X47_Y56_N0  ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
 ; display:U1|VGA:U4|vga25MHz:U0|clk_div ; FF_X55_Y72_N5      ; 68      ; Clock        ; yes    ; Global Clock         ; GCLK12           ; --                        ;
@@ -2785,25 +2786,25 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:06
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:05
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 1% of the available device resources in the region that extends from location X46_Y49 to location X57_Y60
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.30 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.29 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
+Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (171167): Found invalid Fitter assignments. See the Ignored Assignments panel in the Fitter Compilation Report for more information.
 Info (144001): Generated suppressed messages file C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/output_files/Master.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 502 warnings
-    Info: Peak virtual memory: 5716 megabytes
-    Info: Processing ended: Wed Dec 04 22:28:17 2019
-    Info: Elapsed time: 00:00:18
+    Info: Peak virtual memory: 5721 megabytes
+    Info: Processing ended: Wed Dec 04 22:59:02 2019
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:27
 
 
