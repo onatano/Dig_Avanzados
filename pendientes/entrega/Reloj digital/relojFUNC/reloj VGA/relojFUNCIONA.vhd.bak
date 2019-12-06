@@ -53,7 +53,7 @@ architecture Beh of relojFUNCIONA is
 	U1: fijarHora port map (nRESETEO, inMIN, contCM);
 	U2: fijarHora2 port map (nRESETEO, inHOR, contCH);
 	
-	process(nRESETEO, entradaOP, minC,horC)
+	process(nRESETEO, entradaOP)
 	variable contCMf, contCHf: integer:=0;
 		begin
 		if(nRESETEO='1')then

@@ -60,7 +60,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "inMINf",
+					"name" : "inHORf",
 					"strict" : false
 				},
 				{
@@ -68,7 +68,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "inHORf",
+					"name" : "inMINf",
 					"strict" : false
 				}
 			]
