@@ -33,15 +33,17 @@ architecture Beh of master is
     end component;
 
     signal contHd,contHu,contMd,contMu: std_logic_vector (3 downto 0):= "0000";
+    signal numHd,numHu,numMd,numMu: std_logic_vector (3 downto 0);
     signal clk1s,or1,and1,and2: std_logic;
 
 begin
     U0: DIV1Hz port map (clk,clk1s);
-    U1: display port map (clk,contHd,contHu,contMd,contMu,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
+    U1: Buttonip port map (contHd,contHu,contMd,contMu,minup,mindw,horaup,horadw,numHd,numHu,numMd,numMu);
+    U2: display port map (clk,numHd,numHu,numMd,numMu,vgaBLUE,vgaRED,vgaGREEN,vgaHS,vgaVS,clkvga,vgaBLANK,vgaSYNC);
 
     
 
-   process (clk1s, contHd,contHu,contMd,contMu)
+   process (clk1s)
    begin
         if rising_edge (clk1s) then
             contMu <= contMu + 1;
@@ -55,17 +57,15 @@ begin
                     if contHu = "1001" then
                         contHu <="0000";
                         contHd <= contHd + 1;
-
+                        if or1 = '1' then
+                            contMu <="0000";
+                            contMd <="0000";
+                            contHu <="0000";
+                            contHd <="0000";
+                        end if;
                     end if;
                 end if;
             end if;
         end if;
-		if or1 = '1' then
-			contMu <="0000";
-         contMd <="0000";
-         contHu <="0000";
-         contHd <="0000";
-		end if;
     end process; 
-	
 end architecture Beh;
