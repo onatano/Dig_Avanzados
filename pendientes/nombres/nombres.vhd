@@ -121,7 +121,6 @@ Architecture beh of nombres is
 			current_state <= current_state;
 		end if;
 	end process;
-			U0: Data port map (clk, RS, DB, Send, Enable, RSout, RW, DBout(7 downto 0));
-
+			
 	
 	end architecture beh;

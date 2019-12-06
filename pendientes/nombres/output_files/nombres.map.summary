@@ -1,14 +1,14 @@
-Analysis & Synthesis Status : Failed - Thu Nov 28 18:38:26 2019
+Analysis & Synthesis Status : Successful - Thu Dec 05 15:39:39 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : nombres
 Top-level Entity Name : nombres
 Family : Cyclone IV E
-Total logic elements : N/A until Partition Merge
-    Total combinational functions : N/A until Partition Merge
-    Dedicated logic registers : N/A until Partition Merge
-Total registers : N/A until Partition Merge
-Total pins : N/A until Partition Merge
-Total virtual pins : N/A until Partition Merge
-Total memory bits : N/A until Partition Merge
-Embedded Multiplier 9-bit elements : N/A until Partition Merge
-Total PLLs : N/A until Partition Merge
+Total logic elements : 8
+    Total combinational functions : 2
+    Dedicated logic registers : 8
+Total registers : 8
+Total pins : 12
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

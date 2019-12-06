@@ -7,8 +7,8 @@ entity letras is
 	port (
 		clk: in std_logic;
 		RSin: in std_logic;
-		DB: in std_logic_vector (7 downto 0);
-		send: in std_Logic;
+		DB1: in std_logic_vector (7 downto 0);
+		send1: in std_Logic;
 		Enable, RSout, RW: out std_logic;
 		DBout: out std_logic_vector (7 downto 0)
 		);
