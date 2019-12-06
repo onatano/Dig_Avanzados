@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Sat Nov 30 14:20:21 2019
+Analysis & Synthesis Status : Successful - Fri Dec 06 09:04:12 2019
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : reloj_vga
 Top-level Entity Name : reloj_vga
 Family : Cyclone IV E
-Total logic elements : 1,414
-    Total combinational functions : 1,414
+Total logic elements : 1,423
+    Total combinational functions : 1,423
     Dedicated logic registers : 263
 Total registers : 263
 Total pins : 35
