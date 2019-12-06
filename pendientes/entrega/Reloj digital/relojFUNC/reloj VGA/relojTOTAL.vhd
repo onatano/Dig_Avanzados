@@ -44,16 +44,12 @@ architecture Beh of relojTOTAL is
 				if(rising_edge(clkSEG))then
 					contadorSEG <= contadorSEG+1;
 						  
-					if(contadorSEG=59)then
-						contadorSEG <= 0;
-						contadorMIN <= contadorMIN+1+sumarMIN;
-						contR <= contR + '1';
-						contG <= contG + '1';
-						contB <= contB + '1';
-
 						if(contadorMIN=59)then
 							contadorMIN <= 0;
 							contadorHOR<=contadorHOR+1+sumarHOR;
+							contR <= contR + 1;
+							contG <= contG + 1;
+							contB <= contB + 1;
 							
 							if(contadorHOR=23)then
 								contadorHOR<=0;
