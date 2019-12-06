@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-
+use ieee.std_logic_unsigned.all;
 --RELOJ CUENTA
 
 entity relojTOTAL is
@@ -50,9 +50,9 @@ architecture Beh of relojTOTAL is
 						if(contadorMIN=59)then
 							contadorMIN <= 0;
 							contadorHOR<=contadorHOR+1+sumarHOR;
-							contR <= contR + 1;
-							contG <= contG + 1;
-							contB <= contB + 1;
+							contR <= contR + 50;
+							contG <= contG + 50;
+							contB <= contB + 50;
 							
 							if(contadorHOR=23)then
 								contadorHOR<=0;

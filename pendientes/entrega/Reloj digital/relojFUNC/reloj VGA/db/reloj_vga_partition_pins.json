@@ -36,10 +36,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "vgaRED[0]",
-					"strict" : false
-				},
-				{
 					"name" : "vgaRED[1]",
 					"strict" : false
 				},
@@ -65,10 +61,6 @@
 				},
 				{
 					"name" : "vgaRED[7]",
-					"strict" : false
-				},
-				{
-					"name" : "vgaGREEN[0]",
 					"strict" : false
 				},
 				{
@@ -124,11 +116,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "clkRTf",
+					"name" : "inMINf",
 					"strict" : false
 				},
 				{
-					"name" : "inMINf",
+					"name" : "clkRTf",
 					"strict" : false
 				},
 				{
