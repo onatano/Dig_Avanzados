@@ -48,22 +48,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "horaup",
-					"strict" : false
-				},
-				{
-					"name" : "horadw",
-					"strict" : false
-				},
-				{
-					"name" : "minup",
-					"strict" : false
-				},
-				{
-					"name" : "mindw",
-					"strict" : false
-				},
-				{
 					"name" : "clk",
 					"strict" : false
 				}
