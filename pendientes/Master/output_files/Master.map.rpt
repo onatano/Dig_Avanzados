@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Thu Dec 05 23:49:55 2019
+Fri Dec 06 00:00:21 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Dec 05 23:49:54 2019       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 06 00:00:20 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; master                                      ;
@@ -288,7 +288,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu Dec 05 23:49:41 2019
+    Info: Processing started: Fri Dec 06 00:00:07 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -311,6 +311,7 @@ Info (12021): Found 2 design units, including 1 entities, in source file display
     Info (12022): Found design unit 1: display-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/display.vhd Line: 17
     Info (12023): Found entity 1: display File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/display.vhd Line: 6
 Info (12127): Elaborating entity "Master" for the top level hierarchy
+Warning (10492): VHDL Process Statement warning at master.vhd(71): signal "or1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 71
 Info (12128): Elaborating entity "DIV1Hz" for hierarchy "DIV1Hz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 48
 Warning (12125): Using design file updown.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: UpDown-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 14
@@ -379,9 +380,9 @@ Info (21057): Implemented 331 device resources after synthesis - the final resou
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 29 output pins
     Info (21061): Implemented 297 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 54 warnings
-    Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Thu Dec 05 23:49:55 2019
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 55 warnings
+    Info: Peak virtual memory: 4814 megabytes
+    Info: Processing ended: Fri Dec 06 00:00:21 2019
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:26
 
