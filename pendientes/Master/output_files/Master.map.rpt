@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Master
-Fri Dec 06 00:18:46 2019
+Fri Dec 06 00:34:21 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -13,13 +13,12 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Logic Cells Representing Combinational Loops
-  9. Registers Removed During Synthesis
- 10. General Register Statistics
- 11. Multiplexer Restructuring Statistics (Restructuring Performed)
- 12. Post-Synthesis Netlist Statistics for Top Partition
- 13. Elapsed Time Per Partition
- 14. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -45,13 +44,13 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 06 00:18:46 2019       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 06 00:34:21 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; Master                                      ;
 ; Top-level Entity Name              ; master                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 451                                         ;
-;     Total combinational functions  ; 451                                         ;
+; Total logic elements               ; 385                                         ;
+;     Total combinational functions  ; 385                                         ;
 ;     Dedicated logic registers      ; 118                                         ;
 ; Total registers                    ; 118                                         ;
 ; Total pins                         ; 34                                          ;
@@ -165,19 +164,18 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                                     ; Library ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------+---------+
-; master.vhd                       ; yes             ; User VHDL File        ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd     ;         ;
-; vga25MHz.vhd                     ; yes             ; User VHDL File        ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/vga25MHz.vhd   ;         ;
-; VGA.vhd                          ; yes             ; User VHDL File        ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/VGA.vhd        ;         ;
-; segmentos7.vhd                   ; yes             ; User VHDL File        ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/segmentos7.vhd ;         ;
-; DIV1Hz.vhd                       ; yes             ; User VHDL File        ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/DIV1Hz.vhd     ;         ;
-; display.vhd                      ; yes             ; User VHDL File        ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/display.vhd    ;         ;
-; updown.vhd                       ; yes             ; Auto-Found VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd     ;         ;
-+----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                            ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                     ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
+; master.vhd                       ; yes             ; User VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd     ;         ;
+; vga25MHz.vhd                     ; yes             ; User VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/vga25MHz.vhd   ;         ;
+; VGA.vhd                          ; yes             ; User VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/VGA.vhd        ;         ;
+; segmentos7.vhd                   ; yes             ; User VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/segmentos7.vhd ;         ;
+; DIV1Hz.vhd                       ; yes             ; User VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/DIV1Hz.vhd     ;         ;
+; display.vhd                      ; yes             ; User VHDL File  ; C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/display.vhd    ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------+
@@ -185,17 +183,17 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+---------------------------------------+
 ; Resource                                    ; Usage                                 ;
 +---------------------------------------------+---------------------------------------+
-; Estimated Total logic elements              ; 451                                   ;
+; Estimated Total logic elements              ; 385                                   ;
 ;                                             ;                                       ;
-; Total combinational functions               ; 451                                   ;
+; Total combinational functions               ; 385                                   ;
 ; Logic element usage by number of LUT inputs ;                                       ;
-;     -- 4 input functions                    ; 248                                   ;
-;     -- 3 input functions                    ; 58                                    ;
-;     -- <=2 input functions                  ; 145                                   ;
+;     -- 4 input functions                    ; 218                                   ;
+;     -- 3 input functions                    ; 39                                    ;
+;     -- <=2 input functions                  ; 128                                   ;
 ;                                             ;                                       ;
 ; Logic elements by mode                      ;                                       ;
-;     -- normal mode                          ; 346                                   ;
-;     -- arithmetic mode                      ; 105                                   ;
+;     -- normal mode                          ; 292                                   ;
+;     -- arithmetic mode                      ; 93                                    ;
 ;                                             ;                                       ;
 ; Total registers                             ; 118                                   ;
 ;     -- Dedicated logic registers            ; 118                                   ;
@@ -207,8 +205,8 @@ refer to the applicable agreement for further details.
 ;                                             ;                                       ;
 ; Maximum fan-out node                        ; display:U2|VGA:U4|vga25MHz:U0|clk_div ;
 ; Maximum fan-out                             ; 70                                    ;
-; Total fan-out                               ; 1740                                  ;
-; Average fan-out                             ; 2.73                                  ;
+; Total fan-out                               ; 1529                                  ;
+; Average fan-out                             ; 2.68                                  ;
 +---------------------------------------------+---------------------------------------+
 
 
@@ -217,11 +215,10 @@ refer to the applicable agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-------------+--------------+
-; |master                    ; 451 (22)            ; 118 (16)                  ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |master                               ; master      ; work         ;
+; |master                    ; 385 (22)            ; 118 (16)                  ; 0           ; 0            ; 0       ; 0         ; 34   ; 0            ; |master                               ; master      ; work         ;
 ;    |DIV1Hz:U0|             ; 52 (52)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|DIV1Hz:U0                     ; DIV1Hz      ; work         ;
-;    |UpDown:U1|             ; 61 (61)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|UpDown:U1                     ; UpDown      ; work         ;
-;    |display:U2|            ; 316 (0)             ; 69 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2                    ; display     ; work         ;
-;       |VGA:U4|             ; 290 (289)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2|VGA:U4             ; VGA         ; work         ;
+;    |display:U2|            ; 311 (0)             ; 69 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2                    ; display     ; work         ;
+;       |VGA:U4|             ; 285 (284)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2|VGA:U4             ; VGA         ; work         ;
 ;          |vga25MHz:U0|     ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2|VGA:U4|vga25MHz:U0 ; vga25MHz    ; work         ;
 ;       |segmentos7:U0|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2|segmentos7:U0      ; segmentos7  ; work         ;
 ;       |segmentos7:U1|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2|segmentos7:U1      ; segmentos7  ; work         ;
@@ -229,38 +226,6 @@ refer to the applicable agreement for further details.
 ;       |segmentos7:U3|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |master|display:U2|segmentos7:U3      ; segmentos7  ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops                ;
-+--------------------------------------------------------+----+
-; Logic Cell Name                                        ;    ;
-+--------------------------------------------------------+----+
-; UpDown:U1|parHu~7                                      ;    ;
-; UpDown:U1|parHu~8                                      ;    ;
-; UpDown:U1|parHu~9                                      ;    ;
-; UpDown:U1|parHu~10                                     ;    ;
-; UpDown:U1|numHu[1]                                     ;    ;
-; UpDown:U1|numHu[2]                                     ;    ;
-; UpDown:U1|numHu[3]                                     ;    ;
-; UpDown:U1|parMu~7                                      ;    ;
-; UpDown:U1|parMu~8                                      ;    ;
-; UpDown:U1|parMu~9                                      ;    ;
-; UpDown:U1|parMu~10                                     ;    ;
-; UpDown:U1|numMu[1]                                     ;    ;
-; UpDown:U1|numMu[2]                                     ;    ;
-; UpDown:U1|numMu[3]                                     ;    ;
-; UpDown:U1|numMd[0]                                     ;    ;
-; UpDown:U1|numMd[1]                                     ;    ;
-; UpDown:U1|numMd[2]                                     ;    ;
-; UpDown:U1|numMd[3]                                     ;    ;
-; UpDown:U1|numHd[0]                                     ;    ;
-; UpDown:U1|numHd[1]                                     ;    ;
-; UpDown:U1|numHd[2]                                     ;    ;
-; UpDown:U1|numHd[3]                                     ;    ;
-; Number of logic cells representing combinational loops ; 22 ;
-+--------------------------------------------------------+----+
-Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +--------------------------------------------------------------------------------+
@@ -295,10 +260,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |master|display:U2|VGA:U4|bH ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |master|display:U2|VGA:U4|bV ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |master|UpDown:U1|parMu      ;
-; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |master|UpDown:U1|parHu      ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |master|UpDown:U1|parHd      ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; No         ; |master|UpDown:U1|parMd      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
 
 
@@ -311,19 +272,19 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; cycloneiii_ff         ; 118                         ;
 ;     ENA               ; 10                          ;
 ;     plain             ; 108                         ;
-; cycloneiii_lcell_comb ; 453                         ;
-;     arith             ; 105                         ;
-;         2 data inputs ; 96                          ;
-;         3 data inputs ; 9                           ;
-;     normal            ; 348                         ;
+; cycloneiii_lcell_comb ; 387                         ;
+;     arith             ; 93                          ;
+;         2 data inputs ; 92                          ;
+;         3 data inputs ; 1                           ;
+;     normal            ; 294                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 42                          ;
-;         3 data inputs ; 49                          ;
-;         4 data inputs ; 248                         ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 38                          ;
+;         4 data inputs ; 218                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 17.20                       ;
-; Average LUT depth     ; 9.73                        ;
+; Max LUT depth         ; 18.00                       ;
+; Average LUT depth     ; 11.11                       ;
 +-----------------------+-----------------------------+
 
 
@@ -342,7 +303,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Dec 06 00:18:32 2019
+    Info: Processing started: Fri Dec 06 00:34:08 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Master -c Master
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -367,35 +328,6 @@ Info (12021): Found 2 design units, including 1 entities, in source file display
 Info (12127): Elaborating entity "Master" for the top level hierarchy
 Warning (10492): VHDL Process Statement warning at master.vhd(71): signal "or1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 71
 Info (12128): Elaborating entity "DIV1Hz" for hierarchy "DIV1Hz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 48
-Warning (12125): Using design file updown.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: UpDown-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 14
-    Info (12023): Found entity 1: UpDown File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 6
-Info (12128): Elaborating entity "UpDown" for hierarchy "UpDown:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at updown.vhd(21): signal "contMu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 21
-Warning (10492): VHDL Process Statement warning at updown.vhd(22): signal "contMd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 22
-Warning (10492): VHDL Process Statement warning at updown.vhd(23): signal "contHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 23
-Warning (10492): VHDL Process Statement warning at updown.vhd(24): signal "contHd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at updown.vhd(26): signal "parMu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 26
-Warning (10492): VHDL Process Statement warning at updown.vhd(27): signal "parMu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 27
-Warning (10492): VHDL Process Statement warning at updown.vhd(29): signal "parMd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at updown.vhd(30): signal "parMd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 30
-Warning (10492): VHDL Process Statement warning at updown.vhd(37): signal "parMu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 37
-Warning (10492): VHDL Process Statement warning at updown.vhd(38): signal "parMu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 38
-Warning (10492): VHDL Process Statement warning at updown.vhd(40): signal "parMd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 40
-Warning (10492): VHDL Process Statement warning at updown.vhd(41): signal "parMd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 41
-Warning (10492): VHDL Process Statement warning at updown.vhd(48): signal "parHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 48
-Warning (10492): VHDL Process Statement warning at updown.vhd(49): signal "parHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 49
-Warning (10492): VHDL Process Statement warning at updown.vhd(51): signal "parHd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 51
-Warning (10492): VHDL Process Statement warning at updown.vhd(52): signal "parHd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 52
-Warning (10492): VHDL Process Statement warning at updown.vhd(52): signal "parHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 52
-Warning (10492): VHDL Process Statement warning at updown.vhd(59): signal "parHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 59
-Warning (10492): VHDL Process Statement warning at updown.vhd(60): signal "parHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 60
-Warning (10492): VHDL Process Statement warning at updown.vhd(62): signal "parHd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 62
-Warning (10492): VHDL Process Statement warning at updown.vhd(63): signal "parHd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 63
-Warning (10492): VHDL Process Statement warning at updown.vhd(69): signal "parMu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 69
-Warning (10492): VHDL Process Statement warning at updown.vhd(70): signal "parMd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 70
-Warning (10492): VHDL Process Statement warning at updown.vhd(71): signal "parHu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 71
-Warning (10492): VHDL Process Statement warning at updown.vhd(72): signal "parHd" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/updown.vhd Line: 72
 Info (12128): Elaborating entity "display" for hierarchy "display:U2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 50
 Info (12128): Elaborating entity "segmentos7" for hierarchy "display:U2|segmentos7:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/display.vhd Line: 40
 Warning (10812): VHDL warning at segmentos7.vhd(14): sensitivity list already contains a File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/segmentos7.vhd Line: 14
@@ -425,13 +357,18 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 565 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 4 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "minup" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 8
+    Warning (15610): No output dependent on input pin "mindw" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 8
+    Warning (15610): No output dependent on input pin "horaup" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 8
+    Warning (15610): No output dependent on input pin "horadw" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/Master/master.vhd Line: 8
+Info (21057): Implemented 499 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 5 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 531 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 50 warnings
+    Info (21061): Implemented 465 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
     Info: Peak virtual memory: 4815 megabytes
-    Info: Processing ended: Fri Dec 06 00:18:46 2019
+    Info: Processing ended: Fri Dec 06 00:34:22 2019
     Info: Elapsed time: 00:00:14
     Info: Total CPU time (on all processors): 00:00:26
 
