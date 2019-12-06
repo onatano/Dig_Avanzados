@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use ieee.std_logic_unsigned.all;
 
 --RELOJ CUENTA
 
@@ -12,7 +11,7 @@ port (
 --	entradaOP: in std_logic; --CHECAR SI ES MEJOR EL BOTON
 --	minutosENTRADA: in integer;
 --	horasENTRADA: in integer; --NUEVOS
-	minutos, horas: out integer;
+	minutos, horas: out integer
 	fondoR: out std_logic_vector(7 downto 0);
 	fondoG: out std_logic_vector(7 downto 0);
 	fondoB: out std_logic_vector(7 downto 0)
@@ -47,9 +46,9 @@ architecture Beh of relojTOTAL is
 					if(contadorSEG=59)then
 						contadorSEG <= 0;
 						contadorMIN <= contadorMIN+1+sumarMIN;
-						contR <= contR + '1';
-						contG <= contG + '1';
-						contB <= contB + '1';
+						contR <= contR+1;
+						contG <= contG+1;
+						contB <= contB+1;
 
 						if(contadorMIN=59)then
 							contadorMIN <= 0;

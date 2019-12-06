@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reloj_vga
-Fri Dec 06 10:16:00 2019
+Fri Dec 06 10:56:13 2019
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -14,11 +14,12 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. User-Specified and Inferred Latches
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  9. Registers Removed During Synthesis
+ 10. General Register Statistics
+ 11. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -44,15 +45,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Dec 06 10:16:00 2019       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 06 10:56:13 2019       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; reloj_vga                                   ;
 ; Top-level Entity Name              ; reloj_vga                                   ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,403                                       ;
-;     Total combinational functions  ; 1,403                                       ;
-;     Dedicated logic registers      ; 263                                         ;
-; Total registers                    ; 263                                         ;
+; Total logic elements               ; 1,424                                       ;
+;     Total combinational functions  ; 1,424                                       ;
+;     Dedicated logic registers      ; 271                                         ;
+; Total registers                    ; 271                                         ;
 ; Total pins                         ; 35                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -190,20 +191,20 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------------+
 ; Resource                                    ; Usage           ;
 +---------------------------------------------+-----------------+
-; Estimated Total logic elements              ; 1,403           ;
+; Estimated Total logic elements              ; 1,424           ;
 ;                                             ;                 ;
-; Total combinational functions               ; 1403            ;
+; Total combinational functions               ; 1424            ;
 ; Logic element usage by number of LUT inputs ;                 ;
-;     -- 4 input functions                    ; 619             ;
-;     -- 3 input functions                    ; 469             ;
-;     -- <=2 input functions                  ; 315             ;
+;     -- 4 input functions                    ; 612             ;
+;     -- 3 input functions                    ; 473             ;
+;     -- <=2 input functions                  ; 339             ;
 ;                                             ;                 ;
 ; Logic elements by mode                      ;                 ;
-;     -- normal mode                          ; 889             ;
-;     -- arithmetic mode                      ; 514             ;
+;     -- normal mode                          ; 904             ;
+;     -- arithmetic mode                      ; 520             ;
 ;                                             ;                 ;
-; Total registers                             ; 263             ;
-;     -- Dedicated logic registers            ; 263             ;
+; Total registers                             ; 271             ;
+;     -- Dedicated logic registers            ; 271             ;
 ;     -- I/O registers                        ; 0               ;
 ;                                             ;                 ;
 ; I/O pins                                    ; 35              ;
@@ -211,9 +212,9 @@ refer to the applicable agreement for further details.
 ; Embedded Multiplier 9-bit elements          ; 0               ;
 ;                                             ;                 ;
 ; Maximum fan-out node                        ; nRESETEOf~input ;
-; Maximum fan-out                             ; 488             ;
-; Total fan-out                               ; 5343            ;
-; Average fan-out                             ; 3.08            ;
+; Maximum fan-out                             ; 489             ;
+; Total fan-out                               ; 5405            ;
+; Average fan-out                             ; 3.06            ;
 +---------------------------------------------+-----------------+
 
 
@@ -222,16 +223,16 @@ refer to the applicable agreement for further details.
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                    ; Entity Name   ; Library Name ;
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+---------------+--------------+
-; |reloj_vga                    ; 1403 (0)            ; 263 (0)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |reloj_vga                                                             ; reloj_vga     ; work         ;
-;    |VGA:U0|                   ; 317 (316)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|VGA:U0                                                      ; VGA           ; work         ;
+; |reloj_vga                    ; 1424 (0)            ; 271 (0)                   ; 0           ; 0            ; 0       ; 0         ; 35   ; 0            ; |reloj_vga                                                             ; reloj_vga     ; work         ;
+;    |VGA:U0|                   ; 334 (333)           ; 69 (68)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|VGA:U0                                                      ; VGA           ; work         ;
 ;       |vga25MHz:U0|           ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|VGA:U0|vga25MHz:U0                                          ; vga25MHz      ; work         ;
-;    |relojFUNC:U1|             ; 1086 (0)            ; 194 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1                                                ; relojFUNC     ; work         ;
+;    |relojFUNC:U1|             ; 1090 (0)            ; 202 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1                                                ; relojFUNC     ; work         ;
 ;       |bcd7SEGHOR:U2|         ; 197 (197)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2                                  ; bcd7SEGHOR    ; work         ;
-;       |bcd7SEGMIN:U1|         ; 392 (392)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1                                  ; bcd7SEGMIN    ; work         ;
-;       |relojFUNCIONA:U0|      ; 497 (152)           ; 194 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0                               ; relojFUNCIONA ; work         ;
+;       |bcd7SEGMIN:U1|         ; 387 (387)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1                                  ; bcd7SEGMIN    ; work         ;
+;       |relojFUNCIONA:U0|      ; 506 (152)           ; 202 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0                               ; relojFUNCIONA ; work         ;
 ;          |fijarHora2:U2|      ; 76 (76)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2                 ; fijarHora2    ; work         ;
 ;          |fijarHora:U1|       ; 76 (76)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1                  ; fijarHora     ; work         ;
-;          |relojTOTAL:U0|      ; 193 (140)           ; 130 (96)                  ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0                 ; relojTOTAL    ; work         ;
+;          |relojTOTAL:U0|      ; 202 (149)           ; 138 (104)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0                 ; relojTOTAL    ; work         ;
 ;             |divisor60SEG:U0| ; 53 (53)             ; 34 (34)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0 ; divisor60SEG  ; work         ;
 +-------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -274,38 +275,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[29] ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[30] ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|salidaHOR[31] ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2|Equal0 ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[7]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[6]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[5]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[4]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[3]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[2]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[1]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[0]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[9]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[10]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[11]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[12]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[13]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[14]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[15]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[16]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[17]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[18]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[19]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[20]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[21]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[22]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[23]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[24]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[25]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[26]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[27]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[28]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[29]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[30]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[31]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
-; relojFUNC:U1|bcd7SEGHOR:U2|resta[8]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[7]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[6]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[5]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[4]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[3]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[2]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[1]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[0]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[9]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[10]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[11]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[12]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[13]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[14]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[15]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[16]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[17]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[18]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[19]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[20]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[21]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[22]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[23]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[24]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[25]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[26]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[27]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[28]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[29]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[30]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[31]                      ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
+; relojFUNC:U1|bcd7SEGHOR:U2|resta[8]                       ; relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]        ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[2]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[1]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
 ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|salidaMIN[0]   ; relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1|Equal0  ; yes                    ;
@@ -347,17 +348,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Table restricted to first 100 entries. Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++-------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                      ;
++------------------------------------------------------+------------------------------------------------------------------+
+; Register name                                        ; Reason for Removal                                               ;
++------------------------------------------------------+------------------------------------------------------------------+
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[0] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[0] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[0] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[0] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[1] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[1] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[1] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[1] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[2] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[2] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[2] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[2] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[3] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[3] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[3] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[3] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[4] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[4] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[4] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[4] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[5] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[5] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[5] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[5] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[6] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[6] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[6] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[6] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contG[7] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[7] ;
+; relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contR[7] ; Merged with relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|contB[7] ;
+; Total Number of Removed Registers = 16               ;                                                                  ;
++------------------------------------------------------+------------------------------------------------------------------+
+
+
 +------------------------------------------------------+
 ; General Register Statistics                          ;
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 263   ;
+; Total registers                              ; 271   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 193   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 68    ;
+; Number of registers using Clock Enable       ; 75    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -370,13 +396,13 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_vga|VGA:U0|bH                                         ;
 ; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_vga|VGA:U0|bV                                         ;
 ; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|salida7SEG[1]          ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[6]       ;
-; 3:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|resta[21]              ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|minutosCOMPUESTO[1] ;
-; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|horasCOMPUESTO[27]  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHORD[2]      ;
-; 6:1                ; 28 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|resta[7]               ;
-; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|salida7SEGD[4]         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHOR[2]       ;
+; 3:1                ; 29 bits   ; 58 LEs        ; 58 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|resta[17]              ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|minutosCOMPUESTO[2] ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|relojFUNCIONA:U0|horasCOMPUESTO[23]  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGHOR:U2|salida7SEGHORD[6]      ;
+; 6:1                ; 28 bits   ; 112 LEs       ; 112 LEs              ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|resta[11]              ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |reloj_vga|relojFUNC:U1|bcd7SEGMIN:U1|salida7SEGD[1]         ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------+
 
 
@@ -386,24 +412,24 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 35                          ;
-; cycloneiii_ff         ; 263                         ;
+; cycloneiii_ff         ; 271                         ;
 ;     CLR               ; 129                         ;
-;     ENA               ; 4                           ;
+;     ENA               ; 11                          ;
 ;     ENA CLR           ; 64                          ;
-;     plain             ; 66                          ;
-; cycloneiii_lcell_comb ; 1406                        ;
-;     arith             ; 514                         ;
-;         2 data inputs ; 243                         ;
-;         3 data inputs ; 271                         ;
-;     normal            ; 892                         ;
+;     plain             ; 67                          ;
+; cycloneiii_lcell_comb ; 1426                        ;
+;     arith             ; 520                         ;
+;         2 data inputs ; 248                         ;
+;         3 data inputs ; 272                         ;
+;     normal            ; 906                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 12                          ;
-;         2 data inputs ; 61                          ;
-;         3 data inputs ; 198                         ;
-;         4 data inputs ; 619                         ;
+;         2 data inputs ; 79                          ;
+;         3 data inputs ; 201                         ;
+;         4 data inputs ; 612                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 19.80                       ;
-; Average LUT depth     ; 12.51                       ;
+; Max LUT depth         ; 20.10                       ;
+; Average LUT depth     ; 12.50                       ;
 +-----------------------+-----------------------------+
 
 
@@ -422,7 +448,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri Dec 06 10:15:45 2019
+    Info: Processing started: Fri Dec 06 10:55:57 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_vga -c reloj_vga
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -431,41 +457,41 @@ Warning (12125): Using design file reloj_vga.vhd, which is not specified as a de
     Info (12023): Found entity 1: reloj_vga File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 5
 Info (12127): Elaborating entity "reloj_vga" for the top level hierarchy
 Warning (12125): Using design file vga.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: VGA-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga.vhd Line: 17
+    Info (12022): Found design unit 1: VGA-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga.vhd Line: 18
     Info (12023): Found entity 1: VGA File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga.vhd Line: 6
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 50
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 56
 Warning (12125): Using design file vga25mhz.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: vga25MHz-beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga25mhz.vhd Line: 13
     Info (12023): Found entity 1: vga25MHz File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga25mhz.vhd Line: 6
-Info (12128): Elaborating entity "vga25MHz" for hierarchy "VGA:U0|vga25MHz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga.vhd Line: 42
+Info (12128): Elaborating entity "vga25MHz" for hierarchy "VGA:U0|vga25MHz:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga.vhd Line: 43
 Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(23): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga25mhz.vhd Line: 23
 Warning (10492): VHDL Process Statement warning at vga25mhz.vhd(25): signal "clk_div" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/vga25mhz.vhd Line: 25
 Warning (12125): Using design file relojfunc.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: relojFUNC-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 19
+    Info (12022): Found design unit 1: relojFUNC-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 22
     Info (12023): Found entity 1: relojFUNC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 5
-Info (12128): Elaborating entity "relojFUNC" for hierarchy "relojFUNC:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 51
+Info (12128): Elaborating entity "relojFUNC" for hierarchy "relojFUNC:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 57
 Warning (12125): Using design file relojfunciona.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: relojFUNCIONA-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 20
+    Info (12022): Found design unit 1: relojFUNCIONA-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 19
     Info (12023): Found entity 1: relojFUNCIONA File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 5
-Info (12128): Elaborating entity "relojFUNCIONA" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 54
-Warning (10492): VHDL Process Statement warning at relojfunciona.vhd(61): signal "contCM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 61
-Warning (10492): VHDL Process Statement warning at relojfunciona.vhd(62): signal "contCH" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 62
+Info (12128): Elaborating entity "relojFUNCIONA" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 60
+Warning (10492): VHDL Process Statement warning at relojfunciona.vhd(63): signal "contCM" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at relojfunciona.vhd(64): signal "contCH" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 64
 Warning (12125): Using design file relojtotal.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: relojTOTAL-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 18
-    Info (12023): Found entity 1: relojTOTAL File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 7
-Info (12128): Elaborating entity "relojTOTAL" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 52
-Warning (10540): VHDL Signal Declaration warning at relojtotal.vhd(29): used explicit default value for signal "sumarMIN" because signal was never assigned a value File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 29
-Warning (10540): VHDL Signal Declaration warning at relojtotal.vhd(29): used explicit default value for signal "sumarHOR" because signal was never assigned a value File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 29
-Warning (10492): VHDL Process Statement warning at relojtotal.vhd(65): signal "contadorSEG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 65
+    Info (12022): Found design unit 1: relojTOTAL-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 22
+    Info (12023): Found entity 1: relojTOTAL File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 8
+Info (12128): Elaborating entity "relojTOTAL" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 54
+Warning (10540): VHDL Signal Declaration warning at relojtotal.vhd(33): used explicit default value for signal "sumarMIN" because signal was never assigned a value File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 33
+Warning (10540): VHDL Signal Declaration warning at relojtotal.vhd(33): used explicit default value for signal "sumarHOR" because signal was never assigned a value File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at relojtotal.vhd(73): signal "contadorSEG" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 73
 Warning (12125): Using design file divisor60seg.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: divisor60SEG-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/divisor60seg.vhd Line: 16
     Info (12023): Found entity 1: divisor60SEG File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/divisor60seg.vhd Line: 8
-Info (12128): Elaborating entity "divisor60SEG" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 33
+Info (12128): Elaborating entity "divisor60SEG" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|relojTOTAL:U0|divisor60SEG:U0" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojtotal.vhd Line: 38
 Warning (10492): VHDL Process Statement warning at divisor60seg.vhd(23): signal "nRst" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/divisor60seg.vhd Line: 23
 Warning (12125): Using design file fijarhora.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: fijarHora-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 16
     Info (12023): Found entity 1: fijarHora File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 8
-Info (12128): Elaborating entity "fijarHora" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 53
+Info (12128): Elaborating entity "fijarHora" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|fijarHora:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 55
 Warning (10492): VHDL Process Statement warning at fijarhora.vhd(26): signal "contadorMIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at fijarhora.vhd(32): signal "contadorMIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 32
 Warning (10492): VHDL Process Statement warning at fijarhora.vhd(34): signal "contadorMIN" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora.vhd Line: 34
@@ -505,7 +531,7 @@ Info (10041): Inferred latch for "salidaMIN[31]" at fijarhora.vhd(21) File: C:/U
 Warning (12125): Using design file fijarhora2.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: fijarHora2-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 16
     Info (12023): Found entity 1: fijarHora2 File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 8
-Info (12128): Elaborating entity "fijarHora2" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 54
+Info (12128): Elaborating entity "fijarHora2" for hierarchy "relojFUNC:U1|relojFUNCIONA:U0|fijarHora2:U2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunciona.vhd Line: 56
 Warning (10492): VHDL Process Statement warning at fijarhora2.vhd(26): signal "contadorHOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 26
 Warning (10492): VHDL Process Statement warning at fijarhora2.vhd(32): signal "contadorHOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 32
 Warning (10492): VHDL Process Statement warning at fijarhora2.vhd(34): signal "contadorHOR" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/fijarhora2.vhd Line: 34
@@ -545,7 +571,7 @@ Info (10041): Inferred latch for "salidaHOR[31]" at fijarhora2.vhd(21) File: C:/
 Warning (12125): Using design file bcd7segmin.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: bcd7SEGMIN-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 14
     Info (12023): Found entity 1: bcd7SEGMIN File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 5
-Info (12128): Elaborating entity "bcd7SEGMIN" for hierarchy "relojFUNC:U1|bcd7SEGMIN:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 55
+Info (12128): Elaborating entity "bcd7SEGMIN" for hierarchy "relojFUNC:U1|bcd7SEGMIN:U1" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 61
 Warning (10492): VHDL Process Statement warning at bcd7segmin.vhd(25): signal "resta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 25
 Warning (10492): VHDL Process Statement warning at bcd7segmin.vhd(53): signal "resta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 53
 Warning (10492): VHDL Process Statement warning at bcd7segmin.vhd(81): signal "resta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 81
@@ -588,7 +614,7 @@ Info (10041): Inferred latch for "resta[31]" at bcd7segmin.vhd(19) File: C:/User
 Warning (12125): Using design file bcd7seghor.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
     Info (12022): Found design unit 1: bcd7SEGHOR-Beh File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 14
     Info (12023): Found entity 1: bcd7SEGHOR File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 5
-Info (12128): Elaborating entity "bcd7SEGHOR" for hierarchy "relojFUNC:U1|bcd7SEGHOR:U2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 56
+Info (12128): Elaborating entity "bcd7SEGHOR" for hierarchy "relojFUNC:U1|bcd7SEGHOR:U2" File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/relojfunc.vhd Line: 62
 Warning (10492): VHDL Process Statement warning at bcd7seghor.vhd(25): signal "resta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 25
 Warning (10492): VHDL Process Statement warning at bcd7seghor.vhd(53): signal "resta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 53
 Warning (10492): VHDL Process Statement warning at bcd7seghor.vhd(81): signal "resta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7seghor.vhd Line: 81
@@ -882,27 +908,19 @@ Warning (13012): Latch relojFUNC:U1|bcd7SEGMIN:U1|resta[30] has unsafe behavior 
 Warning (13012): Latch relojFUNC:U1|bcd7SEGMIN:U1|resta[31] has unsafe behavior File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/bcd7segmin.vhd Line: 19
     Warning (13013): Ports D and ENA on the latch are fed by the same signal nRESETEOf File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 9
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "vgaRED[0]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[1]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[2]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[3]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[4]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[5]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[6]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
-    Warning (13410): Pin "vgaRED[7]" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 13
     Warning (13410): Pin "vgaBLANK" is stuck at VCC File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 16
     Warning (13410): Pin "vgaSYNC" is stuck at GND File: C:/Users/OsmarBW/Documents/GitHub/Dig_Avanzados/pendientes/entrega/Reloj digital/relojFUNC/reloj VGA/reloj_vga.vhd Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1518 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1539 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 6 input pins
     Info (21059): Implemented 29 output pins
-    Info (21061): Implemented 1483 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 306 warnings
-    Info: Peak virtual memory: 4822 megabytes
-    Info: Processing ended: Fri Dec 06 10:16:00 2019
-    Info: Elapsed time: 00:00:15
+    Info (21061): Implemented 1504 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 298 warnings
+    Info: Peak virtual memory: 4828 megabytes
+    Info: Processing ended: Fri Dec 06 10:56:13 2019
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:28
 
 
