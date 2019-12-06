@@ -66,9 +66,9 @@ begin
                 end if;
             end if;
         end if;
+        numMu <= parMu;
+        numMd <= parMd;
+        numHu <= parHu;
+        numHd <= parHd;
     end process;
-    numMu <= parMu;
-    numMd <= parMd;
-    numHu <= parHu;
-    numHd <= parHd;
 end Beh;
