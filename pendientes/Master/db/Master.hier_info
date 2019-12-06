@@ -1,39 +1,39 @@
 |Master
 clk => DIV1Hz:U0.Fi
-clk => display:U1.clk
-minup => ~NO_FANOUT~
-mindw => ~NO_FANOUT~
-horaup => ~NO_FANOUT~
-horadw => ~NO_FANOUT~
-vgaBLUE[0] <= display:U1.vgaBLUE[0]
-vgaBLUE[1] <= display:U1.vgaBLUE[1]
-vgaBLUE[2] <= display:U1.vgaBLUE[2]
-vgaBLUE[3] <= display:U1.vgaBLUE[3]
-vgaBLUE[4] <= display:U1.vgaBLUE[4]
-vgaBLUE[5] <= display:U1.vgaBLUE[5]
-vgaBLUE[6] <= display:U1.vgaBLUE[6]
-vgaBLUE[7] <= display:U1.vgaBLUE[7]
-vgaRED[0] <= display:U1.vgaRED[0]
-vgaRED[1] <= display:U1.vgaRED[1]
-vgaRED[2] <= display:U1.vgaRED[2]
-vgaRED[3] <= display:U1.vgaRED[3]
-vgaRED[4] <= display:U1.vgaRED[4]
-vgaRED[5] <= display:U1.vgaRED[5]
-vgaRED[6] <= display:U1.vgaRED[6]
-vgaRED[7] <= display:U1.vgaRED[7]
-vgaGREEN[0] <= display:U1.vgaGREEN[0]
-vgaGREEN[1] <= display:U1.vgaGREEN[1]
-vgaGREEN[2] <= display:U1.vgaGREEN[2]
-vgaGREEN[3] <= display:U1.vgaGREEN[3]
-vgaGREEN[4] <= display:U1.vgaGREEN[4]
-vgaGREEN[5] <= display:U1.vgaGREEN[5]
-vgaGREEN[6] <= display:U1.vgaGREEN[6]
-vgaGREEN[7] <= display:U1.vgaGREEN[7]
-vgaHS <= display:U1.vgaHS
-vgaVS <= display:U1.vgaVS
-clkvga <= display:U1.clkvga
-vgaBLANK <= display:U1.vgaBLANK
-vgaSYNC <= display:U1.vgaSYNC
+clk => display:U2.clk
+minup => UpDown:U1.minup
+mindw => UpDown:U1.mindw
+horaup => UpDown:U1.horaup
+horadw => UpDown:U1.horadw
+vgaBLUE[0] << display:U2.vgaBLUE[0]
+vgaBLUE[1] << display:U2.vgaBLUE[1]
+vgaBLUE[2] << display:U2.vgaBLUE[2]
+vgaBLUE[3] << display:U2.vgaBLUE[3]
+vgaBLUE[4] << display:U2.vgaBLUE[4]
+vgaBLUE[5] << display:U2.vgaBLUE[5]
+vgaBLUE[6] << display:U2.vgaBLUE[6]
+vgaBLUE[7] << display:U2.vgaBLUE[7]
+vgaRED[0] << display:U2.vgaRED[0]
+vgaRED[1] << display:U2.vgaRED[1]
+vgaRED[2] << display:U2.vgaRED[2]
+vgaRED[3] << display:U2.vgaRED[3]
+vgaRED[4] << display:U2.vgaRED[4]
+vgaRED[5] << display:U2.vgaRED[5]
+vgaRED[6] << display:U2.vgaRED[6]
+vgaRED[7] << display:U2.vgaRED[7]
+vgaGREEN[0] << display:U2.vgaGREEN[0]
+vgaGREEN[1] << display:U2.vgaGREEN[1]
+vgaGREEN[2] << display:U2.vgaGREEN[2]
+vgaGREEN[3] << display:U2.vgaGREEN[3]
+vgaGREEN[4] << display:U2.vgaGREEN[4]
+vgaGREEN[5] << display:U2.vgaGREEN[5]
+vgaGREEN[6] << display:U2.vgaGREEN[6]
+vgaGREEN[7] << display:U2.vgaGREEN[7]
+vgaHS << display:U2.vgaHS
+vgaVS << display:U2.vgaVS
+clkvga << display:U2.clkvga
+vgaBLANK << display:U2.vgaBLANK
+vgaSYNC << display:U2.vgaSYNC
 
 
 |Master|DIV1Hz:U0
@@ -73,7 +73,46 @@ Fi => cont[31].CLK
 Fo <= clk_div.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Master|display:U1
+|Master|UpDown:U1
+contHd[0] => ~NO_FANOUT~
+contHd[1] => ~NO_FANOUT~
+contHd[2] => ~NO_FANOUT~
+contHd[3] => ~NO_FANOUT~
+contHu[0] => ~NO_FANOUT~
+contHu[1] => ~NO_FANOUT~
+contHu[2] => ~NO_FANOUT~
+contHu[3] => ~NO_FANOUT~
+contMd[0] => ~NO_FANOUT~
+contMd[1] => ~NO_FANOUT~
+contMd[2] => ~NO_FANOUT~
+contMd[3] => ~NO_FANOUT~
+contMu[0] => ~NO_FANOUT~
+contMu[1] => ~NO_FANOUT~
+contMu[2] => ~NO_FANOUT~
+contMu[3] => ~NO_FANOUT~
+minup => ~NO_FANOUT~
+mindw => ~NO_FANOUT~
+horaup => ~NO_FANOUT~
+horadw => ~NO_FANOUT~
+numHd[0] <= numHd[0].DB_MAX_OUTPUT_PORT_TYPE
+numHd[1] <= numHd[1].DB_MAX_OUTPUT_PORT_TYPE
+numHd[2] <= numHd[2].DB_MAX_OUTPUT_PORT_TYPE
+numHd[3] <= numHd[3].DB_MAX_OUTPUT_PORT_TYPE
+numHu[0] <= numHu[0].DB_MAX_OUTPUT_PORT_TYPE
+numHu[1] <= numHu[1].DB_MAX_OUTPUT_PORT_TYPE
+numHu[2] <= numHu[2].DB_MAX_OUTPUT_PORT_TYPE
+numHu[3] <= numHu[3].DB_MAX_OUTPUT_PORT_TYPE
+numMd[0] <= numMd[0].DB_MAX_OUTPUT_PORT_TYPE
+numMd[1] <= numMd[1].DB_MAX_OUTPUT_PORT_TYPE
+numMd[2] <= numMd[2].DB_MAX_OUTPUT_PORT_TYPE
+numMd[3] <= numMd[3].DB_MAX_OUTPUT_PORT_TYPE
+numMu[0] <= comb.DB_MAX_OUTPUT_PORT_TYPE
+numMu[1] <= numMu[1].DB_MAX_OUTPUT_PORT_TYPE
+numMu[2] <= numMu[2].DB_MAX_OUTPUT_PORT_TYPE
+numMu[3] <= numMu[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Master|display:U2
 clk => VGA:U4.clk
 numH_d[0] => segmentos7:U0.a[0]
 numH_d[1] => segmentos7:U0.a[1]
@@ -122,7 +161,7 @@ vgaBLANK <= VGA:U4.vgaBLANK
 vgaSYNC <= VGA:U4.vgaSYNC
 
 
-|Master|display:U1|segmentos7:U0
+|Master|display:U2|segmentos7:U0
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -160,7 +199,7 @@ s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Master|display:U1|segmentos7:U1
+|Master|display:U2|segmentos7:U1
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -198,7 +237,7 @@ s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Master|display:U1|segmentos7:U2
+|Master|display:U2|segmentos7:U2
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -236,7 +275,7 @@ s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Master|display:U1|segmentos7:U3
+|Master|display:U2|segmentos7:U3
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -274,7 +313,7 @@ s[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 s[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Master|display:U1|VGA:U4
+|Master|display:U2|VGA:U4
 clk => vga25MHz:U0.Fi
 vgaBLUE[0] <= <GND>
 vgaBLUE[1] <= <GND>
@@ -335,7 +374,7 @@ vgaBLANK <= <VCC>
 vgaSYNC <= <GND>
 
 
-|Master|display:U1|VGA:U4|vga25MHz:U0
+|Master|display:U2|VGA:U4|vga25MHz:U0
 Fi => clk_div.CLK
 Fo <= clk_div.DB_MAX_OUTPUT_PORT_TYPE
 
