@@ -1,7 +1,6 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 use IEEE.numeric_std.all;
-use ieee.std_logic_unsigned.all;
 
 --RELOJ CUENTA
 
@@ -44,6 +43,10 @@ architecture Beh of relojTOTAL is
 				if(rising_edge(clkSEG))then
 					contadorSEG <= contadorSEG+1;
 						  
+					if(contadorSEG=59)then
+						contadorSEG <= 0;
+						contadorMIN <= contadorMIN+1+sumarMIN;
+
 						if(contadorMIN=59)then
 							contadorMIN <= 0;
 							contadorHOR<=contadorHOR+1+sumarHOR;
