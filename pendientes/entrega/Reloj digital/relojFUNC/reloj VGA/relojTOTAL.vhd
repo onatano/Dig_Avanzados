@@ -8,9 +8,6 @@ entity relojTOTAL is
 port (
 	clkINS: in std_logic;
 	nRes: in std_logic;
---	entradaOP: in std_logic; --CHECAR SI ES MEJOR EL BOTON
---	minutosENTRADA: in integer;
---	horasENTRADA: in integer; --NUEVOS
 	minutos, horas: out integer;
 	fondoR: out std_logic_vector(7 downto 0);
 	fondoG: out std_logic_vector(7 downto 0);
@@ -86,6 +83,3 @@ architecture Beh of relojTOTAL is
 	horas <= contadorHOR;
 	
 end architecture Beh;
-
-
---Falta poner en que numero inicia

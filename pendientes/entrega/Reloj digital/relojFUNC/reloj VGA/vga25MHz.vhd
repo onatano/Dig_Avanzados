@@ -26,10 +26,3 @@ begin
 	end process; 
 	
 end architecture beh;
-
-
-
---Si el boton no es presionado, el estado se mantiene
---Si el boton es presionado, el estado avanza
---si el boton sigue siendo presionado, el estado se mantiene
---si el boton ya no es presionado, el estado avanza

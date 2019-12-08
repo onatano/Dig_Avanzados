@@ -1,12 +1,12 @@
-Fitter Status : Successful - Fri Dec 06 11:31:03 2019
-Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Fitter Status : Successful - Sun Dec 08 16:43:18 2019
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : reloj_vga
 Top-level Entity Name : reloj_vga
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 1,437 / 114,480 ( 1 % )
-    Total combinational functions : 1,422 / 114,480 ( 1 % )
+Total logic elements : 1,445 / 114,480 ( 1 % )
+    Total combinational functions : 1,437 / 114,480 ( 1 % )
     Dedicated logic registers : 270 / 114,480 ( < 1 % )
 Total registers : 270
 Total pins : 35 / 529 ( 7 % )
